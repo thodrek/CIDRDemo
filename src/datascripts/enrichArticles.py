@@ -80,41 +80,42 @@ for eKey in articleInfo:
         # extract entities and topics from article
         calaisInput = ar['title'] + ' ' + ar['body']
         calaisInput = re.sub(r'[^\x00-\x7F]+',' ', calaisInput)
+        try:
+            calaisResult = calais.analyze(calaisInput)
+            # store entities
+            if hasattr(calaisResult, 'entities'):
+                # calais entity schema ['_typeReference', '_type', 'name', '__reference', 'instances', 'relevance', 'nationality', 'organizationtype']
+                for entity in calaisResult.entities:
+                    newEntity = {}
+                    newEntity['name'] = entity['name']
+                    newEntity['type'] = entity['_type']
+                    newEntity['cRef'] = entity['__reference']
+                    newEntity['typeRef'] = entity['_typeReference']
+                    newEntity['relevance'] = entity['relevance']
 
-        calaisResult = calais.analyze(calaisInput)
-        # store entities
-        if hasattr(calaisResult, 'entities'):
-            # calais entity schema ['_typeReference', '_type', 'name', '__reference', 'instances', 'relevance', 'nationality', 'organizationtype']
-            for entity in calaisResult.entities:
-                newEntity = {}
-                newEntity['name'] = entity['name']
-                newEntity['type'] = entity['_type']
-                newEntity['cRef'] = entity['__reference']
-                newEntity['typeRef'] = entity['_typeReference']
-                newEntity['relevance'] = entity['relevance']
+                    # add new entity to article entities
+                    newArticle['entities'].append(newEntity)
+            # store topics
+            if hasattr(calaisResult, 'topics'):
+                # calais topic schema ['category', 'categoryName', '__reference', 'classifierName', 'score']
+                for topic in calaisResult.topics:
+                    newTopic = {}
+                    newTopic['name'] = topic['categoryName']
+                    newTopic['namedRef'] = topic['category']
+                    newTopic['idRef'] = topic['__reference']
+                    newTopic['score'] = topic['score']
 
-                # add new entity to article entities
-                newArticle['entities'].append(newEntity)
-        # store topics
-        if hasattr(calaisResult, 'topics'):
-            # calais topic schema ['category', 'categoryName', '__reference', 'classifierName', 'score']
-            for topic in calaisResult.topics:
-                newTopic = {}
-                newTopic['name'] = topic['categoryName']
-                newTopic['namedRef'] = topic['category']
-                newTopic['idRef'] = topic['__reference']
-                newTopic['score'] = topic['score']
-
-                # add new topic to article topics
-                newArticle['topics'].append(newTopic)
-
-        # add new article to event
-        if len(newArticle['entities']) == 0 and len(newArticle['topics']) == 0:
-            print "Error.. skipping article"
+                    # add new topic to article topics
+                    newArticle['topics'].append(newTopic)
+            # add new article to event
+            if len(newArticle['entities']) == 0 and len(newArticle['topics']) == 0:
+                print "Error.. skipping article"
+                errors += 1.0
+            else:
+                articlesEnriched[eKey].append(newArticle)
+        except Exception, err:
+            print err
             errors += 1.0
-        else:
-            articlesEnriched[eKey].append(newArticle)
-
     # print progress
     events_processed += 1.0
     progress = events_processed*100.0/float(total_entries)
