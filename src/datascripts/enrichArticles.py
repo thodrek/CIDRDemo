@@ -10,8 +10,11 @@ import sys
 import re
 
 # init calais
-API_KEY = '3x9q2sc5qtvqkqgdwmremkar'
-calais = Calais(API_KEY,submitter="thodrek")
+API_KEYS = ['k8qqyqpzgck5k3hgmsfjrphf','n6p8psyvs2yqe4gzrttck5rv', '2ap3f4ycgn3bs3wjxsbkjsrk']
+#API_KEY = '3x9q2sc5qtvqkqgdwmremkar'
+calais_reqs = 0.0
+calais_index = 0
+calais = Calais(API_KEYS[calais_index],submitter="thodrek")
 
 # Read input arguments
 parser = argparse.ArgumentParser(description='Please use script as "python enrichArticles.py -a <input_art_file> -e <input_event_file>.')
@@ -115,6 +118,11 @@ for eKey in articleInfo:
         except Exception, err:
             print err
             errors += 1.0
+        calais_reqs += 1
+        if calais_reqs == 50000:
+            calais_reqs = 0
+            calais_index += 1
+            calais = Calais(API_KEYS[calais_index],submitter="thodrek")
     # print progress
     events_processed += 1.0
     progress = events_processed*100.0/float(total_entries)
