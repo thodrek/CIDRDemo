@@ -109,7 +109,6 @@ for eKey in articleInfo:
                     newArticle['topics'].append(newTopic)
             # add new article to event
             if len(newArticle['entities']) == 0 and len(newArticle['topics']) == 0:
-                print "Error.. skipping article"
                 errors += 1.0
             else:
                 articlesEnriched[eKey].append(newArticle)
