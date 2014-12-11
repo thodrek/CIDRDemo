@@ -10,11 +10,16 @@ import sys
 import re
 
 # init calais
-API_KEYS = ['k8qqyqpzgck5k3hgmsfjrphf','n6p8psyvs2yqe4gzrttck5rv', '2ap3f4ycgn3bs3wjxsbkjsrk']
+# umd based keys
+#API_KEYS = ['k8qqyqpzgck5k3hgmsfjrphf','n6p8psyvs2yqe4gzrttck5rv', '2ap3f4ycgn3bs3wjxsbkjsrk']
+
+# outlook and yahoo based keys
+API_KEYS = ['xff9ne6nsz23t4hejjfqvfs7','cjw4hyyv8cp8qfmpecwyw2f8', 'mshb2wfq5wktgxeeajma2r46', 'ekdx24bagxr2yntdncs9zqar', 'j7rstdax6nxewyaczffpg6aj', '3x9q2sc5qtvqkqgdwmremkar']
+
 #API_KEY = '3x9q2sc5qtvqkqgdwmremkar'
 calais_reqs = 0.0
 calais_index = 0
-calais = Calais(API_KEYS[calais_index],submitter="thodrek")
+calais = Calais(API_KEYS[calais_index],submitter="enrich")
 
 # Read input arguments
 parser = argparse.ArgumentParser(description='Please use script as "python enrichArticles.py -a <input_art_file> -e <input_event_file>.')
