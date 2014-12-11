@@ -46,7 +46,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="23" selection-start="898" selection-end="898" vertical-scroll-proportion="0.58550185" vertical-offset="0" max-vertical-offset="1076">
+            <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.535316" vertical-offset="0" max-vertical-offset="1076">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -400,7 +400,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="23" selection-start="898" selection-end="898" vertical-scroll-proportion="0.58550185" vertical-offset="0" max-vertical-offset="1076">
+        <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.535316" vertical-offset="0" max-vertical-offset="1076">
           <folding>
             <element signature="e#25#49#0" expanded="true" />
           </folding>
