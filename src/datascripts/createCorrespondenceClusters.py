@@ -24,7 +24,7 @@ print "DONE."
 # Partition articles on topics
 events_processed = 0.0
 total_entries = len(data)
-paritionedInput = {}
+partitionedInput = {}
 print "Partitioning articles to topics...",
 for e in data:
     for ar in data[e]:
