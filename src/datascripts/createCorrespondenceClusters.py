@@ -4,10 +4,8 @@ __author__ = 'thodrek'
 import cPickle as pickle
 import argparse
 import sys
-from fp_growth import find_frequent_itemsets
+from CorrespondenceGraph import CGraph
 
-
-# frequent itemset approach for entities
 
 # Read input arguments
 print "Reading input args...",
@@ -26,15 +24,18 @@ print "DONE."
 # Partition articles on topics
 events_processed = 0.0
 total_entries = len(data)
-articlesToTopics = {}
-topicset = set([])
+paritionedInput = {}
 print "Partitioning articles to topics...",
 for e in data:
     for ar in data[e]:
         for t in ar['topics']:
-            tok = t['name'].split('_')
-            if 'Finance' in tok:
-                topicset.add(t['name'])
+            tRef = t['namedRef']
+            tName = t['name']
+            if tRef not in partitionedInput:
+                partitionedInput[tRef] = {}
+                partitionedInput[tRef]['name'] = tName
+                partitionedInput[tRef]['articles'] = []
+            partitionedInput[tRef]['articles'].append(ar)
     # print progress
     events_processed += 1.0
     progress = events_processed*100.0/float(total_entries)
@@ -43,7 +44,8 @@ for e in data:
 print "\n"
 print "DONE."
 
-print topicset
 
-
-#itemsets = find_frequent_itemsets(transactions, 5, include_support=True)
+# build correspondence graph
+cgprah = CGraph()
+cgraph.generate(partitionedInput)
+cgraph.summary()

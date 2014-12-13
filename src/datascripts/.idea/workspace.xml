@@ -23,11 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="enrichArticles.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="enrichArticles.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="5" selection-start="86" selection-end="86" vertical-scroll-proportion="0.14450867" vertical-offset="0" max-vertical-offset="2295">
-              <folding />
+            <state line="126" column="32" selection-start="5135" selection-end="5135" vertical-scroll-proportion="-2.235294" vertical-offset="1776" max-vertical-offset="2295">
+              <folding>
+                <element signature="e#24#48#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,16 +37,18 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="14" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-25.2" vertical-offset="0" max-vertical-offset="780">
-              <folding />
+            <state line="26" column="20" selection-start="654" selection-end="654" vertical-scroll-proportion="-15.6" vertical-offset="0" max-vertical-offset="855">
+              <folding>
+                <element signature="e#25#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="54" column="68" selection-start="1947" selection-end="1947" vertical-scroll-proportion="-20.0" vertical-offset="310" max-vertical-offset="945">
+            <state line="18" column="41" selection-start="497" selection-end="497" vertical-scroll-proportion="0.20650813" vertical-offset="105" max-vertical-offset="1485">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -73,7 +77,7 @@
       <file leaf-file-name="Source.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="17" selection-start="174" selection-end="174" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="345">
+            <state line="21" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="540">
               <folding />
             </state>
           </provider>
@@ -82,7 +86,7 @@
       <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="630">
+            <state line="40" column="27" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -104,23 +108,23 @@
         <option value="$PROJECT_DIR$/createEventClusters.py" />
         <option value="$PROJECT_DIR$/exploreEnrichedEvents.py" />
         <option value="$PROJECT_DIR$/enrichArticles.py" />
-        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/ContextCluster/CCluster.py" />
         <option value="$PROJECT_DIR$/ContextCluster/ClusterManager.py" />
         <option value="$PROJECT_DIR$/Utilities/fp_growth.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py" />
+        <option value="$PROJECT_DIR$/DataPreprocessing/enrichArticles.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/DataPreprocessing/enrichArticles.py" />
+        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="690" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -164,20 +168,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DataPreprocessing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -325,7 +315,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="690" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="970" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -346,6 +336,25 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11690363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -367,7 +376,9 @@
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="14" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -397,7 +408,9 @@
     <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="22" selection-start="5291" selection-end="5539" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2295">
-          <folding />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -409,7 +422,9 @@
     <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="22" selection-start="5291" selection-end="5539" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2295">
-          <folding />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -421,7 +436,9 @@
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="825">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -433,7 +450,9 @@
     <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="13" selection-start="1202" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="1048" max-vertical-offset="2664">
-          <folding />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -445,7 +464,9 @@
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="216">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -457,7 +478,9 @@
     <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="22" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2520">
-          <folding />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -469,7 +492,9 @@
     <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="21" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1422">
-          <folding />
+          <folding>
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -493,33 +518,12 @@
         <state line="17" column="30" selection-start="447" selection-end="447" vertical-scroll-proportion="0.33027524" vertical-offset="0" max-vertical-offset="675" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="14" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-25.2" vertical-offset="0" max-vertical-offset="780">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="870" selection-end="870" vertical-scroll-proportion="-18.0" vertical-offset="0" max-vertical-offset="630">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="68" selection-start="1947" selection-end="1947" vertical-scroll-proportion="-20.0" vertical-offset="310" max-vertical-offset="945">
+        <state line="126" column="32" selection-start="5135" selection-end="5135" vertical-scroll-proportion="-2.235294" vertical-offset="1776" max-vertical-offset="2295">
           <folding>
-            <element signature="e#25#66#0" expanded="true" />
+            <element signature="e#24#48#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="28" selection-start="537" selection-end="537" vertical-scroll-proportion="-16.8" vertical-offset="0" max-vertical-offset="525">
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,17 +534,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="17" selection-start="174" selection-end="174" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="345">
+        <state line="28" column="28" selection-start="537" selection-end="537" vertical-scroll-proportion="-16.8" vertical-offset="0" max-vertical-offset="525">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="5" selection-start="86" selection-end="86" vertical-scroll-proportion="0.14450867" vertical-offset="0" max-vertical-offset="2295">
+        <state line="21" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="540">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="27" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="20" selection-start="654" selection-end="654" vertical-scroll-proportion="-15.6" vertical-offset="0" max-vertical-offset="855">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="41" selection-start="497" selection-end="497" vertical-scroll-proportion="0.20650813" vertical-offset="105" max-vertical-offset="1485">
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
