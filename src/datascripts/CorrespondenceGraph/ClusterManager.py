@@ -5,29 +5,29 @@ from CCluster import CCluster
 class ClusterManager:
 
     def __init__(self):
-        self.entitiesToClusters = {}
-        self.topicsToClusters = {}
-        self.cclusterIds = 0
-        self.cclusters = {}
+        self._entitiesToClusters = {}
+        self._topicsToClusters = {}
+        self._nextId = 0
+        self._cClusters = {}
 
 
-    def addCCluster(self,entities, topics, sources):
-        # create new ccluster
-        ccluster =  CCluster(self.cclusterIds, entities, topics, sources)
-        self.cclusterIds += 1
-        self.cclusterIds[ccluster.id] = ccluster
+    def addCCluster(self,cCluster):
+        cCluster.assignId(self._nextId)
+        self._cClusterIds[cCluster.id] = cCluster
+        self._nextId += 1
 
         # update entity index with new ccluster
-        for e in ccluster.entities:
-            if e not in self.entitiesToClusters:
-                self.entitiesToClusters[e] = set([])
-            self.entitiesToClusters[e].add(ccluster.id)
+        for e in cCluster.entities:
+            if e not in self._entitiesToClusters:
+                self._entitiesToClusters[e] = set([])
+            self._entitiesToClusters[e].add(ccluster.id)
 
         # update topics index with new ccluster
         for i in ccluster.topics:
-            if t not in self.topicsToClusters:
-                self.topicsToClusters[t] = set([])
-            self.topicsToClusters[t].add(ccluster.id)
+            if t not in self._topicsToClusters:
+                self._topicsToClusters[t] = set([])
+            self._topicsToClusters[t].add(ccluster.id)
+
 
 
     def evaluateQuery(self,query):

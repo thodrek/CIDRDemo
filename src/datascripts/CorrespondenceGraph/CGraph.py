@@ -1,14 +1,17 @@
 __author__ = 'thodoris'
 
 from ClusterManager import ClusterManager
+from CCluster import CCluster
 from fp_growth import find_frequent_itemsets
 
 class CGraph:
     def __init__(self):
-        self.Manager = ClusterManager()
-        self.cEntRefToName = {}
-        self.cTopicToName = {}
+        self._Manager = ClusterManager()
+        self._cEntRefToName = {}
+        self._cTopicToName = {}
 
+    def addCCluster(self,cCluster):
+        self._Manager.addCCluster(cCluster)
 
     def generate(self,inputData):
         # inputData: articles partitioned per topic, associated with entities, sources and associated with events
@@ -38,9 +41,17 @@ class CGraph:
             # frequent entityset mining
             entitysets = find_frequent_itemsets(transactions, 5, include_support=True)
 
-            # iterate over entity sets
+            # iterate over entity sets and form valid sets
+            validSets = []
             for (entityset, support) in entitysets:
-                entityset =
+                validSets.append((support,set(entityset)))
 
+                # create c-cluster based on entity set and topic
+                newcluster = CCluster(set(entityset),set([topic['namedRef']]))
+
+                # add c-cluster to manager
+                self.addCCluster(newcluster)
+
+            # iterate over articles and assign sources to c-clusters
 
 
