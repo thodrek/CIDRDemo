@@ -40,7 +40,7 @@ class CGraph:
 
             # iterate over entity sets
             for (entityset, support) in entitysets:
-                entityset = 
+                entityset =
 
 
 
