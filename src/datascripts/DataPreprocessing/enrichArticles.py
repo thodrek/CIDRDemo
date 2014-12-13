@@ -3,7 +3,7 @@ __author__ = 'thodrek'
 import cPickle as pickle
 import argparse
 import datetime
-from DataPreprocessing.calais import Calais
+from DataPreprocessing import Calais
 import socket
 import os
 import sys
