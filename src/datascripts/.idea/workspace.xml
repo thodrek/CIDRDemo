@@ -23,30 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="enrichArticles.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/enrichArticles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="22" selection-start="5291" selection-end="5539" vertical-scroll-proportion="0.0" vertical-offset="1566" max-vertical-offset="2754">
-              <folding>
-                <element signature="e#24#48#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exploreEnrichedEvents.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exploreEnrichedEvents.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="15" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="810">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.535316" vertical-offset="0" max-vertical-offset="1076">
+            <state line="45" column="14" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-27.0" vertical-offset="0" max-vertical-offset="825">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -54,11 +34,35 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extractArticleInfo.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/extractArticleInfo.py">
+      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="43" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1782">
+            <state line="23" column="0" selection-start="732" selection-end="732" vertical-scroll-proportion="0.4181818" vertical-offset="0" max-vertical-offset="825">
+              <folding>
+                <element signature="e#25#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="20" selection-start="125" selection-end="125" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="225">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="-19.8" vertical-offset="0" max-vertical-offset="630">
+              <folding>
+                <marker date="1418401141000" expanded="true" signature="77:999" placeholder="..." />
+                <marker date="1418401141000" expanded="true" signature="102:231" placeholder="..." />
+                <marker date="1418401141000" expanded="true" signature="286:947" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,14 +84,16 @@
         <option value="$PROJECT_DIR$/exploreEnrichedEvents.py" />
         <option value="$PROJECT_DIR$/enrichArticles.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
+        <option value="$PROJECT_DIR$/ContextCluster/CCluster.py" />
+        <option value="$PROJECT_DIR$/ContextCluster/ClusterManager.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1737" />
-    <option name="y" value="21" />
-    <option name="width" value="1863" />
-    <option name="height" value="1179" />
+    <option name="y" value="22" />
+    <option name="width" value="1920" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -137,6 +143,12 @@
         </subPane>
       </pane>
     </panes>
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Utilities" />
+      <recent name="$PROJECT_DIR$/DataPreprocessing" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="tests" factoryName="py.test">
@@ -272,14 +284,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1737" y="21" width="1863" height="1179" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="970" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15995705" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11690363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -311,16 +323,58 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/enrichArticles.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="13" selection-start="1202" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="1048" max-vertical-offset="2664">
+        <state line="134" column="22" selection-start="5291" selection-end="5539" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/exploreEnrichedEvents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="15" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="134" column="22" selection-start="5291" selection-end="5539" vertical-scroll-proportion="0.0" vertical-offset="2010" max-vertical-offset="2295">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/exploreEnrichedEvents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="15" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="825">
           <folding>
-            <element signature="e#24#48#0" expanded="true" />
+            <element signature="e#25#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploreEnrichedEvents.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="43" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="13" selection-start="1202" selection-end="1355" vertical-scroll-proportion="0.0" vertical-offset="1048" max-vertical-offset="2664">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/exploreEnrichedEvents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="15" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="432" max-vertical-offset="900">
           <folding />
@@ -336,73 +390,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractArticleInfo.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="43" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1872">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enrichArticles.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="22" selection-start="3734" selection-end="3734" vertical-scroll-proportion="0.0" vertical-offset="1188" max-vertical-offset="2520">
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractArticleInfo.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="98" column="29" selection-start="3133" selection-end="3759" vertical-scroll-proportion="0.0" vertical-offset="1764" max-vertical-offset="1872">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enrichArticles.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="21" selection-start="1190" selection-end="1190" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1422">
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractArticleInfo.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="12" selection-start="2002" selection-end="2002" vertical-scroll-proportion="0.0" vertical-offset="954" max-vertical-offset="1872">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/extractArticleInfo.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="43" selection-start="781" selection-end="781" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1782">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enrichArticles.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="134" column="22" selection-start="5291" selection-end="5539" vertical-scroll-proportion="0.0" vertical-offset="1566" max-vertical-offset="2754">
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exploreEnrichedEvents.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="15" selection-start="607" selection-end="607" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="900">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="570">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/exploreEnrichedEvents.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="447" selection-end="447" vertical-scroll-proportion="0.33027524" vertical-offset="0" max-vertical-offset="675">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="14" selection-start="999" selection-end="999" vertical-scroll-proportion="-19.8" vertical-offset="0" max-vertical-offset="630">
+          <folding>
+            <marker date="1418401141000" expanded="true" signature="77:999" placeholder="..." />
+            <marker date="1418401141000" expanded="true" signature="102:231" placeholder="..." />
+            <marker date="1418401141000" expanded="true" signature="286:947" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.535316" vertical-offset="0" max-vertical-offset="1076">
+        <state line="45" column="14" selection-start="1243" selection-end="1243" vertical-scroll-proportion="-27.0" vertical-offset="0" max-vertical-offset="825">
           <folding>
             <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="20" selection-start="125" selection-end="125" vertical-scroll-proportion="-3.6" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="732" selection-end="732" vertical-scroll-proportion="0.4181818" vertical-offset="0" max-vertical-offset="825">
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
           </folding>
         </state>
       </provider>
