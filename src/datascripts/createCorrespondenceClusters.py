@@ -46,6 +46,6 @@ print "DONE."
 
 
 # build correspondence graph
-cgprah = CGraph
+cgraph = CGraph
 cgraph.generate(partitionedInput)
 cgraph.summary()
