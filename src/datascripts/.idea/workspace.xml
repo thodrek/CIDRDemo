@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="35" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.44954127" vertical-offset="385" max-vertical-offset="1485">
+            <state line="42" column="35" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-9.8" vertical-offset="385" max-vertical-offset="1485">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClusterManager.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="27" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="795">
+            <state line="15" column="23" selection-start="332" selection-end="332" vertical-scroll-proportion="0.41284403" vertical-offset="0" max-vertical-offset="795">
               <folding />
             </state>
           </provider>
@@ -115,9 +115,9 @@
         <option value="$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py" />
         <option value="$PROJECT_DIR$/DataPreprocessing/enrichArticles.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
       </list>
     </option>
   </component>
@@ -548,13 +548,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="27" selection-start="1254" selection-end="1254" vertical-scroll-proportion="-24.0" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="48" column="24" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="855">
@@ -566,10 +559,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="35" selection-start="1418" selection-end="1418" vertical-scroll-proportion="0.44954127" vertical-offset="385" max-vertical-offset="1485">
+        <state line="42" column="35" selection-start="1418" selection-end="1418" vertical-scroll-proportion="-9.8" vertical-offset="385" max-vertical-offset="1485">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="23" selection-start="332" selection-end="332" vertical-scroll-proportion="0.41284403" vertical-offset="0" max-vertical-offset="795">
+          <folding />
         </state>
       </provider>
     </entry>

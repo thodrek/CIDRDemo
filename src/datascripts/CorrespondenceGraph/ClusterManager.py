@@ -13,7 +13,7 @@ class ClusterManager:
 
     def addCCluster(self,cCluster):
         cCluster.assignId(self._nextId)
-        self._cClusterIds[cCluster.id] = cCluster
+        self._cClusters[cCluster.id] = cCluster
         self._nextId += 1
 
         # update entity index with new ccluster
