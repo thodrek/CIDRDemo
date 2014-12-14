@@ -81,7 +81,9 @@ class CGraph:
                 src.addEntities(artEntities)
 
                 # update c-clusters
-                self._Manager.assignSource(artEntities, topicRef,src)
+                evId = ar['eventUri']
+                self._Manager.updateSourceEventInfo(artEntities, topicRef,src,evId)
+
 
     def summary(self):
         print ("The graph contains %d c-clusters in total." % self._Manager.totalClusters())

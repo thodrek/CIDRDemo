@@ -9,14 +9,19 @@ class CCluster:
         for e in entities:
             self._entities.add(e)
         self._topics = topics
-        self._sources = set([])
+        self._sources = {}
+        self._events = set([])
 
     def assignId(self,newId):
         self._id = newId
 
     def assignSource(self,newSource):
-        self._sources.add(newSource)
+        if newSource.id() not in self._sources:
+            self._sources[newSource.id()] = set([])
 
+    def assignEvent(self,sourceId,evId):
+        self._events.add(evId)
+        self._sources[sourceId].add(evId)
 
     def id(self):
         return self._id

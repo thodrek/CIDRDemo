@@ -29,13 +29,14 @@ class ClusterManager:
                 self._topicsToClusters[t] = set([])
             self._topicsToClusters[t].add(cCluster.id())
 
-    def assignSource(self, entities, topic, source):
+    def updateSourceEventInfo(self, entities, topic, source, evId):
         # find relevant c-clusters
         candidateClusters = self._topicsToClusters[topic]
 
         for c in candidateClusters:
             if entities.issuperset(self._cClusters[c].entities()):
                 self._cClusters[c].assignSource(source)
+                self._cClusters[c].assignEvent(source.id(),evId)
 
 
     def totalClusters(self):
