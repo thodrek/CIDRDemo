@@ -35,7 +35,7 @@ class CGraph:
 
                 for e in ar['entities']:
                     # update entity reference to name map
-                    if e['cRef'] not in self.cEntRefToName:
+                    if e['cRef'] not in self._cEntRefToName:
                         self._cEntRefToName = []
                     self._cEntRefToName.append(e['name'])
                     newTrans.add(e['cRef'])
