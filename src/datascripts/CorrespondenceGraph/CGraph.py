@@ -30,7 +30,7 @@ class CGraph:
             # initialize entity to artic
 
             # populate article transactions
-            for ar in inputData[topic['articles']]:
+            for ar in topic['articles']:
                 newTrans = set([])
 
                 for e in ar['entities']:
