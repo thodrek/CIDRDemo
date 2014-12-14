@@ -19,11 +19,13 @@ class CCluster:
 
     def assignSource(self,newSource):
         if newSource.id() not in self._sources:
-            self._sources[newSource.id()] = set([])
+            self._sources[newSource.id()] = {}
+            self._sources[newSource.id()]['src'] = newSource
+            self._sources[newSource.id()]['events'] = set([])
 
     def assignEvent(self,sourceId,evId):
         self._events.add(evId)
-        self._sources[sourceId].add(evId)
+        self._sources[sourceId]['events'].add(evId)
 
     def id(self):
         return self._id
@@ -39,11 +41,11 @@ class CCluster:
 
     def buildQualityProfile(self):
         for srcId in self._sources:
-            src = self._sources[srcId]
+            src = self._sources[srcId]['src']
 
             # build quality profile
             srcQual = SourceQuality(srcId,src.uri())
-            srcCov = float(len(self._sources[srcId]))/float(len(self._events))
+            srcCov = float(len(self._sources[srcId]['events']))/float(len(self._events))
             srcQual.setCoverage(srcCov)
 
             # store quality profile
