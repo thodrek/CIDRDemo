@@ -21,8 +21,8 @@ class CGraph:
             # get topic
             topic = inputData[topicRef]
             # update topic reference to name map
-            if topicRef not in self.cTopicToName:
-                self.cTopicToName[topicRef] = topic['name']
+            if topicRef not in self._cTopicToName:
+                self._cTopicToName[topicRef] = topic['name']
 
             # initialize article transactions
             transactions = []
@@ -36,8 +36,8 @@ class CGraph:
                 for e in ar['entities']:
                     # update entity reference to name map
                     if e['cRef'] not in self.cEntRefToName:
-                        self.cEntRefToName = []
-                    self.cEntRefToName.append(e['name'])
+                        self._cEntRefToName = []
+                    self._cEntRefToName.append(e['name'])
                     newTrans.add(e['cRef'])
 
                 transactions.add(newTrans)
