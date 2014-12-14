@@ -44,8 +44,9 @@ class ClusterManager:
 
 
     def printCoverage(self):
-        cKey = self._cClusters.keys()[0]
-        cluster = self._cClusters[cKey]
-        cluster.buildQualityProfile()
-        cluster.printCoverage()
+        cKeys = self._cClusters.keys()[:100]
+        for cKey in cKeys:
+            cluster = self._cClusters[cKey]
+            cluster.buildQualityProfile()
+            cluster.printCoverage()
 
