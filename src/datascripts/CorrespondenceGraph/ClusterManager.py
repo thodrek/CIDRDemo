@@ -20,13 +20,13 @@ class ClusterManager:
         for e in cCluster.entities():
             if e not in self._entitiesToClusters:
                 self._entitiesToClusters[e] = set([])
-            self._entitiesToClusters[e].add(ccluster.id)
+            self._entitiesToClusters[e].add(ccluster.id())
 
         # update topics index with new ccluster
-        for t in ccluster.topics():
+        for t in cCluster.topics():
             if t not in self._topicsToClusters:
                 self._topicsToClusters[t] = set([])
-            self._topicsToClusters[t].add(ccluster.id)
+            self._topicsToClusters[t].add(cCluster.id())
 
     def assignSource(self, entities, topic, source):
         # find relevant c-clusters
