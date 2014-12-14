@@ -20,7 +20,7 @@ class ClusterManager:
         for e in cCluster.entities():
             if e not in self._entitiesToClusters:
                 self._entitiesToClusters[e] = set([])
-            self._entitiesToClusters[e].add(ccluster.id())
+            self._entitiesToClusters[e].add(cCluster.id())
 
         # update topics index with new ccluster
         for t in cCluster.topics():
