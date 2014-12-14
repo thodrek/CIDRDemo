@@ -40,7 +40,7 @@ class CGraph:
                     self._cEntRefToName.append(e['name'])
                     newTrans.add(e['cRef'])
 
-                transactions.add(newTrans)
+                transactions.append(newTrans)
 
             # frequent entityset mining
             entitysets = find_frequent_itemsets(transactions, 5, include_support=True)
