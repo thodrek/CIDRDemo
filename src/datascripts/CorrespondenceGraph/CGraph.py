@@ -87,6 +87,7 @@ class CGraph:
         print ("The graph contains %d c-clusters in total." % self._Manager.totalClusters())
         print ("The graph contains %d topics in total." % len(self._cTopicToName))
         print ("The graph contains %d entities in total." % len(self._cEntRefToName))
+        print ("The graph contains %d sources in total." % len(self._sources))
 
 
 

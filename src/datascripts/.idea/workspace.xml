@@ -37,7 +37,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="24" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="855">
+            <state line="48" column="24" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-21.6" vertical-offset="180" max-vertical-offset="855">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -45,10 +45,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="35" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.47706422" vertical-offset="850" max-vertical-offset="1485">
+            <state line="89" column="67" selection-start="3326" selection-end="3326" vertical-scroll-proportion="-23.0" vertical-offset="760" max-vertical-offset="1500">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -83,10 +83,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ClusterManager.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="46" selection-start="620" selection-end="620" vertical-scroll-proportion="-6.6" vertical-offset="165" max-vertical-offset="795">
+            <state line="38" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.74311924" vertical-offset="165" max-vertical-offset="810">
               <folding />
             </state>
           </provider>
@@ -116,8 +116,8 @@
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
       </list>
     </option>
   </component>
@@ -527,25 +527,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
+        <state line="21" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="540">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="24" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-28.8" vertical-offset="0" max-vertical-offset="855">
+        <state line="48" column="24" selection-start="1425" selection-end="1425" vertical-scroll-proportion="-21.6" vertical-offset="180" max-vertical-offset="855">
           <folding>
             <element signature="e#25#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="34" selection-start="537" selection-end="537" vertical-scroll-proportion="-12.6" vertical-offset="0" max-vertical-offset="540">
+        <state line="2" column="19" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.2" vertical-offset="0" max-vertical-offset="165">
           <folding />
         </state>
       </provider>
@@ -557,19 +557,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="46" selection-start="620" selection-end="620" vertical-scroll-proportion="-6.6" vertical-offset="165" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="35" selection-start="2643" selection-end="2643" vertical-scroll-proportion="0.47706422" vertical-offset="850" max-vertical-offset="1485">
+        <state line="89" column="67" selection-start="3326" selection-end="3326" vertical-scroll-proportion="-23.0" vertical-offset="760" max-vertical-offset="1500">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.74311924" vertical-offset="165" max-vertical-offset="810">
+          <folding />
         </state>
       </provider>
     </entry>

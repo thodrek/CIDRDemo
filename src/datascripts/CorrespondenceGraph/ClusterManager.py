@@ -9,6 +9,7 @@ class ClusterManager:
         self._topicsToClusters = {}
         self._nextId = 0
         self._cClusters = {}
+        self._sources = {}
 
 
     def addCCluster(self,cCluster):
@@ -30,12 +31,12 @@ class ClusterManager:
 
     def assignSource(self, entities, topic, source):
         # find relevant c-clusters
-        relevantClusters = self._topicsToClusters[topic]
-        for e in entities:
-            relevantClusters &= self._entitiesToClusters[e]
-        # assign source
-        for c in relevantClusters:
-            c.assigneSource(source)
+        candidateClusters = self._topicsToClusters[topic]
+
+        for c in candidateClusters:
+            if entities.issuperset(c.entities()):
+                c.assignSource(source)
+
 
     def totalClusters(self):
         return self._nextId
