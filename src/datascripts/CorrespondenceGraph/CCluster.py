@@ -5,7 +5,9 @@ class CCluster:
 
     def __init__(self, entities, topics):
         self._id = -1
-        self._entities = entities
+        self._entities = set([])
+        for e in entities:
+            self._entities.add(e)
         self._topics = topics
         self._sources = set([])
 

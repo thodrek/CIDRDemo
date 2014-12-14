@@ -51,8 +51,7 @@ class CGraph:
                 validSets.append((support,set(entityset)))
 
                 # create c-cluster based on entity set and topic
-                print entityset
-                newcluster = CCluster(set(entityset),set([topicRef]))
+                newcluster = CCluster(entityset,set([topicRef]))
 
                 # add c-cluster to manager
                 self.addCCluster(newcluster)
