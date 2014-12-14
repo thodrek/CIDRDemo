@@ -16,7 +16,13 @@ class CGraph:
         self._Manager.addCCluster(cCluster)
 
     def generate(self,inputData):
+        # find total entries
+        total_entries = 0.0
+        for topicRef in inputData:
+            total_entries += float(2.0*len(topic['articles']))
+
         # inputData: articles partitioned per topic, associated with entities, sources and associated with events
+        entries_processed = 0.0
         for topicRef in inputData:
             # get topic
             topic = inputData[topicRef]
@@ -41,6 +47,12 @@ class CGraph:
                     newTrans.add(e['cRef'])
 
                 transactions.append(newTrans)
+
+                # update progress output
+                entries_processed += 1.0
+                progress = entries_processed*100.0/total_entries
+                sys.stdout.write("Generating graph... Progress: %10.2f%% (%d out of %d)   \r" % (progress,entries_processed,total_entries))
+                sys.stdout.flush()
 
             # frequent entityset mining
             entitysets = find_frequent_itemsets(transactions, 5, include_support=True)
@@ -83,6 +95,13 @@ class CGraph:
                 # update c-clusters
                 evId = ar['eventUri']
                 self._Manager.updateSourceEventInfo(artEntities, topicRef,src,evId)
+
+                # update progress output
+                entries_processed += 1.0
+                progress = entries_processed*100.0/total_entries
+                sys.stdout.write("Generating graph... Progress: %10.2f%% (%d out of %d)   \r" % (progress,entries_processed,total_entries))
+                sys.stdout.flush()
+
 
 
     def summary(self):

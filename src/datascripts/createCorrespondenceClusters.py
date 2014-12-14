@@ -41,8 +41,6 @@ for e in data:
     progress = events_processed*100.0/float(total_entries)
     sys.stdout.write("Event processing progress: %10.2f%% (%d out of %d)   \r" % (progress,events_processed,total_entries))
     sys.stdout.flush()
-print "\n"
-print "DONE."
 
 
 # build correspondence graph
