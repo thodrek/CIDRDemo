@@ -35,7 +35,7 @@ class ClusterManager:
 
         for c in candidateClusters:
             if entities.issuperset(self._cClusters[c].entities()):
-                c.assignSource(source)
+                self._cClusters[c].assignSource(source)
 
 
     def totalClusters(self):
