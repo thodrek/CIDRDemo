@@ -43,7 +43,9 @@ class ClusterManager:
         return self._nextId
 
 
-    def evaluateQuery(self,query):
-        return
-
+    def printCoverage(self):
+        cKey = self._cClusters.keys()[0]
+        cluster = self._cClusters[cKey]
+        cluster.buildQualityProfile()
+        cluster.printCoverage()
 

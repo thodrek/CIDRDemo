@@ -103,7 +103,7 @@ class CGraph:
                 progress = entries_processed*100.0/total_entries
                 sys.stdout.write("Generating graph... Progress: %10.2f%% (%d out of %d)   \r" % (progress,entries_processed,total_entries))
                 sys.stdout.flush()
-
+        print "\n"
 
 
     def summary(self):
@@ -111,6 +111,10 @@ class CGraph:
         print ("The graph contains %d topics in total." % len(self._cTopicToName))
         print ("The graph contains %d entities in total." % len(self._cEntRefToName))
         print ("The graph contains %d sources in total." % len(self._sources))
+
+
+    def manager(self):
+        return self._Manager
 
 
 
