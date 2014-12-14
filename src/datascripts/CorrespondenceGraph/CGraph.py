@@ -72,7 +72,7 @@ class CGraph:
                 if srcId not in self._sources:
                     newSource = Source(srcId,srcUri)
                     self._sources[srcId] = newSource
-                    src = None
+                    src = newSource
                 else:
                     src = self_sources[srcId]
 
