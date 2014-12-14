@@ -17,13 +17,13 @@ class ClusterManager:
         self._nextId += 1
 
         # update entity index with new ccluster
-        for e in cCluster.entities:
+        for e in cCluster.entities():
             if e not in self._entitiesToClusters:
                 self._entitiesToClusters[e] = set([])
             self._entitiesToClusters[e].add(ccluster.id)
 
         # update topics index with new ccluster
-        for t in ccluster.topics:
+        for t in ccluster.topics():
             if t not in self._topicsToClusters:
                 self._topicsToClusters[t] = set([])
             self._topicsToClusters[t].add(ccluster.id)
