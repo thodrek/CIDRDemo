@@ -16,10 +16,11 @@ class CGraph:
         self._Manager.addCCluster(cCluster)
 
     def generate(self,inputData):
+        print "Generating correspondence graph...\n"
         # find total entries
         total_entries = 0.0
         for topicRef in inputData:
-            total_entries += float(2.0*len(topic['articles']))
+            total_entries += float(2.0*len(inputData[topicRef]['articles']))
 
         # inputData: articles partitioned per topic, associated with entities, sources and associated with events
         entries_processed = 0.0
