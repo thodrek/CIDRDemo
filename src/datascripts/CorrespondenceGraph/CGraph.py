@@ -74,7 +74,7 @@ class CGraph:
                     self._sources[srcId] = newSource
                     src = newSource
                 else:
-                    src = self_sources[srcId]
+                    src = self._sources[srcId]
 
                 # update source topic and entity information
                 src.addTopics(set([topicRef]))
