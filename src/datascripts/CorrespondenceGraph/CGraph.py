@@ -57,7 +57,7 @@ class CGraph:
                 self.addCCluster(newcluster)
 
             # iterate over articles and assign sources to c-clusters
-            for ar in inputData[topic['articles']]:
+            for ar in topic['articles']:
                 # form entity set
                 artEntities = set([])
 
