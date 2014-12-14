@@ -34,7 +34,7 @@ class ClusterManager:
         candidateClusters = self._topicsToClusters[topic]
 
         for c in candidateClusters:
-            if entities.issuperset(c.entities()):
+            if entities.issuperset(self._cClusters[c].entities()):
                 c.assignSource(source)
 
 
