@@ -144,7 +144,7 @@ class QueryEngine:
         return unicode(entityString)
 
     def generateTopicString(self, cluster):
-        topicNames = [self._cGraph.topicToName(e) for e in cluster.topics()]
+        topicNames = [self._cGraph.topToName(e) for e in cluster.topics()]
         topicString = ' '.join(topicNames)
         return unicode(topicString)
 
