@@ -85,7 +85,7 @@ class CGraph:
 
                 for e in ar['entities']:
                     if 'Obama' in e['name'] or 'obama' in e['name']:
-                        print e['cref'],e['name']
+                        print e['cRef'],e['name']
                     # update entity reference to name map
                     artEntities.add(e['cRef'])
 
