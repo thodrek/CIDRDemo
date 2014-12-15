@@ -1,6 +1,7 @@
 __author__ = 'thodoris'
 
 from CCluster import CCluster
+import sys
 
 class ClusterManager:
 
@@ -45,6 +46,18 @@ class ClusterManager:
 
 
     def buildQualityProfiles(self):
+        c_processed = 0.0
+        total_entries = float(len(self._cClusters))
         for cKey in self._cClusters:
             self._cClusters[cKey].genQualityProfile()
+            # update progress output
+            c_processed += 1.0
+            progress = c_processed*100.0/total_entries
+            sys.stdout.write("Generating graph... Progress: %10.2f%% (%d out of %d)   \r" % (progress,c_processed,total_entries))
+            sys.stdout.flush()
+
+    def clusters(self):
+        return self._cClusters
+
+
 

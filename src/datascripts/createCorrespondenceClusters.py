@@ -47,4 +47,16 @@ print "\n"
 cgraph = CGraph.CGraph()
 cgraph.generate(partitionedInput)
 cgraph.summary()
+print "Start building quality profiles..."
 cgraph.manager().buildQualityProfiles()
+print "\nDONE"
+
+print "Build query engine"
+qEngine = CGraph.QueryEngine("/tmp/index",cgraph)
+qEngine.generateIndex()
+
+print "\n Issue a test query"
+qRes = qEngine.processQuery("entities:Obama")
+for cid in qRes:
+    # get cluster
+    c = cgraph.manager().clusters()[cid].printCovSummary()

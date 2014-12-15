@@ -5,6 +5,11 @@ from CCluster import CCluster
 from fp_growth import find_frequent_itemsets
 from Source import Source
 import sys
+from whoosh.index import create_in
+from whoosh.fields import *
+from whoosh import qparser
+import os
+import re
 
 class CGraph:
     def __init__(self):
@@ -12,6 +17,15 @@ class CGraph:
         self._cEntRefToName = {}
         self._cTopicToName = {}
         self._sources = {}
+
+    def entToName(self,cRef):
+        return self._cEntRefToName[cRef]
+
+    def topToName(self,topicRef):
+        return self._cTopicToName[topicRef]
+
+    def manager(self):
+        return self._Manager
 
     def generate(self,inputData):
         print "Generating correspondence graph...\n"
@@ -109,8 +123,71 @@ class CGraph:
         print ("The graph contains %d sources in total." % len(self._sources))
 
 
-    def manager(self):
-        return self._Manager
+
+class QueryEngine:
+
+    def __init__(self, indexDir, cGraph):
+
+        if not os.path.exists(indexDir):
+            os.mkdir(indexDir)
+        self._schema = Schema(cid=ID(stored=True), entities=TEXT(spelling=True), topic=TEXT(spelling=True))
+        self._index = create_in("/tmp/index",self._schema)
+        self._cGraph = cGraph
+        self._searcher = self._index.searcher()
+        self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
+
+    def generateEntityString(self, cluster):
+        entityNames = [self._cGraph.entToName(e) for e in cluster.entities()]
+        print entityNames
+        if len(entityNames) == 0:
+            entityString = '__None'
+        else:
+            entityString = ' '.join(entityNames)
+        return unicode(entityString)
+
+    def generateTopicString(self, cluster):
+        topicNames = [self._cGraph.topicToName(e) for e in cluster.topics()]
+        topicString = ' '.join(topicNames)
+        return unicode(topicString)
+
+    def generateIndex(self):
+        c_processed = 0.0
+        total_entries = float(len(self._cGraph.manager().clusters()))
+        # initialize writer
+        writer = self._index.writer()
+        clusters = self._cGraph.manager().clusters()
+        for cid in clusters:
+            c = clusters[cid]
+            cid = unicode(cid)
+            entities = self.generateEntityString(c)
+            topic = self.generateTopicString(c)
+            writer.add_document(cid=cid,entities=entities,topic=topic)
+            # update progress output
+            c_processed += 1.0
+            progress = c_processed*100.0/total_entries
+            sys.stdout.write("Generating graph... Progress: %10.2f%% (%d out of %d)   \r" % (progress,c_processed,total_entries))
+            sys.stdout.flush()
+        writer.commit()
+
+    def processQuery(self,queryString):
+        # validate query format
+        try:
+            found = re.search('entities:',queryString).group(1)
+        except AttributeError:
+            queryString += "entities:__None"
+
+
+        # parse query
+        q = self._parser(queryString)
+
+        # check query for misspelled words
+        corrected = self._searcher.correct_query(q,queryString)
+        results = self._searcher.search(corrected.query)
+        outClusterIds = []
+        for r in results:
+            outClusterIds.append(r['cid'])
+        return outClusterIds
+
 
 
 
