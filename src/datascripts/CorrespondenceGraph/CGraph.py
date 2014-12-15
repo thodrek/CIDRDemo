@@ -132,7 +132,7 @@ class QueryEngine:
         if not os.path.exists(indexDir):
             os.mkdir(indexDir)
         self._schema = Schema(title=TEXT(stored=True),cid=ID(stored=True), content=TEXT(spelling=True), topic=TEXT(spelling=True))
-        self._index = create_in("/tmp/index",self._schema)
+        self._index = create_in(indexDir,self._schema)
         self._cGraph = cGraph
         self._searcher = self._index.searcher()
         #self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
@@ -161,7 +161,7 @@ class QueryEngine:
             c = clusters[cid]
             cid = unicode(cid)
             entities = self.generateEntityString(c)
-            entities
+            print entities
             topic = self.generateTopicString(c)
             writer.add_document(title=cid,cid=cid,content=entities,topic=topic)
             # update progress output
