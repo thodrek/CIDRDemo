@@ -181,8 +181,8 @@ class QueryEngine:
         q = parser.parse(unicode(queryString))
 
         # check query for misspelled words
-        corrected = self._searcher.correct_query(q,queryString)
-        results = self._searcher.search(corrected.query)
+        corrected = searcher.correct_query(q,queryString)
+        results = searcher.search(corrected.query)
         print corrected.query
         print results
         outClusterIds = []
