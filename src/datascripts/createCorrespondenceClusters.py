@@ -55,8 +55,8 @@ print "Build query engine"
 qEngine = CGraph.QueryEngine("/tmp/index",cgraph)
 qEngine.generateIndex()
 
-print "\n Issue a test query"
-qRes = qEngine.processQuery("entities:Obama")
+print "\nIssue a test query"
+qRes = qEngine.processQuery("entities:Obma")
 for cid in qRes:
     # get cluster
     c = cgraph.manager().clusters()[cid].printCovSummary()

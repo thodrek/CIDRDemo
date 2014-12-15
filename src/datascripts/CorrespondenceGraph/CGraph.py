@@ -133,7 +133,8 @@ class QueryEngine:
         self._index = create_in("/tmp/index",self._schema)
         self._cGraph = cGraph
         self._searcher = self._index.searcher()
-        self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
+        #self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
+        self._parser = qparser.QueryParser("entities", self._index.schema)
 
     def generateEntityString(self, cluster):
         entityNames = [self._cGraph.entToName(e) for e in cluster.entities()]
@@ -159,8 +160,6 @@ class QueryEngine:
             cid = unicode(cid)
             entities = self.generateEntityString(c)
             topic = self.generateTopicString(c)
-            if 'Obama' in entities or 'obama' in entities:
-                        print 'Obama found!!'
             writer.add_document(cid=cid,entities=entities,topic=topic)
             # update progress output
             c_processed += 1.0
@@ -171,10 +170,10 @@ class QueryEngine:
 
     def processQuery(self,queryString):
         # validate query format
-        try:
-            found = re.search("entities:",queryString).group(0)
-        except AttributeError:
-            queryString += "entities:__None"
+        #try:
+        #    found = re.search("entities:",queryString).group(0)
+        #except AttributeError:
+        #    queryString += "entities:__None"
 
 
         # parse query
