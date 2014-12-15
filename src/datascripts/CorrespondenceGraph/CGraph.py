@@ -84,6 +84,7 @@ class CGraph:
                 artEntities = set([])
 
                 for e in ar['entities']:
+                    print e['cRef'],e['name']
                     # update entity reference to name map
                     artEntities.add(e['cRef'])
 
