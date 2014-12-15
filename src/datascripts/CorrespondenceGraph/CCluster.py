@@ -36,7 +36,12 @@ class CCluster:
     def genQualityProfile(self):
         self._qualManager.buildQualityProfiles()
 
+    def printClusterSummary(self):
+        print "Entities: ", " ".join(self._entities)
+        print "Topic: ", " ".join(self._topics)
+
     def printCovSummary(self):
+        self.printClusterSummary()
         print "Cluster ",self._id," coverage summary..."
         coverages = self._qualManager.srcCoverage()
         for sid in coverages:
