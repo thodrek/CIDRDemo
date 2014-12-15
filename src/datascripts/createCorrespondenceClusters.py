@@ -47,4 +47,4 @@ print "\n"
 cgraph = CGraph.CGraph()
 cgraph.generate(partitionedInput)
 cgraph.summary()
-cgraph.manager().printCoverage()
+cgraph.manager().buildQualityProfiles()

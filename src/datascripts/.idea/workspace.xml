@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="32" selection-start="1494" selection-end="1494" vertical-scroll-proportion="-17.6" vertical-offset="295" max-vertical-offset="840">
+            <state line="49" column="37" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.80733943" vertical-offset="295" max-vertical-offset="840">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -56,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCluster.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="32" selection-start="763" selection-end="763" vertical-scroll-proportion="0.9357798" vertical-offset="0" max-vertical-offset="1290">
+            <state line="34" column="32" selection-start="763" selection-end="763" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="1290">
               <folding>
                 <element signature="e#25#64#0" expanded="true" />
               </folding>
@@ -88,7 +88,7 @@
       <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="0" selection-start="1511" selection-end="1511" vertical-scroll-proportion="-18.2" vertical-offset="280" max-vertical-offset="825">
+            <state line="45" column="28" selection-start="1391" selection-end="1411" vertical-scroll-proportion="-15.8" vertical-offset="280" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -115,12 +115,12 @@
         <option value="$PROJECT_DIR$/Utilities/fp_growth.py" />
         <option value="$PROJECT_DIR$/DataPreprocessing/enrichArticles.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/QualityManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
+        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
       </list>
     </option>
   </component>
@@ -545,28 +545,10 @@
         <state line="17" column="30" selection-start="447" selection-end="447" vertical-scroll-proportion="0.33027524" vertical-offset="0" max-vertical-offset="675" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="32" selection-start="5135" selection-end="5135" vertical-scroll-proportion="-2.235294" vertical-offset="1776" max-vertical-offset="2295">
-          <folding>
-            <element signature="e#24#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="0" selection-start="173" selection-end="173" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="285">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="32" selection-start="1494" selection-end="1494" vertical-scroll-proportion="-17.6" vertical-offset="295" max-vertical-offset="840">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -586,18 +568,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="32" selection-start="763" selection-end="763" vertical-scroll-proportion="-20.4" vertical-offset="0" max-vertical-offset="1290">
+          <folding>
+            <element signature="e#25#64#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="0" selection-start="1511" selection-end="1511" vertical-scroll-proportion="-18.2" vertical-offset="280" max-vertical-offset="825">
+        <state line="45" column="28" selection-start="1391" selection-end="1411" vertical-scroll-proportion="-15.8" vertical-offset="280" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="32" selection-start="763" selection-end="763" vertical-scroll-proportion="0.9357798" vertical-offset="0" max-vertical-offset="1290">
+        <state line="126" column="32" selection-start="5135" selection-end="5135" vertical-scroll-proportion="-2.235294" vertical-offset="1776" max-vertical-offset="2295">
           <folding>
-            <element signature="e#25#64#0" expanded="true" />
+            <element signature="e#24#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="37" selection-start="1499" selection-end="1499" vertical-scroll-proportion="0.80733943" vertical-offset="295" max-vertical-offset="840">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
