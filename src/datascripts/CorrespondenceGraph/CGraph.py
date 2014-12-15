@@ -91,7 +91,8 @@ class CGraph:
 
                 # update c-clusters
                 evId = ar['eventUri']
-                self._Manager.updateSourceEventInfo(artEntities, topicRef,src,evId)
+                delay = ar['delay']
+                self._Manager.updateSourceEventInfo(artEntities, topicRef,src,evId,delay)
 
                 # update progress output
                 entries_processed += 1.0

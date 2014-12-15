@@ -1,7 +1,8 @@
 __author__ = 'thodoris'
 
-from SourceQuality import SourceQuality
 from bitarray import bitarray
+from statsmodels.distributions.empirical_distribution import ECDF
+
 
 class CCluster:
 
@@ -20,6 +21,9 @@ class CCluster:
     def registerEvent(self,sourceId,evId):
         self._qualManager.registerEvent(sourceId,evId)
 
+    def registerDelay(self,sourceId,delay):
+        self._qualManager.registerDelay(sourceId,delay)
+
     def id(self):
         return self._id
 
@@ -28,9 +32,6 @@ class CCluster:
 
     def topics(self):
         return self._topics
-
-    def sources(self):
-        return self._sources
 
     def genQualityProfile(self):
         self._qualManager.buildQualityProfiles()
@@ -41,17 +42,20 @@ class QualityManager:
         self._cclusterId = cClusterId
         self._srcIdToSrc = {}
         self._srcEvents = {}
+        self._srcDelays = {}
         self._events = {}
         self._nextEventId = 0
         self._qualityProfiles = {}
 
         self._srcBitArrays = {}
         self._srcCoverage = {}
+        self._srcDelayECDF = {}
 
     def registerSource(self, newSource):
         if newSource.id() not in self._srcIdToSrc:
             self._srcIdToSrc[newSource.id()] = newSource
             self._srcEvents[newSource.id()] = set([])
+            self._srcDelays[newSource.id()] = []
 
 
     def registerEvent(self,sourceId,evId):
@@ -60,6 +64,9 @@ class QualityManager:
             self._nextEventId += 1
 
         self._srcEvents[sourceId].add(self._events[evId])
+
+    def registerDelay(self,sourceId,delay):
+        self._srcDelays[sourceId].append(delay)
 
     def buildQualityProfiles(self):
         # build bitarrays for each source
@@ -72,8 +79,17 @@ class QualityManager:
             # build coverage profile
             self._srcCoverage[srcId] = float(self._srcBitArrays[srcId].count())/float(totalLen)
 
+            # build delay profile
+            # fit Kaplan-Meier empirical distribution
+            self._srcDelayECDF[srcId] = ECDF(self._srcDelays[srcId])
+
     def getSrcCoverage(self,srcId):
         return self._srcCoverage[srcId]
+
+    def getSrcDelayDistr(self,srcId,value):
+        return self._srcDelayECDF[srcId](value)
+
+
 
 
 
