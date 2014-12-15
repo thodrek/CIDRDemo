@@ -181,6 +181,7 @@ class QueryEngine:
         # check query for misspelled words
         corrected = self._searcher.correct_query(q,queryString)
         results = self._searcher.search(corrected.query)
+        print results
         outClusterIds = []
         for r in results:
             outClusterIds.append(r['cid'])
