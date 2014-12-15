@@ -56,7 +56,7 @@ qEngine = CGraph.QueryEngine("/tmp/index",cgraph)
 qEngine.generateIndex()
 
 print "\nIssue a test query"
-qRes = qEngine.processQuery("entities:Obma")
+qRes = qEngine.processQuery("Obma")
 for cid in qRes:
     # get cluster
     c = cgraph.manager().clusters()[cid].printCovSummary()
