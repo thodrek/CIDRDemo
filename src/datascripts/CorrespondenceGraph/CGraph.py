@@ -84,8 +84,6 @@ class CGraph:
                 artEntities = set([])
 
                 for e in ar['entities']:
-                    if 'Obama' in e['name'] or 'obama' in e['name']:
-                        print e['cRef'],e['name']
                     # update entity reference to name map
                     artEntities.add(e['cRef'])
 
@@ -161,6 +159,8 @@ class QueryEngine:
             cid = unicode(cid)
             entities = self.generateEntityString(c)
             topic = self.generateTopicString(c)
+            if 'Obama' in entities or 'obama' in entities:
+                        print 'Obama found!!'
             writer.add_document(cid=cid,entities=entities,topic=topic)
             # update progress output
             c_processed += 1.0

@@ -44,7 +44,7 @@
       <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="35" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.6545454" vertical-offset="765" max-vertical-offset="3030">
+            <state line="162" column="45" selection-start="6009" selection-end="6009" vertical-scroll-proportion="0.58181816" vertical-offset="1950" max-vertical-offset="3030">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -529,7 +529,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="35" selection-start="3024" selection-end="3024" vertical-scroll-proportion="0.6545454" vertical-offset="765" max-vertical-offset="3030">
+        <state line="162" column="45" selection-start="6009" selection-end="6009" vertical-scroll-proportion="0.58181816" vertical-offset="1950" max-vertical-offset="3030">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
           </folding>
