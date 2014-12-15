@@ -136,7 +136,7 @@ class QueryEngine:
         self._cGraph = cGraph
         self._searcher = self._index.searcher()
         #self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
-        self._parser = qparser.QueryParser("entities", self._index.schema)
+        self._parser = qparser.QueryParser("content", self._index.schema)
 
     def generateEntityString(self, cluster):
         entityNames = [self._cGraph.entToName(e) for e in cluster.entities()]
