@@ -134,9 +134,7 @@ class QueryEngine:
         self._schema = Schema(title=TEXT(stored=True),cid=ID(stored=True), content=TEXT(spelling=True), topic=TEXT(spelling=True))
         self._index = create_in(indexDir,self._schema)
         self._cGraph = cGraph
-        self._searcher = self._index.searcher()
         #self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
-        self._parser = qparser.QueryParser("content", self._index.schema)
 
     def generateEntityString(self, cluster):
         entityNames = [self._cGraph.entToName(e) for e in cluster.entities()]
@@ -177,13 +175,16 @@ class QueryEngine:
         #except AttributeError:
         #    queryString += "entities:__None"
 
+        # searcher
+        searcher = self._index.searcher()
 
         # parse query
-        q = self._parser.parse(unicode(queryString))
+        parser = qparser.QueryParser("content", self._index.schema)
+        q = parser.parse(unicode(queryString))
 
         # check query for misspelled words
-        corrected = self._searcher.correct_query(q,queryString)
-        results = self._searcher.search(corrected.query)
+        corrected = searcher.correct_query(q,queryString)
+        results = searcher.search(corrected.query)
         print corrected.query
         print results
         outClusterIds = []
