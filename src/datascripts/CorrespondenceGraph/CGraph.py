@@ -120,8 +120,6 @@ class CGraph:
         print ("The graph contains %d topics in total." % len(self._cTopicToName))
         print ("The graph contains %d entities in total." % len(self._cEntRefToName))
         print ("The graph contains %d sources in total." % len(self._sources))
-        for t in self._cTopicToName:
-            print self._cTopicToName[t]
 
 
 
@@ -131,10 +129,9 @@ class QueryEngine:
 
         if not os.path.exists(indexDir):
             os.mkdir(indexDir)
-        self._schema = Schema(title=TEXT(stored=True),cid=ID(stored=True), content=TEXT(spelling=True), topic=TEXT(spelling=True))
-        self._index = create_in(indexDir,self._schema)
+        self._schema = Schema(cid=ID(stored=True), entities=TEXT(spelling=True), topic=TEXT(spelling=True))
+        self._index = create_in("/tmp/index",self._schema)
         self._cGraph = cGraph
-        #self._parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
 
     def generateEntityString(self, cluster):
         entityNames = [self._cGraph.entToName(e) for e in cluster.entities()]
@@ -160,7 +157,7 @@ class QueryEngine:
             cid = unicode(cid)
             entities = self.generateEntityString(c)
             topic = self.generateTopicString(c)
-            writer.add_document(title=cid,cid=cid,content=entities,topic=topic)
+            writer.add_document(cid=cid,entities=entities,topic=topic)
             # update progress output
             c_processed += 1.0
             progress = c_processed*100.0/total_entries
@@ -169,27 +166,28 @@ class QueryEngine:
         writer.commit()
 
     def processQuery(self,queryString):
-        # validate query format
-        #try:
-        #    found = re.search("entities:",queryString).group(0)
-        #except AttributeError:
-        #    queryString += "entities:__None"
-
-        # searcher
+        # initialize parser and searcher
         searcher = self._index.searcher()
+        parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
+
+        # validate query format
+        try:
+            found = re.search("entities:",queryString).group(0)
+        except AttributeError:
+            queryString += "entities:__None"
+
 
         # parse query
-        parser = qparser.QueryParser("content", self._index.schema)
         q = parser.parse(unicode(queryString))
 
         # check query for misspelled words
-        corrected = searcher.correct_query(q,queryString)
-        results = searcher.search(corrected.query)
+        corrected = self._searcher.correct_query(q,queryString)
+        results = self._searcher.search(corrected.query)
         print corrected.query
         print results
         outClusterIds = []
         for r in results:
-            outClusterIds.append(r['cid'])
+            outClusterIds.append(int(r['cid']))
         return outClusterIds
 
 
