@@ -59,4 +59,5 @@ print "\nIssue a test query"
 qRes = qEngine.processQuery("entities:Obma")
 for cid in qRes:
     # get cluster
-    c = cgraph.manager().clusters()[cid].printCovSummary()
+    cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
+    cgraph.manager().clusters()[cid].printCovSummary()
