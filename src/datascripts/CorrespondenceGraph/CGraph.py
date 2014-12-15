@@ -13,9 +13,6 @@ class CGraph:
         self._cTopicToName = {}
         self._sources = {}
 
-    def addCCluster(self,cCluster):
-        self._Manager.addCCluster(cCluster)
-
     def generate(self,inputData):
         print "Generating correspondence graph...\n"
         # find total entries
@@ -64,11 +61,9 @@ class CGraph:
             for (entityset, support) in entitysets:
                 validSets.append((support,set(entityset)))
 
-                # create c-cluster based on entity set and topic
-                newcluster = CCluster(entityset,set([topicRef]))
+                # create c-cluster based on entity set and topic and add it to manager
 
-                # add c-cluster to manager
-                self.addCCluster(newcluster)
+                self._Manager.addCCluster(entityset,set([topicRef]))
 
             # iterate over articles and assign sources to c-clusters
             for ar in topic['articles']:

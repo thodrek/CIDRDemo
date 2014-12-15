@@ -1,31 +1,24 @@
 __author__ = 'thodoris'
 
 from SourceQuality import SourceQuality
+from bitarray import bitarray
 
 class CCluster:
 
-    def __init__(self, entities, topics):
-        self._id = -1
+    def __init__(self, id, entities, topics):
+        self._id = id
         self._entities = set([])
         for e in entities:
             self._entities.add(e)
         self._topics = topics
-        self._sources = {}
-        self._events = set([])
-        self._qualityProfiles = {}
+        self._qualManager = QualityManager(self._id)
 
-    def assignId(self,newId):
-        self._id = newId
 
-    def assignSource(self,newSource):
-        if newSource.id() not in self._sources:
-            self._sources[newSource.id()] = {}
-            self._sources[newSource.id()]['src'] = newSource
-            self._sources[newSource.id()]['events'] = set([])
+    def registerSource(self,newSource):
+        self._qualManager.addSource(newSource)
 
-    def assignEvent(self,sourceId,evId):
-        self._events.add(evId)
-        self._sources[sourceId]['events'].add(evId)
+    def registerEvent(self,evId):
+        self._qualManager.registerEvent(evId)
 
     def id(self):
         return self._id
@@ -39,19 +32,49 @@ class CCluster:
     def sources(self):
         return self._sources
 
-    def buildQualityProfile(self):
-        for srcId in self._sources:
-            src = self._sources[srcId]['src']
+    def genQualityProfile(self):
+        self._qualManager.buildQualityProfiles()
 
-            # build quality profile
-            srcQual = SourceQuality(srcId,src.uri())
-            srcCov = float(len(self._sources[srcId]['events']))/float(len(self._events))
-            srcQual.setCoverage(srcCov)
+class QualityManager:
 
-            # store quality profile
-            self._qualityProfiles[srcId] = srcQual
+    def __init__(self,cClusterId):
+        self._cclusterId = cClusterId
+        self._srcIdToSrc = {}
+        self._srcEvents = {}
+        self._events = {}
+        self._nextEventId = 0
+        self._qualityProfiles = {}
 
-    def printCoverage(self):
-        for srcId in self._qualityProfiles:
-            print srcId, self._qualityProfiles[srcId].getCoverage()
+        self._srcBitArrays = {}
+        self._srcCoverage = {}
+
+    def registerSource(self, newSource):
+        if newSource.id() not in self._srcIdToSrc:
+            self._srcIdToSrc[newSource.id()] = newSource
+            self._srcEvents[newSource.id()] = set([])
+
+
+    def registerEvent(self,sourceId,evId):
+        if evId not in self._events:
+            self._events[evId] = self._nextEventId
+            self._nextEventId += 1
+
+        self._srcEvents[sourceId].add(self._events[evId])
+
+    def buildQualityProfiles(self):
+        # build bitarrays for each source
+        totalLen = len(self._events)
+        for srcId in self._srcEvents:
+            self._srcBitArrays[srcId] = totalLen*bitarray('0')
+            for i in self._srcEvents[srcId]:
+                self._srcBitArrays[srcId][i] = '1'
+
+            # build coverage profile
+            self._srcCoverage[srcId] = float(self._srcBitArrays[srcId].count())/float(totalLen)
+
+    def getSrcCoverage(self,srcId):
+        return self._srcCoverage[srcId]
+
+
+
 

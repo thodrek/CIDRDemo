@@ -12,8 +12,8 @@ class ClusterManager:
         self._sources = {}
 
 
-    def addCCluster(self,cCluster):
-        cCluster.assignId(self._nextId)
+    def addCCluster(self, entities, topics):
+        cCluster = CCluster(self._nextId,entities,topics)
         self._cClusters[cCluster.id()] = cCluster
         self._nextId += 1
 
@@ -35,19 +35,15 @@ class ClusterManager:
 
         for c in candidateClusters:
             if entities.issuperset(self._cClusters[c].entities()):
-                self._cClusters[c].assignSource(source)
-                self._cClusters[c].assignEvent(source.id(),evId)
+                self._cClusters[c].registerSource(source)
+                self._cClusters[c].registerEvent(source.id(),evId)
 
 
     def totalClusters(self):
         return self._nextId
 
 
-    def printCoverage(self):
-        cKeys = self._cClusters.keys()[:100]
-        for cKey in cKeys:
-            print "\n\nNew cluster"
-            cluster = self._cClusters[cKey]
-            cluster.buildQualityProfile()
-            cluster.printCoverage()
+    def buildQualityProfiles(self):
+        for cKey in self._cClusters:
+            self._cClusters[cKey].genQualityProfile()
 
