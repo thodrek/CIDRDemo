@@ -176,7 +176,7 @@ class QueryEngine:
 
 
         # parse query
-        q = self._parser(queryString)
+        q = self._parser.parse(queryString)
 
         # check query for misspelled words
         corrected = self._searcher.correct_query(q,queryString)
