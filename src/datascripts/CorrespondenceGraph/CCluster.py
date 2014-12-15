@@ -15,10 +15,10 @@ class CCluster:
 
 
     def registerSource(self,newSource):
-        self._qualManager.addSource(newSource)
+        self._qualManager.registerSource(newSource)
 
-    def registerEvent(self,evId):
-        self._qualManager.registerEvent(evId)
+    def registerEvent(self,sourceId,evId):
+        self._qualManager.registerEvent(sourceId,evId)
 
     def id(self):
         return self._id
