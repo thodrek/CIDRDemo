@@ -120,6 +120,8 @@ class CGraph:
         print ("The graph contains %d topics in total." % len(self._cTopicToName))
         print ("The graph contains %d entities in total." % len(self._cEntRefToName))
         print ("The graph contains %d sources in total." % len(self._sources))
+        for t in self._cTopicToName:
+            print self._cTopicToName[t]
 
 
 
@@ -129,7 +131,7 @@ class QueryEngine:
 
         if not os.path.exists(indexDir):
             os.mkdir(indexDir)
-        self._schema = Schema(cid=ID(stored=True), entities=TEXT(spelling=True), topic=TEXT(spelling=True))
+        self._schema = Schema(cid=ID(stored=True), content=TEXT(spelling=True), topic=TEXT(spelling=True))
         self._index = create_in("/tmp/index",self._schema)
         self._cGraph = cGraph
         self._searcher = self._index.searcher()
@@ -160,7 +162,7 @@ class QueryEngine:
             cid = unicode(cid)
             entities = self.generateEntityString(c)
             topic = self.generateTopicString(c)
-            writer.add_document(cid=cid,entities=entities,topic=topic)
+            writer.add_document(cid=cid,content=entities,topic=topic)
             # update progress output
             c_processed += 1.0
             progress = c_processed*100.0/total_entries
