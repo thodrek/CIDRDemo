@@ -138,6 +138,7 @@ class QueryEngine:
 
     def generateEntityString(self, cluster):
         entityNames = [self._cGraph.entToName(e) for e in cluster.entities()]
+        print cluster.entities()
         print entityNames
         if len(entityNames) == 0:
             entityString = '__None'

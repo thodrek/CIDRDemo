@@ -26,7 +26,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="58" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="1224">
+            <state line="20" column="13" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1224">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -37,10 +37,8 @@
       <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="28" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2016">
-              <folding>
-                <marker date="1418669787667" expanded="true" signature="138:1119" placeholder="..." />
-              </folding>
+            <state line="81" column="36" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2016">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -48,7 +46,7 @@
       <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="42" selection-start="6705" selection-end="6705" vertical-scroll-proportion="0.69024855" vertical-offset="2554" max-vertical-offset="3600">
+            <state line="140" column="32" selection-start="5195" selection-end="5195" vertical-scroll-proportion="0.17399618" vertical-offset="2338" max-vertical-offset="3618">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -430,9 +428,7 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="48" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1836">
-          <folding>
-            <marker date="1418669787667" expanded="true" signature="138:1119" placeholder="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -504,15 +500,6 @@
         <state line="79" column="62" selection-start="2092" selection-end="2092" vertical-scroll-proportion="-0.26951674" vertical-offset="1694" max-vertical-offset="3384" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="58" selection-start="1832" selection-end="1832" vertical-scroll-proportion="0.0" vertical-offset="112" max-vertical-offset="1224">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="35" selection-start="1504" selection-end="1504" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1242">
@@ -522,18 +509,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="13" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="148" max-vertical-offset="1224">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="28" selection-start="1304" selection-end="1304" vertical-scroll-proportion="0.0" vertical-offset="254" max-vertical-offset="2016">
-          <folding>
-            <marker date="1418669787667" expanded="true" signature="138:1119" placeholder="..." />
-          </folding>
+        <state line="81" column="36" selection-start="2241" selection-end="2241" vertical-scroll-proportion="0.0" vertical-offset="756" max-vertical-offset="2016">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="42" selection-start="6705" selection-end="6705" vertical-scroll-proportion="0.69024855" vertical-offset="2554" max-vertical-offset="3600">
+        <state line="140" column="32" selection-start="5195" selection-end="5195" vertical-scroll-proportion="0.17399618" vertical-offset="2338" max-vertical-offset="3618">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
           </folding>
