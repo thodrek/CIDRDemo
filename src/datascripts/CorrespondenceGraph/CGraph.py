@@ -144,12 +144,12 @@ class QueryEngine:
             entityString = '__None'
         else:
             entityString = ' '.join(entityNames)
-        return entityString
+        return unicode(entityString)
 
     def generateTopicString(self, cluster):
         topicNames = [self._cGraph.topToName(e) for e in cluster.topics()]
         topicString = ' '.join(topicNames)
-        return topicString
+        return unicode(topicString)
 
     def generateIndex(self):
         c_processed = 0.0
@@ -159,6 +159,7 @@ class QueryEngine:
         clusters = self._cGraph.manager().clusters()
         for cid in clusters:
             c = clusters[cid]
+            cid = unicode(cid)
             entities = self.generateEntityString(c)
             topic = self.generateTopicString(c)
             writer.add_document(title=cid,cid=cid,content=entities,topic=topic)
@@ -178,7 +179,7 @@ class QueryEngine:
 
 
         # parse query
-        q = self._parser.parse(queryString)
+        q = self._parser.parse(unicode(queryString))
 
         # check query for misspelled words
         corrected = self._searcher.correct_query(q,queryString)
