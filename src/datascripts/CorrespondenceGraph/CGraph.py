@@ -144,12 +144,12 @@ class QueryEngine:
             entityString = '__None'
         else:
             entityString = ' '.join(entityNames)
-        return unicode(entityString)
+        return entityString
 
     def generateTopicString(self, cluster):
         topicNames = [self._cGraph.topToName(e) for e in cluster.topics()]
         topicString = ' '.join(topicNames)
-        return unicode(topicString)
+        return topicString
 
     def generateIndex(self):
         c_processed = 0.0
@@ -159,9 +159,7 @@ class QueryEngine:
         clusters = self._cGraph.manager().clusters()
         for cid in clusters:
             c = clusters[cid]
-            cid = unicode(cid)
             entities = self.generateEntityString(c)
-            print entities
             topic = self.generateTopicString(c)
             writer.add_document(title=cid,cid=cid,content=entities,topic=topic)
             # update progress output
