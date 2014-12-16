@@ -78,4 +78,13 @@ print "Selected sources:"
 for s in selection:
     print cgraph.getSourceName(s)
 
+selection, gain, cost, util = ls.selectSourcesGreedy()
+
+print "Gain = ",gain
+print "Cost = ",cost
+print "Util = ",util
+print "Selected sources:"
+for s in selection:
+    print cgraph.getSourceName(s)
+
 
