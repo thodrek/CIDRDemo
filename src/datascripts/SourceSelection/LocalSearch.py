@@ -75,13 +75,13 @@ class LocalSearch:
                     curUtil = newUtil
                     curGain = newGain
                     curCost = newCost
-                    break
 
                 # revert changes
                 tmpSelection.remove(srcId)
 
             if srcToAdd:
                 # commit changes
+                tmpSelection.add(srcToAdd)
                 availSources.remove(srcToAdd)
                 changed = True
             else:
@@ -99,15 +99,15 @@ class LocalSearch:
                         curUtil = newUtil
                         curGain = newGain
                         curCost = newCost
-                        break
 
                     # revert changes
                     tmpSelection.add(srcId)
 
 
-                if srcToAdd:
+                if srcToRemove:
                     # commit changes
                     availSources.add(srcToRemove)
+                    tmpSelection.remove(srcToRemove)
                     changed = True
 
         # set selection result
