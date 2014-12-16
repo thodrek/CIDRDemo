@@ -23,11 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="0" selection-start="1662" selection-end="1662" vertical-scroll-proportion="-25.2" vertical-offset="165" max-vertical-offset="990">
-              <folding />
+            <state line="78" column="32" selection-start="2449" selection-end="2449" vertical-scroll-proportion="0.96245307" vertical-offset="401" max-vertical-offset="1305">
+              <folding>
+                <element signature="e#25#49#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,11 +37,8 @@
       <file leaf-file-name="LocalSearch.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="41" selection-start="282" selection-end="282" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="1935">
-              <folding>
-                <marker date="1418695353000" expanded="true" signature="44:3983" placeholder="..." />
-                <marker date="1418695353000" expanded="true" signature="122:456" placeholder="..." />
-              </folding>
+            <state line="5" column="76" selection-start="69" selection-end="122" vertical-scroll-proportion="42.44" vertical-offset="1136" max-vertical-offset="1935">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -47,12 +46,17 @@
       <file leaf-file-name="CostFunction.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="34" selection-start="182" selection-end="182" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
-              <folding>
-                <marker date="1418691850000" expanded="true" signature="45:183" placeholder="..." />
-                <marker date="1418691850000" expanded="true" signature="76:106" placeholder="..." />
-                <marker date="1418691850000" expanded="true" signature="147:183" placeholder="..." />
-              </folding>
+            <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="34" selection-start="2170" selection-end="2170" vertical-scroll-proportion="-13.09804" vertical-offset="292" max-vertical-offset="1110">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -60,16 +64,7 @@
       <file leaf-file-name="GainFunction.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="14" selection-start="109" selection-end="109" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="enrichArticles.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.1689612" vertical-offset="0" max-vertical-offset="2190">
+            <state line="12" column="19" selection-start="298" selection-end="298" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="285">
               <folding />
             </state>
           </provider>
@@ -79,9 +74,7 @@
         <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="660">
-              <folding>
-                <marker date="1418696516000" expanded="true" signature="101:422" placeholder="..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -89,14 +82,9 @@
       <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="21" selection-start="1804" selection-end="1817" vertical-scroll-proportion="-15.16" vertical-offset="536" max-vertical-offset="2130">
+            <state line="61" column="34" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-15.16" vertical-offset="536" max-vertical-offset="2130">
               <folding>
                 <element signature="e#25#54#0" expanded="true" />
-                <marker date="1418696390000" expanded="true" signature="138:1885" placeholder="..." />
-                <marker date="1418696390000" expanded="true" signature="185:412" placeholder="..." />
-                <marker date="1418696390000" expanded="true" signature="989:1026" placeholder="..." />
-                <marker date="1418696390000" expanded="true" signature="1052:1094" placeholder="..." />
-                <marker date="1418696390000" expanded="true" signature="1830:1885" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -114,7 +102,7 @@
       <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="30" selection-start="5897" selection-end="5897" vertical-scroll-proportion="-8.4" vertical-offset="2205" max-vertical-offset="3030">
+            <state line="29" column="32" selection-start="698" selection-end="698" vertical-scroll-proportion="-16.8" vertical-offset="15" max-vertical-offset="3075">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -143,16 +131,16 @@
         <option value="$PROJECT_DIR$/Utilities/fp_growth.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/QualityManager.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
         <option value="$PROJECT_DIR$/SourceSelection/LocalSearch.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
-        <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
         <option value="$PROJECT_DIR$/DataPreprocessing/enrichArticles.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
+        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
       </list>
     </option>
   </component>
@@ -231,6 +219,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="DataPreprocessing" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CorrespondenceGraph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -411,7 +413,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13709678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13709678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -465,7 +467,9 @@
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="13" selection-start="551" selection-end="551" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="840">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -474,11 +478,6 @@
         <state line="81" column="33" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1530">
           <folding>
             <element signature="e#25#54#0" expanded="true" />
-            <marker date="1418696390000" expanded="true" signature="138:1885" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="185:412" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="989:1026" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="1052:1094" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="1830:1885" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -502,7 +501,9 @@
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="43" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1008">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -511,11 +512,6 @@
         <state line="57" column="48" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1836">
           <folding>
             <element signature="e#25#54#0" expanded="true" />
-            <marker date="1418696390000" expanded="true" signature="138:1885" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="185:412" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="989:1026" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="1052:1094" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="1830:1885" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -539,41 +535,67 @@
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="43" selection-start="920" selection-end="920" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="954">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="0" selection-start="1320" selection-end="1320" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="990">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="45" column="14" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="22" selection-start="804" selection-end="804" vertical-scroll-proportion="0.0" vertical-offset="480" max-vertical-offset="825">
-          <folding />
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="216">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="2190">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="13" selection-start="255" selection-end="255" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="1020">
+        <state line="61" column="34" selection-start="1830" selection-end="1830" vertical-scroll-proportion="-15.16" vertical-offset="536" max-vertical-offset="2130">
+          <folding>
+            <element signature="e#25#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
@@ -585,9 +607,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="298" selection-end="298" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="76" selection-start="69" selection-end="122" vertical-scroll-proportion="42.44" vertical-offset="1136" max-vertical-offset="1935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="34" selection-start="2170" selection-end="2170" vertical-scroll-proportion="-13.09804" vertical-offset="292" max-vertical-offset="1110">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="30" selection-start="5897" selection-end="5897" vertical-scroll-proportion="-8.4" vertical-offset="2205" max-vertical-offset="3030">
+        <state line="29" column="32" selection-start="698" selection-end="698" vertical-scroll-proportion="-16.8" vertical-offset="15" max-vertical-offset="3075">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
           </folding>
@@ -596,66 +646,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="0" selection-start="1662" selection-end="1662" vertical-scroll-proportion="-25.2" vertical-offset="165" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="34" selection-start="182" selection-end="182" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
+        <state line="78" column="32" selection-start="2449" selection-end="2449" vertical-scroll-proportion="0.96245307" vertical-offset="401" max-vertical-offset="1305">
           <folding>
-            <marker date="1418691850000" expanded="true" signature="45:183" placeholder="..." />
-            <marker date="1418691850000" expanded="true" signature="76:106" placeholder="..." />
-            <marker date="1418691850000" expanded="true" signature="147:183" placeholder="..." />
+            <element signature="e#25#49#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="41" selection-start="282" selection-end="282" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="1935">
-          <folding>
-            <marker date="1418695353000" expanded="true" signature="44:3983" placeholder="..." />
-            <marker date="1418695353000" expanded="true" signature="122:456" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="21" selection-start="1804" selection-end="1817" vertical-scroll-proportion="-15.16" vertical-offset="536" max-vertical-offset="2130">
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-            <marker date="1418696390000" expanded="true" signature="138:1885" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="185:412" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="989:1026" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="1052:1094" placeholder="..." />
-            <marker date="1418696390000" expanded="true" signature="1830:1885" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="-6.0" vertical-offset="0" max-vertical-offset="660">
-          <folding>
-            <marker date="1418696516000" expanded="true" signature="101:422" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="14" selection-start="109" selection-end="109" vertical-scroll-proportion="-4.2" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="0.1689612" vertical-offset="0" max-vertical-offset="2190">
-          <folding />
         </state>
       </provider>
     </entry>

@@ -27,6 +27,9 @@ class CGraph:
     def manager(self):
         return self._Manager
 
+    def getSourceName(self,srcId):
+        return self._Manager.getSrcName(srcId)
+
     def generate(self,inputData):
         print "Generating correspondence graph...\n"
         # find total entries

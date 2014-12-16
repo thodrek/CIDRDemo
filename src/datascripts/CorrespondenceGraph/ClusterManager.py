@@ -31,6 +31,9 @@ class ClusterManager:
             self._topicsToClusters[t].add(cCluster.id())
 
     def updateSourceEventInfo(self, entities, topic, source, evId, delay):
+        # update source info
+        self._sources[source.id()] = source.uri()
+
         # find relevant c-clusters
         candidateClusters = self._topicsToClusters[topic]
 
@@ -58,6 +61,9 @@ class ClusterManager:
 
     def clusters(self):
         return self._cClusters
+
+    def getSrcName(self,srcId):
+        return self._sources[srcId]
 
 
 

@@ -4,9 +4,10 @@ import Metrics
 
 class GainFunction:
 
-    def __init__(self, weights):
-        self._ = type
+    def __init__(self, type, weights):
+        self._type = type
+        self._weights = weights
 
-    def compute(self, selectedSources):
-
-        return len(selectedSources)
+    def compute(self, selectedSources, activeClusters):
+        cov = Metrics.coverage(selectedSources,activeClusters)
+        return 1000*cov

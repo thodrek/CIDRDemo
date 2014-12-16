@@ -5,6 +5,9 @@ import cPickle as pickle
 import argparse
 import sys
 from CorrespondenceGraph import CGraph
+from SourceSelection import LocalSearch
+from SourceSelection import GainFunction
+from SourceSelection import CostFunction
 
 
 # Read input arguments
@@ -55,9 +58,24 @@ print "Build query engine"
 qEngine = CGraph.QueryEngine("/tmp/index",cgraph)
 qEngine.generateIndex()
 
-print "\nIssue a test query"
+print "\nIssue a test query and select sources"
 qRes = qEngine.processQuery("entities:United States AND topic:Politics")
+activeClusters = set([])
 for cid in qRes:
     # get cluster
     cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
-    cgraph.manager().clusters()[cid].printCovSummary()
+    activeClusters.add(cgraph.manager().clusters()[cid])
+
+gf = GainFunction.GainFunction(None,None)
+cf = CostFunction.CostFunction(None)
+ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
+selection, gain, cost, util = ls.selectSources()
+
+print "Gain = ",gain
+print "Cost = ",cost
+print "Util = ",util
+print "Selected sources:"
+for s in selection:
+    print cgraph.getSourceName(s)
+
+
