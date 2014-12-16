@@ -26,7 +26,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="48" selection-start="2240" selection-end="2288" vertical-scroll-proportion="-9.6" vertical-offset="825" max-vertical-offset="1440">
+            <state line="9" column="40" selection-start="116" selection-end="237" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="1440">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -98,10 +98,8 @@
       <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="36" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.51428574" vertical-offset="345" max-vertical-offset="1470">
-              <folding>
-                <element signature="e#25#70#0" expanded="true" />
-              </folding>
+            <state line="7" column="40" selection-start="278" selection-end="278" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="1515">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -109,7 +107,7 @@
       <file leaf-file-name="Client.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="-4.2" vertical-offset="135" max-vertical-offset="660">
+            <state line="16" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -630,15 +628,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="48" selection-start="2240" selection-end="2288" vertical-scroll-proportion="-9.6" vertical-offset="825" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="41" selection-start="6354" selection-end="6354" vertical-scroll-proportion="-14.4" vertical-offset="2220" max-vertical-offset="3045">
@@ -650,17 +639,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="-4.2" vertical-offset="135" max-vertical-offset="660">
+        <state line="16" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="-9.6" vertical-offset="0" max-vertical-offset="660">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="116" selection-end="237" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="1440">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="36" selection-start="1281" selection-end="1281" vertical-scroll-proportion="0.51428574" vertical-offset="345" max-vertical-offset="1470">
-          <folding>
-            <element signature="e#25#70#0" expanded="true" />
-          </folding>
+        <state line="7" column="40" selection-start="278" selection-end="278" vertical-scroll-proportion="0.2" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
         </state>
       </provider>
     </entry>

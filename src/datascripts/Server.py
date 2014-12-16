@@ -3,6 +3,9 @@ __author__ = 'thodoris'
 from twisted.internet.protocol import Factory
 from twisted.internet import reactor, protocol
 from CorrespondenceGraph import CGraph
+from SourceSelection import LocalSearch
+from SourceSelection import GainFunction
+from SourceSelection import CostFunction
 import DataLoader
 import argparse
 import json
