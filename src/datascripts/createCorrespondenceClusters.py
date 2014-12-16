@@ -59,7 +59,7 @@ qEngine = CGraph.QueryEngine("/tmp/index",cgraph)
 qEngine.generateIndex()
 
 print "\nIssue a test query and select sources"
-qRes = qEngine.processQuery("entities:United States AND topic:Politics")
+qRes = qEngine.processQuery("entities:United States")
 activeClusters = set([])
 for cid in qRes:
     # get cluster
