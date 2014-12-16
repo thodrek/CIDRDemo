@@ -22,7 +22,8 @@ class CGraphApi(protocol.Protocol):
         if len(qRes) == 0:
             self.transport.write("No results found!")
         else:
-            self.transport.write("|".join(qRes))
+
+            self.transport.write(str(qRes))
 
 class CGraphFactory(Factory):
 
