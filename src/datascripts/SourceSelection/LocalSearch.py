@@ -158,6 +158,7 @@ class LocalSearch:
 
             if srcToAdd:
                 # commit changes
+                tmpSelection.add(srcToAdd)
                 availSources.remove(srcToAdd)
                 changed = True
 
