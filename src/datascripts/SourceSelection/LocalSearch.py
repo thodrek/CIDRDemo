@@ -17,7 +17,7 @@ class LocalSearch:
     def findAvailableSources(self):
         availableSrcIds = set([])
         for c in self._activeClusters:
-            availableSrcIds |= set(c.sources)
+            availableSrcIds |= set(c.sources())
         return availableSrcIds
 
     def selectSources(self):
