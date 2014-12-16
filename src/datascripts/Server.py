@@ -16,7 +16,6 @@ class CGraphApi(protocol.Protocol):
     def __init__(self,cgraph,queryengine, localSearch):
         self._cgraph = cgraph
         self._queryengine = queryengine
-        self._localSearch = localSearch
 
     def connectionMade(self):
         self.transport.write("Please post your query...")
@@ -46,10 +45,14 @@ class CGraphApi(protocol.Protocol):
             for cid in qRes:
                 # get cluster
                 activeClusters.add(self._cgraph.manager().clusters()[cid])
-                selection, gain, cost, util = ls.selectSources()
-                result = {'selection':str(selection),'gain':gain,'cost':cost,'util':util}
-                resJson = json.dumps(result)
-                self.transport.write(resJson)
+
+            gf = GainFunction.GainFunction(None,None)
+            cf = CostFunction.CostFunction(None)
+            ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
+            selection, gain, cost, util = ls.selectSources()
+            result = {'selection':str(selection),'gain':gain,'cost':cost,'util':util}
+            resJson = json.dumps(result)
+            self.transport.write(resJson)
 
 
 class CGraphFactory(Factory):
@@ -60,16 +63,13 @@ class CGraphFactory(Factory):
         self._cgraph = CGraph.CGraph()
         self._cgraph.generate(self._loader.getInput())
         self._cgraph.summary()
-        self._gf = GainFunction.GainFunction(None,None)
-        self._cf = CostFunction.CostFunction(None)
-        self._ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
 
         print "Start building quality profiles..."
         self._cgraph.manager().buildQualityProfiles()
         print "\nDONE"
 
         print "Build query engine"
-        self._qEngine = CGraph.QueryEngine("/tmp/index",self._cgraph,self._ls)
+        self._qEngine = CGraph.QueryEngine("/tmp/index",self._cgraph)
         self._qEngine.generateIndex()
         print "\nDONE"
 
