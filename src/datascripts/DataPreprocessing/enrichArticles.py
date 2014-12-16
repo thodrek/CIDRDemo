@@ -11,10 +11,10 @@ import re
 
 # init calais
 # umd based keys
-API_KEYS = ['k8qqyqpzgck5k3hgmsfjrphf','n6p8psyvs2yqe4gzrttck5rv', '2ap3f4ycgn3bs3wjxsbkjsrk']
+#API_KEYS = ['k8qqyqpzgck5k3hgmsfjrphf','n6p8psyvs2yqe4gzrttck5rv', '2ap3f4ycgn3bs3wjxsbkjsrk']
 
 # outlook and yahoo based keys
-#API_KEYS = ['xff9ne6nsz23t4hejjfqvfs7','cjw4hyyv8cp8qfmpecwyw2f8', 'mshb2wfq5wktgxeeajma2r46', 'ekdx24bagxr2yntdncs9zqar', 'j7rstdax6nxewyaczffpg6aj', '3x9q2sc5qtvqkqgdwmremkar']
+API_KEYS = ['xff9ne6nsz23t4hejjfqvfs7','cjw4hyyv8cp8qfmpecwyw2f8', 'mshb2wfq5wktgxeeajma2r46', 'ekdx24bagxr2yntdncs9zqar', 'j7rstdax6nxewyaczffpg6aj', '3x9q2sc5qtvqkqgdwmremkar']
 
 #API_KEY = '3x9q2sc5qtvqkqgdwmremkar'
 calais_reqs = 0.0

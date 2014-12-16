@@ -36,6 +36,12 @@ class CCluster:
     def topics(self):
         return self._topics
 
+    def sources(self):
+        return self._srcNames.keys()
+
+    def getEvents(self):
+        return self._qualManager.events()
+
     def genQualityProfile(self):
         self._qualManager.buildQualityProfiles()
 
@@ -52,6 +58,9 @@ class CCluster:
         coverages = self._qualManager.srcCoverage()
         for sid in coverages:
             print self._srcNames[sid], coverages[sid]
+
+    def getSrcContent(self,srcId):
+        return self._qualManager.getSrcBitArray(srcId)
 
 class QualityManager:
 
@@ -108,6 +117,15 @@ class QualityManager:
 
     def getSrcDelayDistr(self,srcId,value):
         return self._srcDelayECDF[srcId](value)
+
+    def events(self):
+        return float(len(self._events))
+
+    def getSrcBitArray(self, srcId):
+        if srcId in self._srcBitArrays:
+            return self._srcBitArrays[srcId]
+        else:
+            return None
 
 
 
