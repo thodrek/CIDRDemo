@@ -107,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="55" selection-start="553" selection-end="553" vertical-scroll-proportion="-9.16" vertical-offset="71" max-vertical-offset="1050">
+            <state line="24" column="47" selection-start="697" selection-end="697" vertical-scroll-proportion="0.3617021" vertical-offset="71" max-vertical-offset="1050">
               <folding>
                 <element signature="e#25#70#0" expanded="true" />
               </folding>
@@ -118,10 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Client.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="0.281602" vertical-offset="0" max-vertical-offset="799">
+            <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -655,15 +655,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="55" selection-start="553" selection-end="553" vertical-scroll-proportion="-9.16" vertical-offset="71" max-vertical-offset="1050">
-          <folding>
-            <element signature="e#25#70#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="170" column="8" selection-start="6240" selection-end="6240" vertical-scroll-proportion="-11.96" vertical-offset="2251" max-vertical-offset="3075">
@@ -675,8 +666,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="0.281602" vertical-offset="0" max-vertical-offset="799">
+        <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="47" selection-start="697" selection-end="697" vertical-scroll-proportion="0.3617021" vertical-offset="71" max-vertical-offset="1050">
+          <folding>
+            <element signature="e#25#70#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
