@@ -13,7 +13,7 @@ import json
 
 class CGraphApi(protocol.Protocol):
 
-    def __init__(self,cgraph,queryengine, localSearch):
+    def __init__(self,cgraph,queryengine):
         self._cgraph = cgraph
         self._queryengine = queryengine
 
