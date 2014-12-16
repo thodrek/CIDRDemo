@@ -13,9 +13,12 @@ class CCluster:
             self._entities.add(e)
         self._topics = topics
         self._qualManager = QualityManager(self._id)
+        self._srcNames = {}
 
 
     def registerSource(self,newSource):
+        if newSource.id() not in self._srcNames:
+            self._srcNames[newSource.id()] = newSource.uri()
         self._qualManager.registerSource(newSource)
 
     def registerEvent(self,sourceId,evId):
@@ -48,7 +51,7 @@ class CCluster:
         print "Cluster ",self._id," coverage summary..."
         coverages = self._qualManager.srcCoverage()
         for sid in coverages:
-            print sid, coverages[sid]
+            print self._srcNames[sid], coverages[sid]
 
 class QualityManager:
 
