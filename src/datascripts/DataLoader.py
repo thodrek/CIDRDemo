@@ -11,7 +11,7 @@ class DataLoader:
 
         for file in os.listdir(dataDir):
             if file.endswith(".pkl"):
-                self._files.append(file)
+                self._files.append(dataDir+"/"+file)
 
         self._partitionedInput = {}
 

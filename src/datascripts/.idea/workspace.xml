@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataLoader.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="DataLoader.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/DataLoader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="24" selection-start="81" selection-end="81" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="885">
+            <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="0.24405506" vertical-offset="0" max-vertical-offset="885">
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -96,10 +96,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="5" selection-start="123" selection-end="123" vertical-scroll-proportion="0.075093865" vertical-offset="0" max-vertical-offset="990">
+            <state line="4" column="5" selection-start="123" selection-end="123" vertical-scroll-proportion="5.24" vertical-offset="191" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
@@ -158,6 +158,7 @@
         <option value="$PROJECT_DIR$/Client/Client.py" />
         <option value="$PROJECT_DIR$/Server/Server.py" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/DataLoader.py" />
       </list>
     </option>
   </component>
@@ -383,7 +384,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1633" height="944" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -626,15 +627,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataLoader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="24" selection-start="81" selection-end="81" vertical-scroll-proportion="-2.4" vertical-offset="0" max-vertical-offset="885">
-          <folding>
-            <element signature="e#24#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
@@ -653,8 +645,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="123" selection-end="123" vertical-scroll-proportion="0.075093865" vertical-offset="0" max-vertical-offset="990">
+        <state line="4" column="5" selection-start="123" selection-end="123" vertical-scroll-proportion="5.24" vertical-offset="191" max-vertical-offset="990">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="0.24405506" vertical-offset="0" max-vertical-offset="885">
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
