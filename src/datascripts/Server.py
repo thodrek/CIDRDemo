@@ -23,10 +23,10 @@ class CGraphApi(protocol.Protocol):
     def dataReceived(self,data):
         print "Received ", data
         if "_clusters:" in data:
-            data.replace("_clusters:","")
+            data = data.replace("_clusters:","")
             self.retrieveClusters(str(data))
         if "_selection:" in data:
-            data.replace("_selection:","")
+            data = data.replace("_selection:","")
             self.retrieveSelectedSources(str(data))
 
     def retrieveClusters(self,qString):
