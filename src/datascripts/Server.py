@@ -18,8 +18,11 @@ class CGraphApi(protocol.Protocol):
 
     def dataReceived(self,data):
         print "Received ", data
-        qRes = self._queryengine.processQuery(data)
-        self.transport.write(qRes)
+        qRes = self._queryengine.processQuery(str(data))
+        if len(qRes) == 0:
+            self.transport.write("No results found!")
+        else:
+            self.transport.write(qRes)
 
 class CGraphFactory(Factory):
 

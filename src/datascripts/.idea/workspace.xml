@@ -45,6 +45,17 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="170" column="8" selection-start="6240" selection-end="6240" vertical-scroll-proportion="-11.96" vertical-offset="2251" max-vertical-offset="3075">
+              <folding>
+                <element signature="e#25#66#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="LocalSearch.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,10 +107,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="31" selection-start="497" selection-end="497" vertical-scroll-proportion="0.35669586" vertical-offset="0" max-vertical-offset="1005">
+            <state line="20" column="55" selection-start="553" selection-end="553" vertical-scroll-proportion="-9.16" vertical-offset="71" max-vertical-offset="1050">
               <folding>
                 <element signature="e#25#70#0" expanded="true" />
               </folding>
@@ -107,19 +118,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Client.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Source.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="21" selection-start="622" selection-end="622" vertical-scroll-proportion="-16.2" vertical-offset="0" max-vertical-offset="585">
+            <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="0.281602" vertical-offset="0" max-vertical-offset="799">
               <folding />
             </state>
           </provider>
@@ -165,6 +167,7 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="x" value="35" />
     <option name="y" value="22" />
     <option name="width" value="1633" />
     <option name="height" value="944" />
@@ -211,6 +214,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CorrespondenceGraph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -385,7 +402,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1633" height="944" extended-state="0" />
+    <frame x="35" y="22" width="1633" height="944" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -606,26 +623,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="622" selection-end="622" vertical-scroll-proportion="-16.2" vertical-offset="0" max-vertical-offset="585">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="32" selection-start="2620" selection-end="2620" vertical-scroll-proportion="23.84" vertical-offset="1826" max-vertical-offset="2625">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="170" column="8" selection-start="6240" selection-end="6240" vertical-scroll-proportion="-10.96" vertical-offset="2276" max-vertical-offset="3075">
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -647,19 +648,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
+        <state line="27" column="21" selection-start="622" selection-end="622" vertical-scroll-proportion="0.5068836" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="31" selection-start="497" selection-end="497" vertical-scroll-proportion="0.35669586" vertical-offset="0" max-vertical-offset="1005">
+        <state line="20" column="55" selection-start="553" selection-end="553" vertical-scroll-proportion="-9.16" vertical-offset="71" max-vertical-offset="1050">
           <folding>
             <element signature="e#25#70#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="170" column="8" selection-start="6240" selection-end="6240" vertical-scroll-proportion="-11.96" vertical-offset="2251" max-vertical-offset="3075">
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="0.281602" vertical-offset="0" max-vertical-offset="799">
+          <folding />
         </state>
       </provider>
     </entry>
