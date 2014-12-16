@@ -17,6 +17,7 @@ class CGraphApi(protocol.Protocol):
         self.transport.write("Please post your query...")
 
     def dataReceived(self,data):
+        print "Received ", data
         qRes = self._queryengine.processQuery(data)
         self.transport.write(qRes)
 

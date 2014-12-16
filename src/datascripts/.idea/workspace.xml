@@ -26,7 +26,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="0" selection-start="1888" selection-end="2105" vertical-scroll-proportion="-37.2" vertical-offset="0" max-vertical-offset="1440">
+            <state line="63" column="16" selection-start="1929" selection-end="1929" vertical-scroll-proportion="-12.16" vertical-offset="641" max-vertical-offset="1440">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DataLoader.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="DataLoader.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/DataLoader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="0.24405506" vertical-offset="0" max-vertical-offset="885">
+            <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="885">
               <folding>
                 <element signature="e#24#35#0" expanded="true" />
               </folding>
@@ -96,11 +96,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="5" selection-start="123" selection-end="123" vertical-scroll-proportion="5.24" vertical-offset="191" max-vertical-offset="990">
-              <folding />
+            <state line="19" column="31" selection-start="497" selection-end="497" vertical-scroll-proportion="0.35669586" vertical-offset="0" max-vertical-offset="1005">
+              <folding>
+                <element signature="e#25#70#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +159,8 @@
         <option value="$PROJECT_DIR$/Server/DataLoader.py" />
         <option value="$PROJECT_DIR$/Client/Client.py" />
         <option value="$PROJECT_DIR$/Server/Server.py" />
-        <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/DataLoader.py" />
+        <option value="$PROJECT_DIR$/Server.py" />
       </list>
     </option>
   </component>
@@ -390,7 +392,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13709678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13709678" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -627,6 +629,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/DataLoader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="-7.8" vertical-offset="0" max-vertical-offset="885">
+          <folding>
+            <element signature="e#24#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="16" selection-start="1929" selection-end="1929" vertical-scroll-proportion="-12.16" vertical-offset="641" max-vertical-offset="1440">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Client.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
@@ -634,27 +654,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1888" selection-end="2105" vertical-scroll-proportion="-37.2" vertical-offset="0" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="5" selection-start="123" selection-end="123" vertical-scroll-proportion="5.24" vertical-offset="191" max-vertical-offset="990">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DataLoader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="0.24405506" vertical-offset="0" max-vertical-offset="885">
+        <state line="19" column="31" selection-start="497" selection-end="497" vertical-scroll-proportion="0.35669586" vertical-offset="0" max-vertical-offset="1005">
           <folding>
-            <element signature="e#24#35#0" expanded="true" />
+            <element signature="e#25#70#0" expanded="true" />
           </folding>
         </state>
       </provider>
