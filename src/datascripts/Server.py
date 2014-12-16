@@ -30,6 +30,7 @@ class CGraphApi(protocol.Protocol):
             self.retrieveSelectedSources(str(data))
 
     def retrieveClusters(self,qString):
+        print qString
         qRes = self._queryengine.processQuery(qString)
         if len(qRes) == 0:
             self.transport.write("No results found!")
@@ -37,6 +38,7 @@ class CGraphApi(protocol.Protocol):
             self.transport.write(str(qRes))
 
     def retrieveSelectedSources(self,qString):
+        print qString
         qRes = self._queryengine.processQuery(qString)
         if len(qRes) == 0:
             self.transport.write("No results found!")
