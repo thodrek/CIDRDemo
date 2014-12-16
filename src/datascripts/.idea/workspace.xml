@@ -23,6 +23,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="62" column="0" selection-start="1888" selection-end="2105" vertical-scroll-proportion="-37.2" vertical-offset="0" max-vertical-offset="1440">
+              <folding>
+                <element signature="e#25#49#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="DataLoader.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/DataLoader.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,21 +96,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="990">
-              <folding>
-                <element signature="e#25#70#0" expanded="true" />
-              </folding>
+            <state line="3" column="46" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0563204" vertical-offset="0" max-vertical-offset="990">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Client.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Client.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Client/Client.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="0.281602" vertical-offset="0" max-vertical-offset="799">
+            <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
               <folding />
             </state>
           </provider>
@@ -110,17 +119,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="27" column="21" selection-start="622" selection-end="622" vertical-scroll-proportion="-16.2" vertical-offset="0" max-vertical-offset="585">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="170" column="8" selection-start="6240" selection-end="6240" vertical-scroll-proportion="-10.96" vertical-offset="2276" max-vertical-offset="3075">
-              <folding>
-                <element signature="e#25#66#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -157,8 +155,8 @@
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
         <option value="$PROJECT_DIR$/Server/DataLoader.py" />
-        <option value="$PROJECT_DIR$/Server/Server.py" />
         <option value="$PROJECT_DIR$/Client/Client.py" />
+        <option value="$PROJECT_DIR$/Server/Server.py" />
       </list>
     </option>
   </component>
@@ -209,34 +207,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="datascripts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Client" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -638,15 +608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="0" selection-start="1888" selection-end="2105" vertical-scroll-proportion="-20.56" vertical-offset="416" max-vertical-offset="1440">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="32" selection-start="2620" selection-end="2620" vertical-scroll-proportion="23.84" vertical-offset="1826" max-vertical-offset="2625">
@@ -672,18 +633,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server/Server.py">
+    <entry file="file://$PROJECT_DIR$/Client/Client.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="192" selection-end="192" vertical-scroll-proportion="-4.8" vertical-offset="0" max-vertical-offset="990">
+        <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="0" selection-start="1888" selection-end="2105" vertical-scroll-proportion="-37.2" vertical-offset="0" max-vertical-offset="1440">
           <folding>
-            <element signature="e#25#70#0" expanded="true" />
+            <element signature="e#25#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Client/Client.py">
+    <entry file="file://$PROJECT_DIR$/Server/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="41" selection-start="399" selection-end="399" vertical-scroll-proportion="0.281602" vertical-offset="0" max-vertical-offset="799">
+        <state line="3" column="46" selection-start="117" selection-end="117" vertical-scroll-proportion="0.0563204" vertical-offset="0" max-vertical-offset="990">
           <folding />
         </state>
       </provider>

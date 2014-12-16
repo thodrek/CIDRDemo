@@ -2,7 +2,7 @@ __author__ = 'thodoris'
 
 from twisted.internet.protocol import Factory
 from twisted.internet import reactor, protocol
-from CorrespondenceGraph import CGraph
+import CorrespondenceGraph.CGraph
 import DataLoader
 import argparse
 
