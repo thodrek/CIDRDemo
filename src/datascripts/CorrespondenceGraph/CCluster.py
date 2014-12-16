@@ -42,6 +42,7 @@ class CCluster:
         print "Cluster ",self._id," content summary..."
         print "Entities: ", " ".join(entityNames)
         print "Topic: ", " ".join(topicNames)
+        print "Total events:",len(self._qualManager._events)
 
     def printCovSummary(self):
         print "Cluster ",self._id," coverage summary..."

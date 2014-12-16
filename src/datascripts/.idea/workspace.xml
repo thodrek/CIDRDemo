@@ -23,19 +23,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="99" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.8727273" vertical-offset="150" max-vertical-offset="990">
+            <state line="59" column="16" selection-start="1753" selection-end="1753" vertical-scroll-proportion="-27.6" vertical-offset="150" max-vertical-offset="990">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CCluster.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="38" column="27" selection-start="920" selection-end="939" vertical-scroll-proportion="-15.6" vertical-offset="165" max-vertical-offset="1785">
+            <state line="44" column="59" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.36363637" vertical-offset="345" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -86,8 +86,8 @@
         <option value="$PROJECT_DIR$/CorrespondenceGraph/QualityManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
       </list>
     </option>
   </component>
@@ -522,16 +522,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="27" selection-start="920" selection-end="939" vertical-scroll-proportion="-15.6" vertical-offset="165" max-vertical-offset="1785">
+        <state line="59" column="16" selection-start="1753" selection-end="1753" vertical-scroll-proportion="-27.6" vertical-offset="150" max-vertical-offset="990">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="99" selection-start="1871" selection-end="1871" vertical-scroll-proportion="0.8727273" vertical-offset="150" max-vertical-offset="990">
+        <state line="44" column="59" selection-start="1301" selection-end="1301" vertical-scroll-proportion="0.36363637" vertical-offset="345" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
