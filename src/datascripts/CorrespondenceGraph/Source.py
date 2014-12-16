@@ -25,7 +25,7 @@ class Source:
         return self._id
 
     def uri(self):
-        return self.uri
+        return self._uri
 
     def topics(self):
         return self._topics.keys()
