@@ -10,6 +10,7 @@ from whoosh.fields import *
 from whoosh import qparser
 import os
 import re
+from textblob import TextBlob
 
 class CGraph:
     def __init__(self):
@@ -108,7 +109,20 @@ class CGraph:
                 # update c-clusters
                 evId = ar['eventUri']
                 delay = ar['delay']
-                self._Manager.updateSourceEventInfo(artEntities, topicRef,src,evId,delay)
+                arBody = TextBlob(ar['body'])
+                arTitle = TextBlob(ar['title'])
+
+                # find article bias
+                polarity = arTitle.sentiment.polarity
+                if abs(polarity) > abs(arBody.sentiment.polarity):
+                    polarity = arBody.sentiment.polarity
+
+                subjectivity = arTitle.sentiment.subjectivity
+                if abs(subjectivity) > abs(arBody.sentiment.subjectivity):
+                    subjectivity = arTitle.sentiment.subjectivity
+
+                # send info to manager
+                self._Manager.updateSourceEventInfo(artEntities, topicRef,src,evId,delay,polarity,subjectivity)
 
                 # update progress output
                 entries_processed += 1.0

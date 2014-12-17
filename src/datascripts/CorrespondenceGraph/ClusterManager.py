@@ -30,7 +30,7 @@ class ClusterManager:
                 self._topicsToClusters[t] = set([])
             self._topicsToClusters[t].add(cCluster.id())
 
-    def updateSourceEventInfo(self, entities, topic, source, evId, delay):
+    def updateSourceEventInfo(self, entities, topic, source, evId, delay, polarity, subjectivity):
         # update source info
         self._sources[source.id()] = source.uri()
 
@@ -42,6 +42,7 @@ class ClusterManager:
                 self._cClusters[c].registerSource(source)
                 self._cClusters[c].registerEvent(source.id(),evId)
                 self._cClusters[c].registerDelay(source.id(),delay)
+                self._cClusters[c].registerBias(source.id(), polarity, subjectivity)
 
 
     def totalClusters(self):

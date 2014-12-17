@@ -2,7 +2,7 @@ __author__ = 'thodoris'
 
 from bitarray import bitarray
 from statsmodels.distributions.empirical_distribution import ECDF
-
+import numpy as np
 
 class CCluster:
 
@@ -26,6 +26,9 @@ class CCluster:
 
     def registerDelay(self,sourceId,delay):
         self._qualManager.registerDelay(sourceId,delay)
+
+    def registerBias(self,sourceId, polarity, subjectivity):
+        self._qualManager.registerDelay(sourceId, polarity, subjectivity)
 
     def id(self):
         return self._id
@@ -62,6 +65,12 @@ class CCluster:
     def getSrcContent(self,srcId):
         return self._qualManager.getSrcBitArray(srcId)
 
+    def getSrcBias(self, srcId):
+        return self._qualManager.getSrcBias(srcId)
+
+    def getSrcDelayedCov(self,srcId,delay):
+        return self._qualManager.getSrcDelayedCov(srcId,delay)
+
 class QualityManager:
 
     def __init__(self,cClusterId):
@@ -69,6 +78,8 @@ class QualityManager:
         self._srcIdToSrc = {}
         self._srcEvents = {}
         self._srcDelays = {}
+        self._srcPolarity = {}
+        self._srcSubjectivity = {}
         self._events = {}
         self._nextEventId = 0
         self._qualityProfiles = {}
@@ -76,6 +87,8 @@ class QualityManager:
         self._srcBitArrays = {}
         self._srcCoverage = {}
         self._srcDelayECDF = {}
+        self._srcBias = {}
+
 
     def srcCoverage(self):
         return self._srcCoverage
@@ -85,6 +98,8 @@ class QualityManager:
             self._srcIdToSrc[newSource.id()] = newSource
             self._srcEvents[newSource.id()] = set([])
             self._srcDelays[newSource.id()] = []
+            self._srcPolarity[newSource.id()] = []
+            self._srcSubjectivity[newSource.id()] = []
 
 
     def registerEvent(self,sourceId,evId):
@@ -96,6 +111,10 @@ class QualityManager:
 
     def registerDelay(self,sourceId,delay):
         self._srcDelays[sourceId].append(delay)
+
+    def registerBias(self,sourceId,polarity, subjectivity):
+        self._srcPolarity[sourceId].append(polarity)
+        self._srcSubjectivity[sourceId].append(subjectivity)
 
     def buildQualityProfiles(self):
         # build bitarrays for each source
@@ -112,11 +131,29 @@ class QualityManager:
             # fit Kaplan-Meier empirical distribution
             self._srcDelayECDF[srcId] = ECDF(self._srcDelays[srcId])
 
+            # build bias profile
+            self._srcBias[srcId] = {}
+            self._srcBias[srcId]['polarity'] = np.mean(self._srcPolarity[srcId])
+            self._srcBias[srcId]['subjectivity'] = np.mean(self._srcSubjectivity[srcId])
+            self._srcBias[srcId]['total'] = float(len(self._srcPolarity[srcId]))
+
     def getSrcCoverage(self,srcId):
         return self._srcCoverage[srcId]
 
     def getSrcDelayDistr(self,srcId,value):
         return self._srcDelayECDF[srcId](value)
+
+    def getSrcBias(self,srcId):
+        if srcId in self._srcBias:
+            return self._srcBias[srcId]
+        else:
+            return None
+
+    def getSrcDelayedCov(self,srcId,delay):
+        if srcId not in self._srcDelayECDF:
+            return 0.0
+        else:
+            return self._srcDelayECDF[srcId](delay)*self._srcCoverage[srcId]
 
     def events(self):
         return float(len(self._events))
@@ -126,6 +163,7 @@ class QualityManager:
             return self._srcBitArrays[srcId]
         else:
             return None
+
 
 
 

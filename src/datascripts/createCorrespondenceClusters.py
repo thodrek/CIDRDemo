@@ -8,6 +8,7 @@ from CorrespondenceGraph import CGraph
 from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction
+from SourceSelection import Metrics
 
 
 # Read input arguments
@@ -86,5 +87,11 @@ print "Util = ",util
 print "Selected sources:"
 for s in selection:
     print cgraph.getSourceName(s)
+
+
+delayIntervals, probability = Metrics.timeliness(selection,activeClusters)
+print delayIntervals
+print probability
+
 
 
