@@ -99,7 +99,7 @@
       <file leaf-file-name="Metrics.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="101" column="30" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.8363636" vertical-offset="825" max-vertical-offset="1710">
+            <state line="100" column="84" selection-start="3176" selection-end="3176" vertical-scroll-proportion="0.8181818" vertical-offset="825" max-vertical-offset="1710">
               <folding />
             </state>
           </provider>
@@ -715,15 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="13" selection-start="2825" selection-end="2825" vertical-scroll-proportion="-27.0" vertical-offset="780" max-vertical-offset="1680">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="124" column="98" selection-start="4462" selection-end="4462" vertical-scroll-proportion="22.8" vertical-offset="2430" max-vertical-offset="3255">
@@ -733,9 +724,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="13" selection-start="2825" selection-end="2825" vertical-scroll-proportion="-27.0" vertical-offset="780" max-vertical-offset="1680">
+          <folding>
+            <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="101" column="30" selection-start="3172" selection-end="3172" vertical-scroll-proportion="0.8363636" vertical-offset="825" max-vertical-offset="1710">
+        <state line="100" column="84" selection-start="3176" selection-end="3176" vertical-scroll-proportion="0.8181818" vertical-offset="825" max-vertical-offset="1710">
           <folding />
         </state>
       </provider>
