@@ -88,20 +88,15 @@ print "Selected sources:"
 for s in selection:
     print cgraph.getSourceName(s)
 
-x = activeClusters.pop()
-
 delayIntervals, probability = Metrics.timeliness(selection,activeClusters)
 print delayIntervals
 print probability
 
+polarity, subjectivity = Metrics.bias(selection,activeClusters)
+print polarity
+print subjectivity
 
-print "\nNew cluster"
-for s in selection:
-    if s in x._qualManager._srcDelayECDF:
-        print cgraph.getSourceName(s)
-        print x._qualManager._srcCoverage[s]
-        print x._qualManager._srcDelayECDF[s].x
-        print x._qualManager._srcDelayECDF[s].y
+
 
 
 
