@@ -141,7 +141,10 @@ class QualityManager:
             self._srcBias[srcId]['total'] = float(len(self._srcPolarity[srcId]))
 
     def getSrcCoverage(self,srcId):
-        return self._srcCoverage[srcId]
+        if srcId in self._srcCoverage:
+            return self._srcCoverage[srcId]
+        else:
+            return 0.0
 
     def getSrcDelayDistr(self,srcId,value):
         return self._srcDelayECDF[srcId](value)
