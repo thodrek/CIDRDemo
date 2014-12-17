@@ -71,14 +71,14 @@ def bias(selection, activeClusters):
     subjectivity = subjectivity/totalEntries
     return polarity, subjectivity
 
-def probCapturedEntryWithDelay(selection, cluster, delay):
+def probCoveredEntryWithDelay(selection, cluster, delay):
     probProduct = 1.0
     for srcId in selection:
         probProduct *= 1.0 - cluster.getSrcDelayedCov(srcId,delay)
     finalProb = 1.0 - probProduct
     return finalProb
 
-def probCaptured(selection, cluster):
+def probCovered(selection, cluster):
     probProduct = 1.0
     for srcId in selection:
         probProduct *= 1.0 - cluster.getSrcCoverage(srcId)
@@ -103,7 +103,7 @@ def timeliness(selection, activeClusters):
         delayProb = 0.0
         for cluster in activeClusters:
             probCluster = cluster.getEvents()/totalEntries
-            probCaptured = probCapturedEntryWithDelay(selection,cluster,delay)/probCaptured(selection,cluster)
+            probCaptured = probCoveredEntryWithDelay(selection,cluster,delay)/probCovered(selection,cluster)
             delayProb += probCaptured*probCluster
             print "New Cluster"
             print probCluster
