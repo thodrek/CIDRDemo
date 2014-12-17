@@ -27,8 +27,9 @@ def computeAggBias(selection, cluster):
             totalCont += srcBias['total']
             polarity += srcBias['total']*srcBias['polarity']
             subjectivity += srcBias['total']*srcBias['subjectivity']
-    polarity = polarity/totalCont
-    subjectivity = subjectivity/totalCont
+    if totalCont != 0.0:
+        polarity = polarity/totalCont
+        subjectivity = subjectivity/totalCont
     return polarity, subjectivity
 
 
