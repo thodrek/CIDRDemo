@@ -105,6 +105,7 @@ class CGraph:
                 # update source topic and entity information
                 src.addTopics(set([topicRef]))
                 src.addEntities(artEntities)
+                src.addEvent(ar['eventUri'])
 
                 # update c-clusters
                 evId = ar['eventUri']
@@ -183,17 +184,22 @@ class QueryEngine:
         writer.commit()
 
     def processQuery(self,queryString):
-        # initialize parser and searcher
+        # initialize searcher
         searcher = self._index.searcher()
-        parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
 
-        # validate query format
-        try:
-            found = re.search("entities:",queryString).group(0)
-        except AttributeError:
-            queryString += "entities:__None"
+        # analyze query format
+        parser = None
+        if "entities:" in queryString and "topic:" in queryString:
+            parser = qparser.MultifieldParser(["entities", "topic"], schema=self._index.schema)
+        elif "entities:" in queryString and "topic:" not in queryString:
+            parser = qparser.QueryParser("entities", schema=self._index.schema)
+        elif "entities:" not in queryString and "topic:" in queryString:
+            parser = qparser.QueryParser("topic", schema=self._index.schema)
+        else:
+            parser = None
 
-
+        if parser == None:
+            return []
         # parse query
         q = parser.parse(unicode(queryString))
 

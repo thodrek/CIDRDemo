@@ -48,6 +48,9 @@ class CCluster:
     def genQualityProfile(self):
         self._qualManager.buildQualityProfiles()
 
+    def genPricingProfile(self):
+        self._qualManager.buildPricingProfiles()
+
     def printClusterSummary(self,entNameMap,topNameMap):
         entityNames = [entNameMap[e] for e in self._entities]
         topicNames = [topNameMap[e] for e in self._topics]
@@ -90,6 +93,7 @@ class QualityManager:
         self._srcBitArrays = {}
         self._srcCoverage = {}
         self._srcDelayECDF = {}
+        self._srcAvgDelay = {}
         self._srcBias = {}
 
 
@@ -133,12 +137,20 @@ class QualityManager:
             # build delay profile
             # fit Kaplan-Meier empirical distribution
             self._srcDelayECDF[srcId] = ECDF(self._srcDelays[srcId])
+            self._srcAvgDelay[srcId] = np.mean(self._srcDelay[srcId])
 
             # build bias profile
             self._srcBias[srcId] = {}
             self._srcBias[srcId]['polarity'] = np.mean(self._srcPolarity[srcId])
             self._srcBias[srcId]['subjectivity'] = np.mean(self._srcSubjectivity[srcId])
             self._srcBias[srcId]['total'] = float(len(self._srcPolarity[srcId]))
+
+    def buildPricingProfiles(self):
+        for srcId in self._srcIdToSrc:
+            srcCov = self._srcCoverage[srcId]
+            srcAvgDelay = self._srcAvgDelay[srcId]
+            srcEvents = float(len(self._srcEvents[srcId]))
+            self._srcIdToSrc[srcId].updateCost(srcCov,srcAvgDelay,srcEvents)
 
     def getSrcCoverage(self,srcId):
         if srcId in self._srcCoverage:
@@ -163,6 +175,9 @@ class QualityManager:
 
     def events(self):
         return float(len(self._events))
+
+    def getSrcAvgDelay(self,srcId):
+        return self._srcAvgDelay[srcId]
 
     def getSrcBitArray(self, srcId):
         if srcId in self._srcBitArrays:

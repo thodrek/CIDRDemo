@@ -26,29 +26,25 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="43" selection-start="1912" selection-end="1912" vertical-scroll-proportion="2.52" vertical-offset="993" max-vertical-offset="1620">
-              <folding>
-                <element signature="e#25#49#0" expanded="true" />
-              </folding>
+            <state line="69" column="45" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="1836">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <file leaf-file-name="LocalSearch.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="61" selection-start="7472" selection-end="7472" vertical-scroll-proportion="-11.28" vertical-offset="2733" max-vertical-offset="3255">
-              <folding>
-                <element signature="e#25#66#0" expanded="true" />
-              </folding>
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="2074" max-vertical-offset="3150">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <file leaf-file-name="Source.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="83" selection-start="1595" selection-end="1595" vertical-scroll-proportion="-18.6" vertical-offset="180" max-vertical-offset="1125">
+            <state line="48" column="19" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.5315985" vertical-offset="292" max-vertical-offset="1764">
               <folding />
             </state>
           </provider>
@@ -57,27 +53,34 @@
       <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="22" selection-start="4789" selection-end="4789" vertical-scroll-proportion="-3.48" vertical-offset="2103" max-vertical-offset="2790">
-              <folding>
-                <element signature="e#25#54#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LocalSearch.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="32" selection-start="2620" selection-end="2620" vertical-scroll-proportion="21.8" vertical-offset="1775" max-vertical-offset="2625">
+            <state line="135" column="0" selection-start="4266" selection-end="4266" vertical-scroll-proportion="0.0" vertical-offset="1944" max-vertical-offset="3582">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CostFunction.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
+      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
+            <state line="125" column="42" selection-start="4451" selection-end="4451" vertical-scroll-proportion="0.0" vertical-offset="2110" max-vertical-offset="3834">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="65" column="53" selection-start="2341" selection-end="2360" vertical-scroll-proportion="0.0" vertical-offset="688" max-vertical-offset="1530">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Metrics.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="706" max-vertical-offset="2214">
               <folding />
             </state>
           </provider>
@@ -86,34 +89,16 @@
       <file leaf-file-name="GainFunction.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="298" selection-end="298" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="285">
+            <state line="33" column="24" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Metrics.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <file leaf-file-name="CostFunction.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="8" selection-start="861" selection-end="861" vertical-scroll-proportion="0.7758621" vertical-offset="60" max-vertical-offset="1845">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1545">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Client.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Client.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="660">
+            <state line="21" column="49" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
               <folding />
             </state>
           </provider>
@@ -140,28 +125,29 @@
         <option value="$PROJECT_DIR$/Utilities/fp_growth.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/SourceQuality.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/QualityManager.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
         <option value="$PROJECT_DIR$/DataPreprocessing/enrichArticles.py" />
-        <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
         <option value="$PROJECT_DIR$/SourceSelection/LocalSearch.py" />
         <option value="$PROJECT_DIR$/Server/DataLoader.py" />
         <option value="$PROJECT_DIR$/Client/Client.py" />
         <option value="$PROJECT_DIR$/Server/Server.py" />
         <option value="$PROJECT_DIR$/DataLoader.py" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
+        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
-        <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
-        <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="690" />
+    <option name="x" value="1737" />
+    <option name="y" value="-7" />
+    <option name="width" value="1863" />
+    <option name="height" value="1207" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -189,7 +175,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -238,6 +223,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -407,14 +393,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="690" extended-state="6" />
-    <editor active="true" />
+    <frame x="1737" y="-7" width="1863" height="1207" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1223193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12184648" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -423,10 +410,9 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -443,9 +429,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11690363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -467,14 +453,35 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="40" selection-start="116" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1440">
+        <state line="62" column="0" selection-start="1833" selection-end="1833" vertical-scroll-proportion="0.0" vertical-offset="1116" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataLoader.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="885">
+        <state line="195" column="0" selection-start="6990" selection-end="6990" vertical-scroll-proportion="0.0" vertical-offset="3510" max-vertical-offset="3618">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="27" selection-start="1466" selection-end="1466" vertical-scroll-proportion="0.0" vertical-offset="792" max-vertical-offset="1242">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="107" column="0" selection-start="2909" selection-end="2909" vertical-scroll-proportion="0.0" vertical-offset="1926" max-vertical-offset="2034">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="40" selection-start="116" selection-end="237" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="1440">
           <folding />
         </state>
       </provider>
@@ -482,50 +489,6 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="41" selection-start="6354" selection-end="6354" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="3045">
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="32" selection-start="2620" selection-end="2620" vertical-scroll-proportion="0.0" vertical-offset="1826" max-vertical-offset="2625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="135" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="298" selection-end="298" vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="660">
           <folding />
         </state>
       </provider>
@@ -540,18 +503,14 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="33" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1530">
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="117" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="0.0" vertical-offset="1755" max-vertical-offset="1845">
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -572,18 +531,14 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="48" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1836">
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="34" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2142">
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,92 +589,65 @@
         <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="2190" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataLoader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="47" selection-start="286" selection-end="286" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="21" selection-start="622" selection-end="622" vertical-scroll-proportion="0.5068836" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="32" selection-start="599" selection-end="599" vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="1545">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="473" selection-end="473" vertical-scroll-proportion="-12.0" vertical-offset="0" max-vertical-offset="660">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="32" selection-start="2620" selection-end="2620" vertical-scroll-proportion="21.8" vertical-offset="1775" max-vertical-offset="2625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="298" selection-end="298" vertical-scroll-proportion="-7.2" vertical-offset="0" max-vertical-offset="285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="83" selection-start="1595" selection-end="1595" vertical-scroll-proportion="-18.6" vertical-offset="180" max-vertical-offset="1125">
+        <state line="33" column="24" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="720">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
+        <state line="21" column="49" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="706" max-vertical-offset="2214">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="45" selection-start="2179" selection-end="2179" vertical-scroll-proportion="0.0" vertical-offset="742" max-vertical-offset="1836">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="65" column="53" selection-start="2341" selection-end="2360" vertical-scroll-proportion="0.0" vertical-offset="688" max-vertical-offset="1530">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="125" column="42" selection-start="4451" selection-end="4451" vertical-scroll-proportion="0.0" vertical-offset="2110" max-vertical-offset="3834">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3150">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="22" selection-start="4789" selection-end="4789" vertical-scroll-proportion="-3.48" vertical-offset="2103" max-vertical-offset="2790">
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-          </folding>
+        <state line="135" column="0" selection-start="4266" selection-end="4266" vertical-scroll-proportion="0.0" vertical-offset="1944" max-vertical-offset="3582">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="43" selection-start="1912" selection-end="1912" vertical-scroll-proportion="2.52" vertical-offset="993" max-vertical-offset="1620">
-          <folding>
-            <element signature="e#25#49#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="61" selection-start="7472" selection-end="7472" vertical-scroll-proportion="-11.28" vertical-offset="2733" max-vertical-offset="3255">
-          <folding>
-            <element signature="e#25#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="8" selection-start="861" selection-end="861" vertical-scroll-proportion="0.7758621" vertical-offset="60" max-vertical-offset="1845">
+        <state line="48" column="19" selection-start="1341" selection-end="1341" vertical-scroll-proportion="0.5315985" vertical-offset="292" max-vertical-offset="1764">
           <folding />
         </state>
       </provider>
