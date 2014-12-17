@@ -90,7 +90,7 @@ for s in selection:
 
 x = activeClusters.pop()
 
-delayIntervals, probability = Metrics.timeliness(selection,set([x]))
+delayIntervals, probability = Metrics.timeliness(selection,activeClusters)
 print delayIntervals
 print probability
 
