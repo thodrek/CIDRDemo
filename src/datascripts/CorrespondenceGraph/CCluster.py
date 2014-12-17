@@ -28,7 +28,7 @@ class CCluster:
         self._qualManager.registerDelay(sourceId,delay)
 
     def registerBias(self,sourceId, polarity, subjectivity):
-        self._qualManager.registerDelay(sourceId, polarity, subjectivity)
+        self._qualManager.registerBias(sourceId, polarity, subjectivity)
 
     def id(self):
         return self._id

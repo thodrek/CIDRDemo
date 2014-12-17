@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="94" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.94545454" vertical-offset="630" max-vertical-offset="1545">
+            <state line="94" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="-31.2" vertical-offset="630" max-vertical-offset="1545">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CCluster.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="155" column="75" selection-start="5059" selection-end="5059" vertical-scroll-proportion="-25.2" vertical-offset="1695" max-vertical-offset="2700">
+            <state line="30" column="38" selection-start="935" selection-end="935" vertical-scroll-proportion="-1.2181818" vertical-offset="1455" max-vertical-offset="2700">
               <folding>
                 <element signature="e#25#54#0" expanded="true" />
               </folding>
@@ -153,8 +153,8 @@
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
       </list>
     </option>
   </component>
@@ -692,15 +692,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="155" column="75" selection-start="5059" selection-end="5059" vertical-scroll-proportion="-25.2" vertical-offset="1695" max-vertical-offset="2700">
-          <folding>
-            <element signature="e#25#54#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="44" column="83" selection-start="1595" selection-end="1595" vertical-scroll-proportion="-18.6" vertical-offset="180" max-vertical-offset="1125">
@@ -717,9 +708,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="94" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="0.94545454" vertical-offset="630" max-vertical-offset="1545">
+        <state line="94" column="0" selection-start="2785" selection-end="2785" vertical-scroll-proportion="-31.2" vertical-offset="630" max-vertical-offset="1545">
           <folding>
             <element signature="e#25#49#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="38" selection-start="935" selection-end="935" vertical-scroll-proportion="-1.2181818" vertical-offset="1455" max-vertical-offset="2700">
+          <folding>
+            <element signature="e#25#54#0" expanded="true" />
           </folding>
         </state>
       </provider>
