@@ -60,7 +60,7 @@ def bias(selection, activeClusters):
     totalEntries = 0.0
     for cluster in activeClusters:
         cEntries = computeCoveredEntries(selection, cluster)
-        cPolarity, cSubjectivity = cEntries*computeAggBias(selection, cluster)
+        cPolarity, cSubjectivity = computeAggBias(selection, cluster)
         polarity += cEntries*cPolarity
         subjectivity += cEntries*cSubjectivity
         totalEntries += cEntries
