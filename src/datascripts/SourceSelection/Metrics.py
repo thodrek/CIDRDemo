@@ -78,6 +78,11 @@ def probCapturedEntryWithDelay(selection, cluster, delay):
     finalProb = 1.0 - probProduct
     return finalProb
 
+def probCapturedEntryWithDelayTest(selection, cluster, delay):
+    probSum = 0.0
+    for srcId in selection:
+        probSum += cluster.getSrcDelayedCov(srcId,delay)
+    return probSum
 
 def timeliness(selection, activeClusters):
     if len(selection) == 0:
@@ -97,8 +102,8 @@ def timeliness(selection, activeClusters):
         delayProb = 0.0
         for cluster in activeClusters:
             probCluster = cluster.getEvents()/totalEntries
-            probCaptured = probCapturedEntryWithDelay(selection,cluster,delay)
-            delayProb += probCaptured*probCluster/coverage(selection,set([cluster]))
+            probCaptured = probCapturedEntryWithDelayTest(selection,cluster,delay)
+            delayProb += probCaptured*probCluster
             print "New Cluster"
             print probCluster
             print probCaptured
