@@ -94,4 +94,13 @@ print delayIntervals
 print probability
 
 
+for c in activeClusters:
+    print "\nNew cluster"
+    for s in selection:
+        if s in c._qualManager._srcDelayECDF:
+            print cgraph.getSourceName(s)
+            print c._qualManager._srcDelayECDF[s].x
+            print c._qualManager._srcDelayECDF[s].y
+
+
 
