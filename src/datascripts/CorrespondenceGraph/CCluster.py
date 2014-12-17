@@ -71,6 +71,9 @@ class CCluster:
     def getSrcDelayedCov(self,srcId,delay):
         return self._qualManager.getSrcDelayedCov(srcId,delay)
 
+    def getSrcCoverage(self,srcId):
+        return self._qualManager.getSrcCoverage(srcId)
+
 class QualityManager:
 
     def __init__(self,cClusterId):
