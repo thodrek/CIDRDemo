@@ -96,7 +96,7 @@ def timeliness(selection, activeClusters):
         delayProb = 0.0
         for cluster in activeClusters:
             probCluster = cluster.getEvents()/totalEntries
-            probCaptured += probCapturedEntryWithDelay(selection,cluster,delay)
+            probCaptured = probCapturedEntryWithDelay(selection,cluster,delay)
             delayProb += probCaptured*probCluster
 
         probability.append(delayProb)
