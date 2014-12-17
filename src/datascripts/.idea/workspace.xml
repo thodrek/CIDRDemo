@@ -26,7 +26,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="15" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.7413793" vertical-offset="1143" max-vertical-offset="1680">
+            <state line="101" column="43" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.7126437" vertical-offset="1143" max-vertical-offset="1695">
               <folding>
                 <element signature="e#25#49#0" expanded="true" />
               </folding>
@@ -57,13 +57,9 @@
       <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="26" selection-start="2651" selection-end="2664" vertical-scroll-proportion="-19.2" vertical-offset="840" max-vertical-offset="2700">
+            <state line="88" column="26" selection-start="2651" selection-end="2664" vertical-scroll-proportion="4.8" vertical-offset="1440" max-vertical-offset="2700">
               <folding>
                 <element signature="e#25#54#0" expanded="true" />
-                <marker date="1418779767000" expanded="true" signature="156:2231" placeholder="..." />
-                <marker date="1418779767000" expanded="true" signature="2168:2231" placeholder="..." />
-                <marker date="1418779767000" expanded="true" signature="2254:5283" placeholder="..." />
-                <marker date="1418779767000" expanded="true" signature="4901:5059" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -546,10 +542,6 @@
         <state line="81" column="33" selection-start="2337" selection-end="2337" vertical-scroll-proportion="0.0" vertical-offset="1215" max-vertical-offset="1530">
           <folding>
             <element signature="e#25#54#0" expanded="true" />
-            <marker date="1418779767000" expanded="true" signature="156:2231" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="2168:2231" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="2254:5283" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="4901:5059" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -582,10 +574,6 @@
         <state line="57" column="48" selection-start="1535" selection-end="1535" vertical-scroll-proportion="0.0" vertical-offset="760" max-vertical-offset="1836">
           <folding>
             <element signature="e#25#54#0" expanded="true" />
-            <marker date="1418779767000" expanded="true" signature="156:2231" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="2168:2231" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="2254:5283" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="4901:5059" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -695,15 +683,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="104" column="57" selection-start="3255" selection-end="3255" vertical-scroll-proportion="-11.88" vertical-offset="1263" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="26" selection-start="2651" selection-end="2664" vertical-scroll-proportion="-19.2" vertical-offset="840" max-vertical-offset="2700">
+        <state line="88" column="26" selection-start="2651" selection-end="2664" vertical-scroll-proportion="4.8" vertical-offset="1440" max-vertical-offset="2700">
           <folding>
             <element signature="e#25#54#0" expanded="true" />
-            <marker date="1418779767000" expanded="true" signature="156:2231" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="2168:2231" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="2254:5283" placeholder="..." />
-            <marker date="1418779767000" expanded="true" signature="4901:5059" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -717,23 +715,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="104" column="57" selection-start="3255" selection-end="3255" vertical-scroll-proportion="-11.88" vertical-offset="1263" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="35" selection-start="183" selection-end="183" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="15" selection-start="2991" selection-end="2991" vertical-scroll-proportion="0.7413793" vertical-offset="1143" max-vertical-offset="1680">
+        <state line="101" column="43" selection-start="2971" selection-end="2971" vertical-scroll-proportion="0.7126437" vertical-offset="1143" max-vertical-offset="1695">
           <folding>
             <element signature="e#25#49#0" expanded="true" />
           </folding>

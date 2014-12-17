@@ -99,6 +99,7 @@ print "\nNew cluster"
 for s in selection:
     if s in x._qualManager._srcDelayECDF:
         print cgraph.getSourceName(s)
+        print x._qualManager._srcCoverage[s]
         print x._qualManager._srcDelayECDF[s].x
         print x._qualManager._srcDelayECDF[s].y
 
