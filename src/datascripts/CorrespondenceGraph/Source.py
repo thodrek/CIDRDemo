@@ -49,17 +49,18 @@ class Source:
         return cost
 
     def delayCost(self,delay):
-        if delay < 10.0:
-            cost = 100.0 - 5.0*delay
-        elif cov >= 0.2 and cov < 0.5:
-            cost = 20.0 + 10.0*(cov - 0.2)
-        elif cov >= 0.5 and cov < 0.7:
-            cost = 40.0 + 10.0*(cov - 0.5)
-        elif cov >= 0.7 and cov < 0.8:
-            cost = 60.0 + 10.0*(cov - 0.7)
+        if delay < 10:
+            cost = 100
+        elif delay >= 10 and delay < 60:
+            cost = 80
+        elif delay >= 60 and delay < 360:
+            cost = 60
+        elif delay >= 360 and delay < 1440:
+            cost = 50
+        elif delay >= 1440 and delay < 2880:
+            cost = 20
         else:
-            cost = 100.0 + 10.0*(cov - 0.8)
-        return cost
+            cost = 10
         return cost
 
     def updateCost(self,cov,delay,events):
