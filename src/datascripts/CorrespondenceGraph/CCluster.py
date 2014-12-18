@@ -137,7 +137,7 @@ class QualityManager:
             # build delay profile
             # fit Kaplan-Meier empirical distribution
             self._srcDelayECDF[srcId] = ECDF(self._srcDelays[srcId])
-            self._srcAvgDelay[srcId] = np.mean(self._srcDelay[srcId])
+            self._srcAvgDelay[srcId] = np.mean(self._srcDelays[srcId])
 
             # build bias profile
             self._srcBias[srcId] = {}

@@ -55,6 +55,10 @@ print "Start building quality profiles..."
 cgraph.manager().buildQualityProfiles()
 print "\nDONE"
 
+print "Start building pricing profiles..."
+cgraph.manager().buildPricingProfiles()
+print "\nDONE"
+
 print "Build query engine"
 qEngine = CGraph.QueryEngine("/tmp/index",cgraph)
 qEngine.generateIndex()
@@ -64,11 +68,11 @@ qRes = qEngine.processQuery("entities:Obama")
 activeClusters = set([])
 for cid in qRes:
     # get cluster
-    cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
+    #cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
     activeClusters.add(cgraph.manager().clusters()[cid])
 
-gWeights = {"cov":1.0, "time":0.0, "bias":0.0}
-gf = GainFunction.GainFunction()
+gWeights = {"cov":0.5, "time":0.5, "bias":0.0}
+gf = GainFunction.GainFunction(gWeights)
 cf = CostFunction.CostFunction("fixed")
 ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
 selection, gain, cost, util = ls.selectSources()

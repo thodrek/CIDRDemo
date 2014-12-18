@@ -64,7 +64,7 @@ class Source:
         return cost
 
     def updateCost(self,cov,delay,events):
-        totalCost = self._covCost(cov) + self._delayCost(delay)
+        totalCost = self.covCost(cov) + self.delayCost(delay)
 
         self._costValues.append(totalCost)
         self._costWeights.append(events)

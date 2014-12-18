@@ -96,7 +96,6 @@ def timeliness(selection, activeClusters):
     # for each interval compute the probability of an event being captured with a delay up to that time
     probability = []
     for delay in delayIntervals:
-        print "\nNew delay value",delay
         totalEntries = 0.0
         for cluster in activeClusters:
             totalEntries += cluster.getEvents()
