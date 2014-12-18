@@ -22,8 +22,8 @@ class GainFunction:
         lower = m - ste*1.96
 
         # compute gain based on upper and lower
-        gainUpper = 1440.0/upper
-        gainLower = 1440.0/lower
+        gainUpper = 1440.0/(1.0+upper)
+        gainLower = 1440.0/(1.0+lower)
         gain = (gainUpper + gainLower)/2.0
         return gain
 
@@ -48,6 +48,6 @@ class GainFunction:
 
         if self._weights['bias'] > 0.0:
             polarity, subjectivity = Metrics.bias(selectedSources,activeClusters)
-            totalGain += self._weights['bias']*self.timeGain(polarity,subjectivity)
+            totalGain += self._weights['bias']*self.biasGain(polarity,subjectivity)
 
         return totalGain

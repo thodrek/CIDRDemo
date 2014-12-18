@@ -71,7 +71,7 @@ for cid in qRes:
     #cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
     activeClusters.add(cgraph.manager().clusters()[cid])
 
-gWeights = {"cov":0.5, "time":0.5, "bias":0.0}
+gWeights = {"cov":0.1, "time":0.1, "bias":0.8}
 gf = GainFunction.GainFunction(gWeights)
 cf = CostFunction.CostFunction("fixed")
 ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
