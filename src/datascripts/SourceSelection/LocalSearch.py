@@ -1,10 +1,12 @@
 __author__ = 'thodoris'
 
+import Metrics
 
 class LocalSearch:
 
     def __init__(self, activeClusters, gainFunction, costFunction, maxCost):
         self._activeClusters = activeClusters
+        self._srcNames = {}
         self._epsilon = 0.001
         self._gainFunction = gainFunction
         self._costFunction = costFunction
@@ -13,11 +15,15 @@ class LocalSearch:
         self._selectionCost = -1.0
         self._selectionUtil = -1.0
         self._maxCost = maxCost
+        self._selectionProfile = None
 
     def findAvailableSources(self):
         availableSrcIds = set([])
         for c in self._activeClusters:
-            availableSrcIds |= set(c.sources())
+            cSrcs = c.sources()
+            availableSrcIds |= set(cSrcs)
+            for sid in cSrcs:
+                self._srcNames[sid] = c.getSrcName(sid)
         return availableSrcIds
 
     def selectSources(self):
@@ -163,6 +169,48 @@ class LocalSearch:
                 changed = True
 
         return tmpSelection, curGain, curCost, curUtil
+
+    def selectionProfile(self):
+        if not self._selectedSources:
+            return None
+        else:
+            # initialize profile
+            profile = {}
+
+            # compute coverage, delay bounds and bias
+            cov = Metrics.coverage(self._selectedSources,self._activeClusters)
+            upperD, lowerD = Metrics.delayBounds(self._selectedSources, self._activeClusters)
+            polarity, subjectivity = Metrics.bias(self._selectedSources, self._activeClusters)
+
+            profile['cov'] = cov
+            profile['upperD'] = upperD
+            profile['lowerD'] = lowerD
+            profile['polarity'] = polarity
+            profile['subjectivity'] = subjectivity
+
+            # build source specific profiles
+            profile['srcInfo'] = {}
+            for s in self._selectedSources:
+                srcProfile = {}
+
+                # build src profile
+                srcProfile['name'] = self._srcNames[s]
+                sSel = set([s])
+                sCov = Metrics.coverage(sSel, self._activeClusters)
+                sUpperD, sLowerD = Metrics.delayBounds(sSel, self._activeClusters)
+                sPolarity, sSubjectivity = Metrics.bias(sSel, self._activeClusters)
+
+                srcProfile['cov'] = sCov
+                srcProfile['upperD'] = sUpperD
+                srcProfile['lowerD'] = sLowerD
+                srcProfile['polarity'] = sPolarity
+                srcProfile['subjectivity'] = sSubjectivity
+
+                # store src profile
+                profile['srcInfo'][s] = srcProfile
+
+        self._selectionprofile = profile
+        return profile
 
     def selectedSources(self):
         return self._selectedSources

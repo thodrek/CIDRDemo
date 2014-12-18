@@ -1,6 +1,9 @@
 __author__ = 'thodoris'
 
 from bitarray import bitarray
+from Utilities import functions
+import numpy as np
+import math
 
 def computeCoveredEntries(selection,cluster):
     totalCont = None
@@ -114,3 +117,13 @@ def timeliness(selection, activeClusters):
         probability.append(delayProb)
 
     return delayIntervals, probability
+
+def delayBounds(selection, activeClusters):
+    delayIntervals, delayProbs = timeliness(selection,activeClusters)
+    sample = functions.sampleCDF(delayIntervals,delayProbs,10000)
+    # compute average delay, upper and lower bound
+    m = np.mean(sample)
+    ste = np.std(sample)/math.sqrt(len(sample))
+    upper = m + ste*1.96
+    lower = m - ste*1.96
+    return lower, upper

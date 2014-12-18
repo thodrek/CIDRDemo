@@ -71,7 +71,8 @@ for cid in qRes:
     #cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
     activeClusters.add(cgraph.manager().clusters()[cid])
 
-gWeights = {"cov":0.1, "time":0.1, "bias":0.8}
+print "Active clusters = ", len(activeClusters)
+gWeights = {"cov":0.5, "time":0.0, "bias":0.5}
 gf = GainFunction.GainFunction(gWeights)
 cf = CostFunction.CostFunction("fixed")
 ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
@@ -89,17 +90,9 @@ selection, gain, cost, util = ls.selectSourcesGreedy()
 print "Gain = ",gain
 print "Cost = ",cost
 print "Util = ",util
-print "Selected sources:"
-for s in selection:
-    print cgraph.getSourceName(s)
 
-delayIntervals, probability = Metrics.timeliness(selection,activeClusters)
-print delayIntervals
-print probability
-
-polarity, subjectivity = Metrics.bias(selection,activeClusters)
-print polarity
-print subjectivity
+profile = ls.selectionProfile()
+print profile
 
 
 

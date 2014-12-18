@@ -77,6 +77,9 @@ class CCluster:
     def getSrcCoverage(self,srcId):
         return self._qualManager.getSrcCoverage(srcId)
 
+    def getSrcName(self,srcId):
+        return self._srcNames[srcId]
+
 class QualityManager:
 
     def __init__(self,cClusterId):
