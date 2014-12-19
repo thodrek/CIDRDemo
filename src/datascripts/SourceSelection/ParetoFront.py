@@ -117,6 +117,6 @@ class ParetoFront:
             sys.stdout.flush()
 
         # find pareto optimal points
-        paretoPoints, dominatedPoints = simple_cull(solValues)
+        paretoPoints, dominatedPoints = self._simple_cull(solValues)
 
         return paretoPoints, dominatedPoints, solToProfile
