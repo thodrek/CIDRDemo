@@ -36,8 +36,9 @@ class GainFunction:
         return gain
 
     def compute(self, selectedSources, activeClusters):
-        cov = 0.0
         totalGain = 0.0
+        if len(selectedSources) == 0.0:
+            return totalGain
         if self._weights['cov'] > 0.0:
             cov = Metrics.coverage(selectedSources,activeClusters)
             totalGain += self._weights['cov']*self.covGain(cov)

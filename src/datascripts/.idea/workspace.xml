@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParetoFront.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ParetoFront.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.5742188" vertical-offset="1393" max-vertical-offset="1905">
+            <state line="5" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="52.72" vertical-offset="1393" max-vertical-offset="1905">
               <folding>
                 <element signature="e#23#39#0" expanded="true" />
               </folding>
@@ -46,7 +46,7 @@
       <file leaf-file-name="LocalSearch.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="192" column="13" selection-start="6455" selection-end="6455" vertical-scroll-proportion="-2.4" vertical-offset="2820" max-vertical-offset="3420">
+            <state line="192" column="13" selection-start="6455" selection-end="6455" vertical-scroll-proportion="-114.6" vertical-offset="15" max-vertical-offset="3420">
               <folding>
                 <element signature="e#25#39#0" expanded="true" />
               </folding>
@@ -84,16 +84,16 @@
       <file leaf-file-name="Metrics.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="129" column="0" selection-start="4030" selection-end="4030" vertical-scroll-proportion="-17.88" vertical-offset="1443" max-vertical-offset="1980">
+            <state line="129" column="0" selection-start="4030" selection-end="4030" vertical-scroll-proportion="-31.2" vertical-offset="1110" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GainFunction.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="GainFunction.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="19" selection-start="194" selection-end="1010" vertical-scroll-proportion="-8.4" vertical-offset="270" max-vertical-offset="840">
+            <state line="40" column="28" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5714286" vertical-offset="255" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -103,7 +103,9 @@
         <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="38" column="4" selection-start="824" selection-end="824" vertical-scroll-proportion="-12.0" vertical-offset="255" max-vertical-offset="870">
-              <folding />
+              <folding>
+                <marker date="1418965402000" expanded="true" signature="867:992" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -147,7 +149,6 @@
         <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
         <option value="$PROJECT_DIR$/Utilities/functions.py" />
@@ -155,6 +156,7 @@
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/SourceSelection/ParetoFront.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
       </list>
     </option>
   </component>
@@ -760,32 +762,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="129" column="0" selection-start="4030" selection-end="4030" vertical-scroll-proportion="-17.88" vertical-offset="1443" max-vertical-offset="1980">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="19" selection-start="194" selection-end="1010" vertical-scroll-proportion="-8.4" vertical-offset="270" max-vertical-offset="840">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="4" selection-start="824" selection-end="824" vertical-scroll-proportion="-12.0" vertical-offset="255" max-vertical-offset="870">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="192" column="13" selection-start="6455" selection-end="6455" vertical-scroll-proportion="-2.4" vertical-offset="2820" max-vertical-offset="3420">
           <folding>
-            <element signature="e#25#39#0" expanded="true" />
+            <marker date="1418965402000" expanded="true" signature="867:992" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -813,10 +794,33 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="-2.5742188" vertical-offset="1393" max-vertical-offset="1905">
+        <state line="5" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="52.72" vertical-offset="1393" max-vertical-offset="1905">
           <folding>
             <element signature="e#23#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="192" column="13" selection-start="6455" selection-end="6455" vertical-scroll-proportion="-114.6" vertical-offset="15" max-vertical-offset="3420">
+          <folding>
+            <element signature="e#25#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="129" column="0" selection-start="4030" selection-end="4030" vertical-scroll-proportion="-31.2" vertical-offset="1110" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="28" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5714286" vertical-offset="255" max-vertical-offset="855">
+          <folding />
         </state>
       </provider>
     </entry>
