@@ -19,9 +19,9 @@ class ParetoFront:
         return sum([rowData[x] >= candidateRowData[x] for x in range(len(rowData))]) == len(rowData)
 
     def _simple_cull(self, inputPoints):
-        paretoPoints = set()
+        paretoPoints ={}
         candidateRowNr = 0
-        dominatedPoints = set()
+        dominatedPoints = {}
         while True:
             candidateRow = inputPoints[candidateRowNr]
             inputPoints.remove(candidateRow)
@@ -32,17 +32,17 @@ class ParetoFront:
                 if self._dominates(candidateRow, row):
                     # If it is worse on all features remove the row from the array
                     inputPoints.remove(row)
-                    dominatedPoints.add(tuple(row))
+                    dominatedPoints[row[0]] = row[1]
                 elif self._dominates(row, candidateRow):
                     nonDominated = False
-                    dominatedPoints.add(tuple(candidateRow))
+                    dominatedPoints[candidateRow[0]] = candidateRow[1]
                     rowNr += 1
                 else:
                     rowNr += 1
 
             if nonDominated:
                 # add the non-dominated point to the Pareto frontier
-                paretoPoints.add(tuple(candidateRow))
+                paretoPoints[candidateRow[0]] = candidateRow[1]
 
             if len(inputPoints) == 0:
                 break
