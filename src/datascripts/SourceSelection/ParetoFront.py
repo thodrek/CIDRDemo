@@ -1,5 +1,6 @@
 __author__ = 'thodrek'
 import itertools
+import sys
 from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction

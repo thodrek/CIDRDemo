@@ -35,10 +35,8 @@
       <file leaf-file-name="ParetoFront.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="113" column="30" selection-start="4473" selection-end="4473" vertical-scroll-proportion="0.6191406" vertical-offset="1378" max-vertical-offset="1905">
-              <folding>
-                <element signature="e#23#39#0" expanded="true" />
-              </folding>
+            <state line="2" column="10" selection-start="50" selection-end="50" vertical-scroll-proportion="0.05859375" vertical-offset="0" max-vertical-offset="1920">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -817,10 +815,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="30" selection-start="4473" selection-end="4473" vertical-scroll-proportion="0.6191406" vertical-offset="1378" max-vertical-offset="1905">
-          <folding>
-            <element signature="e#23#39#0" expanded="true" />
-          </folding>
+        <state line="2" column="10" selection-start="50" selection-end="50" vertical-scroll-proportion="0.05859375" vertical-offset="0" max-vertical-offset="1920">
+          <folding />
         </state>
       </provider>
     </entry>
