@@ -111,7 +111,7 @@ class ParetoFront:
 
             # update progress bar
             entries_processed += 1.0
-            progress = entries_processed_processed*100.0/total_entries
+            progress = entries_processed*100.0/total_entries
             sys.stdout.write("Approximating pareto front... Progress: %10.2f%% (%d out of %d)   \r" % (progress,entries_processed,total_entries))
             sys.stdout.flush()
 
