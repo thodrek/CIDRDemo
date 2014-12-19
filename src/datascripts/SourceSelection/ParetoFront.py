@@ -1,5 +1,9 @@
 __author__ = 'thodrek'
 import itertools
+from SourceSelection import LocalSearch
+from SourceSelection import GainFunction
+from SourceSelection import CostFunction
+from SourceSelection import Metrics
 class ParetoFront:
 
     def __init__(self,qualMetrics, activeClustes, cost, costType):

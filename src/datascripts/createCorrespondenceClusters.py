@@ -5,10 +5,6 @@ import cPickle as pickle
 import argparse
 import sys
 from CorrespondenceGraph import CGraph
-from SourceSelection import LocalSearch
-from SourceSelection import GainFunction
-from SourceSelection import CostFunction
-from SourceSelection import Metrics
 from SourceSelection import ParetoFront
 
 
