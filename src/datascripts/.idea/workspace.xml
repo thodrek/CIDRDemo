@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParetoFront.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ParetoFront.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="52.72" vertical-offset="1393" max-vertical-offset="1905">
+            <state line="113" column="40" selection-start="4483" selection-end="4483" vertical-scroll-proportion="0.6191406" vertical-offset="1378" max-vertical-offset="1905">
               <folding>
                 <element signature="e#23#39#0" expanded="true" />
               </folding>
@@ -90,10 +90,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GainFunction.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="GainFunction.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="28" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5714286" vertical-offset="255" max-vertical-offset="855">
+            <state line="40" column="28" selection-start="1160" selection-end="1160" vertical-scroll-proportion="-12.0" vertical-offset="255" max-vertical-offset="855">
               <folding />
             </state>
           </provider>
@@ -155,8 +155,8 @@
         <option value="$PROJECT_DIR$/SourceSelection/LocalSearch.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
-        <option value="$PROJECT_DIR$/SourceSelection/ParetoFront.py" />
         <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/ParetoFront.py" />
       </list>
     </option>
   </component>
@@ -792,15 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="35" selection-start="197" selection-end="197" vertical-scroll-proportion="52.72" vertical-offset="1393" max-vertical-offset="1905">
-          <folding>
-            <element signature="e#23#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="192" column="13" selection-start="6455" selection-end="6455" vertical-scroll-proportion="-114.6" vertical-offset="15" max-vertical-offset="3420">
@@ -819,8 +810,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="28" selection-start="1160" selection-end="1160" vertical-scroll-proportion="0.5714286" vertical-offset="255" max-vertical-offset="855">
+        <state line="40" column="28" selection-start="1160" selection-end="1160" vertical-scroll-proportion="-12.0" vertical-offset="255" max-vertical-offset="855">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="113" column="40" selection-start="4483" selection-end="4483" vertical-scroll-proportion="0.6191406" vertical-offset="1378" max-vertical-offset="1905">
+          <folding>
+            <element signature="e#23#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
