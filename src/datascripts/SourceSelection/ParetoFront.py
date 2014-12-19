@@ -71,7 +71,7 @@ class ParetoFront:
             validCombos = []
             for c in allCombos:
                 if c[0] + sum(c[1]) == 1.0:
-                    validCombos.append((c[0],c[1],c[2]))
+                    validCombos.append((c[0],c[1][0],c[1][1]))
             for c in validCombos:
                 newComb = {"cov":0.0, "time":0.0, "bias":0.0}
                 newComb[self._qualMetrics[0]] = c[0]
