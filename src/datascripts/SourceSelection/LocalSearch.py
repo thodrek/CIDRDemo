@@ -1,6 +1,7 @@
 __author__ = 'thodoris'
 
 import Metrics
+from Utilities import functions
 
 class LocalSearch:
 
@@ -187,6 +188,9 @@ class LocalSearch:
             profile['lowerD'] = lowerD
             profile['polarity'] = polarity
             profile['subjectivity'] = subjectivity
+            profile['covGain'] = functions.covGain(cov)
+            profile['delayGain'] = functions.timeGain(upperD,lowerD)
+            profile['biasGain'] = functions.biasGain(polarity,subjectivity)
 
             # build source specific profiles
             profile['srcInfo'] = {}
@@ -205,6 +209,7 @@ class LocalSearch:
                 srcProfile['lowerD'] = sLowerD
                 srcProfile['polarity'] = sPolarity
                 srcProfile['subjectivity'] = sSubjectivity
+
 
                 # store src profile
                 profile['srcInfo'][s] = srcProfile

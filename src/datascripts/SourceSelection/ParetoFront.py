@@ -1,12 +1,17 @@
 __author__ = 'thodrek'
-
+import itertools
 class ParetoFront:
 
-    def __init__(self,qualMetrics):
+    def __init__(self,qualMetrics, activeClustes, cost, costType):
         self._qualMetrics = qualMetrics
+        self._activeClusters = activeClustes
+        self._cost = cost
+        self._costType = costType
 
     def _dominates(self, row, candidateRow):
-        return sum([row[x] >= candidateRow[x] for x in range(len(row))]) == len(row)
+        rowData = row[1]
+        candidateRowData = candidateRow[1]
+        return sum([rowData[x] >= candidateRowData[x] for x in range(len(rowData))]) == len(rowData)
 
     def _simple_cull(self, inputPoints):
         paretoPoints = set()
@@ -39,29 +44,65 @@ class ParetoFront:
         return paretoPoints, dominatedPoints
 
     def findFront(self):
-        # initialize weight combinations add basic configuration
+        # build weight grid if there are multiple metrics
         weightCombs = []
         activeMetrics = float(len(self._qualMetrics))
-        newComb = {"cov":0.0, "time":0.0, "bias":0.0}
-        for metric in self._qualMetrics:
-            newComb[metric] = 1.0/activeMetrics
-        weightCombs.append(newComb)
+        gridValues = range(0,110,10)
+        gridValues = [float(x)/100.0 for x in gridValues]
 
-        # build weight grid if there are multiple metrics
-        if activeMetrics > 1.0:
+        if activeMetrics == 1.0:
+            newComb = {"cov":0.0, "time":0.0, "bias":0.0}
+            newComb[self._qualMetrics[0]] = 1.0
+            weightCombs.append(newComb)
+        elif activeMetrics == 2.0:
+            allCombos = list(itertools.product(gridValues,gridValues))
+            validCombos = []
+            for c in allCombos:
+                if sum(c) == 1.0:
+                    validCombos.append(c)
+            for c in validCombos:
+                newComb = {"cov":0.0, "time":0.0, "bias":0.0}
+                newComb[self._qualMetrics[0]] = c[0]
+                newComb[self._qualMetrics[1]] = c[1]
+                weightCombs.append(newComb)
+        else:
+            allCombos = list(itertools.product(gridValues, gridValues))
+            allCombos = list(itertools.product(gridValues, allCombos))
+            validCombos = []
+            for c in allCombos:
+                if c[0] + sum(c[1]) == 1.0:
+                    validCombos.append((c[0],c[1],c[2]))
+            for c in validCombos:
+                newComb = {"cov":0.0, "time":0.0, "bias":0.0}
+                newComb[self._qualMetrics[0]] = c[0]
+                newComb[self._qualMetrics[1]] = c[1]
+                newComb[self._qualMetrics[2]] = c[2]
+                weightCombs.append(newComb)
+            newComb = {"cov":0.34, "time":0.33, "bias":0.33}
+            weightCombs.append(newComb)
 
-
-
-        if 'cov' in self._qualMetrics:
-            covWeights
 
         # for each sample point find best solution
+        solValues = []
+        solToProfile = {}
+        solIndex = 0
+        for combo in weightCombs:
+            gWeights = combo
+            gf = GainFunction.GainFunction(gWeights)
+            cf = CostFunction.CostFunction(self._costType)
+            ls = LocalSearch.LocalSearch(self._activeClusters,gf,cf, self._cost)
+            selection, gain, cost, util = ls.selectSources()
+            profile = ls.selectionProfile()
+            # store solution profile
+            profile['totalGain'] = gain
+            profile['totalCost'] = cost
+            profile['selection'] = selection
+            solToProfile[solIndex] = profile
+            # store values
+            solValues.append((solIndex,[profile['covGain'], profile['delayGain'], profile['biasGain']]))
+            solIndex += 1
 
         # find pareto optimal points
+        paretoPoints, dominatedPoints = simple_cull(solValues)
 
-        gWeights = {"cov":0.1, "time":0.1, "bias":0.8}
-        gf = GainFunction.GainFunction(gWeights)
-        cf = CostFunction.CostFunction("fixed")
-        ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
-        selection, gain, cost, util = ls.selectSources()
-        return None
+        return paretoPoints, dominatedPoints, solToProfile

@@ -9,6 +9,7 @@ from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction
 from SourceSelection import Metrics
+from SourceSelection import ParetoFront
 
 
 # Read input arguments
@@ -71,28 +72,36 @@ for cid in qRes:
     #cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
     activeClusters.add(cgraph.manager().clusters()[cid])
 
-print "Active clusters = ", len(activeClusters)
-gWeights = {"cov":0.5, "time":0.0, "bias":0.5}
-gf = GainFunction.GainFunction(gWeights)
-cf = CostFunction.CostFunction("fixed")
-ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
-selection, gain, cost, util = ls.selectSources()
 
-print "Gain = ",gain
-print "Cost = ",cost
-print "Util = ",util
-print "Selected sources:"
-for s in selection:
-    print cgraph.getSourceName(s)
+pareto = ParetoFront.ParetoFront(['cov','time','bias'],activeClusters,10,"fixed")
 
-selection, gain, cost, util = ls.selectSourcesGreedy()
+paretoPoints, dominatedPoints, solToProfile = pareto.findFront()
 
-print "Gain = ",gain
-print "Cost = ",cost
-print "Util = ",util
+print len(paretoPoints)
+print len(domainatedPoints)
 
-profile = ls.selectionProfile()
-print profile
+#print "Active clusters = ", len(activeClusters)
+#gWeights = {"cov":0.5, "time":0.0, "bias":0.5}
+#gf = GainFunction.GainFunction(gWeights)
+#cf = CostFunction.CostFunction("fixed")
+#ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
+#selection, gain, cost, util = ls.selectSources()
+
+#print "Gain = ",gain
+#print "Cost = ",cost
+#print "Util = ",util
+#print "Selected sources:"
+#for s in selection:
+#    print cgraph.getSourceName(s)
+
+#selection, gain, cost, util = ls.selectSourcesGreedy()
+
+#print "Gain = ",gain
+#print "Cost = ",cost
+#print "Util = ",util
+
+#profile = ls.selectionProfile()
+#print profile
 
 
 

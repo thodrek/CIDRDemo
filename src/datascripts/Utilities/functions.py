@@ -34,3 +34,20 @@ def skewness(sample):
     denom = (denom/(n-1))**(3.0/2.0)
     return numerator/denom
 
+
+def covGain(cov):
+    return 1000*cov
+
+def timeGain(upper,lower):
+    gainUpper = 1440.0/(1.0+upper)
+    gainLower = 1440.0/(1.0+lower)
+    gain = (gainUpper + gainLower)/2.0
+    return gain
+
+def biasGain(polarity, subjectivity):
+    polarityDist = abs(polarity)
+    subjectivityDist = abs(subjectivity)
+    overallDistance = 0.4*polarityDist + 0.6*subjectivityDist
+    gain = 1/(0.001 + overallDistance)
+    return gain
+
