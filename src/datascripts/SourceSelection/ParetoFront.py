@@ -83,6 +83,9 @@ class ParetoFront:
 
 
         # for each sample point find best solution
+        entries_processed = 0.0
+        total_entries = len(weightCombs)
+
         solValues = []
         solToProfile = {}
         solIndex = 0
@@ -101,6 +104,12 @@ class ParetoFront:
             # store values
             solValues.append((solIndex,[profile['covGain'], profile['delayGain'], profile['biasGain']]))
             solIndex += 1
+
+            # update progress bar
+            entries_processed += 1.0
+            progress = c_processed*100.0/total_entries
+            sys.stdout.write("Approximating pareto front... Progress: %10.2f%% (%d out of %d)   \r" % (progress,entries_processed,total_entries))
+            sys.stdout.flush()
 
         # find pareto optimal points
         paretoPoints, dominatedPoints = simple_cull(solValues)
