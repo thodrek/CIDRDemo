@@ -106,7 +106,7 @@ else document.observe('dom:loaded', initFlyouts);
     var path = sankey.link();
 
     function plotResult(cgraphSearchResult) {
-        d3.json(cgraphSearchResult, function(energy) {
+        d3.json("energy.json", function(energy) {
 
           sankey
               .nodes(energy.nodes)
