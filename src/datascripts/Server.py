@@ -1,66 +1,55 @@
-from Utilities import DataLoader
-
 __author__ = 'thodoris'
 
-from twisted.internet.protocol import Factory
-from twisted.internet import reactor, protocol
+
+import sys
+import argparse
+import json
+
+from twisted.internet import reactor
+from twisted.python import log
+from twisted.web.server import Site
+from twisted.web.static import File
+
+from autobahn.twisted.websocket import WebSocketServerFactory, \
+                                       WebSocketServerProtocol
+
+from autobahn.twisted.resource import WebSocketResource, \
+                                      HTTPChannelHixie76Aware
+
 from CorrespondenceGraph import CGraph
 from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction
-import argparse
-import json
+from Utilities import DataLoader
 
 
-class CGraphApi(protocol.Protocol):
+class CGraphServerProtocol(WebSocketServerProtocol):
 
     def __init__(self,cgraph,queryengine):
         self._cgraph = cgraph
         self._queryengine = queryengine
 
-    def connectionMade(self):
-        self.transport.write("Please post your query...")
+    def onConnect(self, request):
+        print("WebSocket connection request: {}".format(request))
 
-    def dataReceived(self,data):
-        print "Received ", data
-        if "_clusters:" in data:
-            data = data.replace("_clusters:","")
-            self.retrieveClusters(str(data))
-        if "_selection:" in data:
-            data = data.replace("_selection:","")
-            self.retrieveSelectedSources(str(data))
-
-    def retrieveClusters(self,qString):
-        print qString
-        qRes = self._queryengine.processQuery(qString)
-        if len(qRes) == 0:
-            self.transport.write("No results found!")
-        else:
-            self.transport.write(str(qRes))
-
-    def retrieveSelectedSources(self,qString):
-        print qString
-        qRes = self._queryengine.processQuery(qString)
-        if len(qRes) == 0:
-            self.transport.write("No results found!")
-        else:
-            activeClusters = set([])
-            for cid in qRes:
-                # get cluster
-                activeClusters.add(self._cgraph.manager().clusters()[cid])
-
-            gf = GainFunction.GainFunction(None,None)
-            cf = CostFunction.CostFunction(None)
-            ls = LocalSearch.LocalSearch(activeClusters,gf,cf,10)
-            selection, gain, cost, util = ls.selectSources()
-            result = {'selection':str(selection),'gain':gain,'cost':cost,'util':util}
-            resJson = json.dumps(result)
-            self.transport.write(resJson)
+    def onMessage(self, payload, isBinary):
+        if not isBinary:
+            query = payload.decode('utf8')
+            print "Received ", query
+            if "_clusters:" in query:
+                query = query.replace("_clusters:","")
+                self.factory.retrieveClusters(str(query))
+            if "_selection:" in query:
+                query = query.replace("_selection:","")
+                self.factory.retrieveSelectedSources(str(query))
 
 
-class CGraphFactory(Factory):
+class CGraphFractry(WebSocketServerFactory):
 
-    def __init__(self,dataDir):
+    protocol = CGraphServerProtocol
+
+    def __init__(self, wsuri, debug, dataDir):
+        WebSocketServerFactory.__init__(self, wsuri, debug=debug, debugCodePaths=debug)
         self._loader = DataLoader.DataLoader(dataDir)
         self._loader.generateInput()
         self._cgraph = CGraph.CGraph()
@@ -76,24 +65,47 @@ class CGraphFactory(Factory):
         self._qEngine.generateIndex()
         print "\nDONE"
 
-    def buildProtocol(self, addr):
-        return CGraphApi(self._cgraph,self._qEngine)
+    def retrieveClusters(self,qString):
+        print qString
+        qRes = self._qEngine.processQuery(qString)
+        if len(qRes) == 0:
+            payload = "No results found!"
+            self.sendMessage(payload,isBinary=False)
+        else:
+            payload = str(qRes)
+            self.transport.write(payload,isBinary=False)
+
+    def retrieveSelectedSources(self,qString):
+        payload = "Not supported yet!"
+        self.sendMessage(payload, isBinary=False)
 
 
 def main():
-    """This runs the protocol on port 8000"""
     # Read input arguments
+    sys.path.append('/scratch0/CIDRDemo/src/datascripts/')
     print "Reading input args...",
-    parser = argparse.ArgumentParser(description='Please use script as "python Server.py -i <input_files_dir>.')
+    parser = argparse.ArgumentParser(description='Please use script as "python server.py -i <input_files_dir>. -d')
     parser.add_argument('-i','--input',help="Specifies input directory.",required=True)
+    parser.add_argument('-d','--debug',help="Debug option.",required=False)
     args = vars(parser.parse_args())
     inputDir = args['input']
+    if 'debug' in args:
+        debug = True
+    else:
+        debug = False
     print "DONE."
 
     print "Initalizing server..."
-    reactor.listenTCP(8000,CGraphFactory(inputDir))
-    reactor.run()
+    factory = CGraphFactory("ws://localhost:8080", debug,inputDir)
+    resource = WebSocketResource(factory)
+    ## we server static files under "/" ..
+    root = File(".")
 
-# this only runs if the module was *not* imported
-if __name__ == '__main__':
-    main()
+    ## and our WebSocket server under "/ws"
+    root.putChild("ws", resource)
+
+    ## both under one Twisted Web Site
+    site = Site(root)
+    site.protocol = HTTPChannelHixie76Aware # needed if Hixie76 is to be supported
+    reactor.listenTCP(8080, site)
+    reactor.run()
