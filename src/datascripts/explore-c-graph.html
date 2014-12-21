@@ -200,7 +200,6 @@ else document.observe('dom:loaded', initFlyouts);
             </form>
             <div align="center"><button onclick='sendCGraph();'>Explore Correspondence Graph</button></div>
             <p id="chart">
-            TEST
             <script src="http://d3js.org/d3.v2.min.js?2.9.1"></script>
             <script src="https://raw.github.com/kunalb/d3-plugins/sankey/sankey/sankey.js"></script>
             <script>
@@ -227,7 +226,7 @@ else document.observe('dom:loaded', initFlyouts);
                 var path = sankey.link();
 
                     d3.json("energy.json", function(energy) {
-
+                      log("skata")
                       sankey
                           .nodes(energy.nodes)
                           .links(energy.links)
