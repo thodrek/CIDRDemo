@@ -190,7 +190,7 @@ else document.observe('dom:loaded', initFlyouts);
                }
                sock.onmessage = function(e) {
                   //ReplaceContentInContainer("log",e.data);
-                  //log("Got: " + e.data);
+                  log("Got: " + e.data);
                   plotResult(e.data)
                }
             }
