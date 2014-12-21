@@ -73,7 +73,7 @@ pareto = ParetoFront.ParetoFront(['cov','time','bias'],activeClusters,10,"fixed"
 
 paretoPoints, dominatedPoints, solToProfile = pareto.findFront()
 
-print len(paretoPoints)
+print paretoPoints
 print len(dominatedPoints)
 
 #print "Active clusters = ", len(activeClusters)
