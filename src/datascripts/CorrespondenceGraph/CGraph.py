@@ -266,7 +266,7 @@ class DataFormater:
                 result['links'].append({"source":eNodeId, "target":cNodeId, "value":linkWeight})
 
             # find source nodes and cluster to source links
-            srcWeights = self._cgraph.manager().clusterSourceWeights[cid]
+            srcWeights = self._cgraph.manager().clusterSourceWeights()[cid]
             for sid in srcWeights:
 
                 # get src name
