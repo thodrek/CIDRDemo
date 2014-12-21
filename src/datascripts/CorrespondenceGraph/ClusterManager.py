@@ -67,6 +67,12 @@ class ClusterManager:
                         self._ClusterEntityWeights[cid][eId] = 0.0
                     self._ClusterSourceWeights[cid][eId] += 1.0
 
+    def clusterEntityWeights(self):
+        return self._ClusterEntityWeights
+
+    def clusterSourceWeights(self):
+        return self._ClusterSourceWeights
+
     def totalClusters(self):
         return self._nextId
 

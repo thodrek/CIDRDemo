@@ -11,6 +11,7 @@ from whoosh import qparser
 import os
 import re
 from textblob import TextBlob
+import json
 
 class CGraph:
     def __init__(self):
@@ -140,7 +141,6 @@ class CGraph:
         print ("The graph contains %d sources in total." % len(self._sources))
 
 
-
 class QueryEngine:
 
     def __init__(self, indexDir, cGraph):
@@ -210,6 +210,87 @@ class QueryEngine:
         for r in results:
             outClusterIds.append(int(r['cid']))
         return outClusterIds
+
+
+
+class DataFormater:
+
+    def __init__(self, cgraph):
+        self._cgraph = cgraph
+
+
+    def cgraphExploration(self, clusterIds):
+        result = {}
+        result['nodes'] = []
+        result['links'] = []
+
+        nodeIds = 0
+        sourceToNodeKey = {}
+        entityToNodeKey = {}
+
+        # populate nodes and links
+        for cid in clusterIds:
+            # set cluster name
+            clusterName = "Cluster "+str(cid)
+
+            # set cluster id
+            cNodeId = nodeIds
+            nodeIds += 1
+
+            # add cluster node
+            result['nodes'].append({"name":clusterName})
+
+            # find entity nodes and entity to cluster links
+            entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
+            for eid in entityWeights:
+
+                # get entity name
+                eName = self._cgraph.entToName(eid)
+
+
+                # assign node id to entity
+                if eid in entityToNodeKey:
+                    eNodeId = entityToNodeKey[eid]
+                else:
+                    eNodeId = nodeIds
+                    entityToNodeKey[eid] = eNodeId
+                    nodeIds += 1
+
+                # add entity node
+                result['nodes'].append({"name":eName})
+
+                # add link entity -> cluster
+                # get link weight
+                linkWeight = entityWeights[eid]
+
+                result['links'].append({"source":eNodeId, "target":cNodeId, "value":linkWeight})
+
+            # find source nodes and cluster to source links
+            srcWeights = self._cgraph.manager().clusterSourceWeights[cid]
+            for sid in srcWeights:
+
+                # get src name
+                sName = self._cgraph.getSourceName(sid)
+
+                # assign node id to source
+                if sid in sourceToNodeKey:
+                    sNodeId = sourceToNodeKey[sid]
+                else:
+                    sNodeId = nodeIds
+                    sourceToNodeKey[sid] = sNodeId
+                    nodeIds += 1
+
+                # add source node
+                result['nodes'].append({"name":sName})
+
+                # add link entity -> cluster
+                # get link weight
+                linkWeight = srcWeights[sid]
+
+                result['links'].append({"source":cNodeId, "target":sNodeId, "value":linkWeight})
+
+        # convert result to json and return
+        return json.dumps(result)
 
 
 

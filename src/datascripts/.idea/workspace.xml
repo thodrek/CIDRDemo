@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="27" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0" vertical-offset="364" max-vertical-offset="1710">
+            <state line="76" column="64" selection-start="2553" selection-end="2553" vertical-scroll-proportion="1.0363636" vertical-offset="0" max-vertical-offset="1500">
               <folding />
             </state>
           </provider>
@@ -35,10 +35,8 @@
       <file leaf-file-name="explore-c-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="13" selection-start="5054" selection-end="5054" vertical-scroll-proportion="-5.703704" vertical-offset="1178" max-vertical-offset="3366">
-              <folding>
-                <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="74" column="13" selection-start="5054" selection-end="5054" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="2805">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,12 +44,8 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="7" selection-start="6923" selection-end="6923" vertical-scroll-proportion="-30.37037" vertical-offset="656" max-vertical-offset="1692">
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="82" column="7" selection-start="6923" selection-end="6923" vertical-scroll-proportion="-26.375" vertical-offset="597" max-vertical-offset="1410">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -59,7 +53,7 @@
       <file leaf-file-name="createCorrespondenceClusters.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerTests/createCorrespondenceClusters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="75" column="18" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0" vertical-offset="40" max-vertical-offset="1926">
+            <state line="75" column="18" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1605">
               <folding />
             </state>
           </provider>
@@ -68,7 +62,7 @@
       <file leaf-file-name="CCluster.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="18" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3636">
+            <state line="82" column="18" selection-start="2496" selection-end="2496" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="3060">
               <folding />
             </state>
           </provider>
@@ -77,17 +71,21 @@
       <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="60" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0" vertical-offset="2758" max-vertical-offset="3834">
-              <folding />
+            <state line="209" column="17" selection-start="7895" selection-end="7895" vertical-scroll-proportion="-17.68" vertical-offset="2693" max-vertical-offset="4560">
+              <folding>
+                <element signature="e#25#66#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClusterManager.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ClusterManager.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="24" selection-start="249" selection-end="249" vertical-scroll-proportion="0.16356878" vertical-offset="4" max-vertical-offset="1926">
-              <folding />
+            <state line="72" column="28" selection-start="2747" selection-end="2767" vertical-scroll-proportion="-25.8" vertical-offset="420" max-vertical-offset="1695">
+              <folding>
+                <marker date="1419200533000" expanded="true" signature="2695:2737" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,19 +130,18 @@
         <option value="$PROJECT_DIR$/AutobahnClient.py" />
         <option value="$PROJECT_DIR$/WebInterface/server.py" />
         <option value="$PROJECT_DIR$/WebServer/server.py" />
-        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/explore-c-graph.html" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
+        <option value="$PROJECT_DIR$/server.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1737" />
-    <option name="y" value="-7" />
-    <option name="width" value="1863" />
-    <option name="height" value="1207" />
+    <option name="y" value="22" />
+    <option name="width" value="1920" />
+    <option name="height" value="970" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -200,7 +197,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="ServerTests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -395,15 +392,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1737" y="-7" width="1863" height="1207" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1920" height="970" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1422437" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13796735" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -412,6 +408,7 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32911393" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -431,9 +428,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11690363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -462,9 +459,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2214">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2214" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
@@ -502,7 +497,9 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="0" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="3255">
-          <folding />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -513,9 +510,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1845" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/GainFunction.py">
@@ -538,7 +533,9 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="0" selection-start="6990" selection-end="6990" vertical-scroll-proportion="0.0" vertical-offset="3510" max-vertical-offset="3618">
-          <folding />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -562,7 +559,9 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="172" column="41" selection-start="6354" selection-end="6354" vertical-scroll-proportion="0.0" vertical-offset="2220" max-vertical-offset="3045">
-          <folding />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -581,7 +580,9 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="117" column="0" selection-start="4302" selection-end="4302" vertical-scroll-proportion="0.0" vertical-offset="1755" max-vertical-offset="1845">
-          <folding />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -605,7 +606,9 @@
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="34" selection-start="1254" selection-end="1254" vertical-scroll-proportion="0.0" vertical-offset="684" max-vertical-offset="2142">
-          <folding />
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -691,63 +694,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ServerTests/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="97" column="0" selection-start="3188" selection-end="3225" vertical-scroll-proportion="0.88289964" vertical-offset="796" max-vertical-offset="1872">
-          <folding />
-        </state>
+        <state line="97" column="0" selection-start="3188" selection-end="3225" vertical-scroll-proportion="0.88289964" vertical-offset="796" max-vertical-offset="1872" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ServerTests/AutobahnClient.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.401487" vertical-offset="0" max-vertical-offset="1076">
-          <folding />
-        </state>
+        <state line="33" column="0" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.401487" vertical-offset="0" max-vertical-offset="1076" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/DataLoader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="0.23420075" vertical-offset="0" max-vertical-offset="1076">
-          <folding />
-        </state>
+        <state line="17" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="0.23420075" vertical-offset="0" max-vertical-offset="1076" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="2430">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ServerTests/createCorrespondenceClusters.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="75" column="18" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0" vertical-offset="1350" max-vertical-offset="1998">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="27" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.0" vertical-offset="738" max-vertical-offset="2052">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="7" selection-start="6923" selection-end="6923" vertical-scroll-proportion="-30.37037" vertical-offset="656" max-vertical-offset="1692">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
+        <state line="2" column="0" selection-start="25" selection-end="25" vertical-scroll-proportion="0.0" vertical-offset="36" max-vertical-offset="2430" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="13" selection-start="5054" selection-end="5054" vertical-scroll-proportion="-5.703704" vertical-offset="1178" max-vertical-offset="3366">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="74" column="13" selection-start="5054" selection-end="5054" vertical-scroll-proportion="0.0" vertical-offset="1110" max-vertical-offset="2805">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -758,16 +726,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="60" selection-start="1445" selection-end="1445" vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="3834">
+        <state line="82" column="7" selection-start="6923" selection-end="6923" vertical-scroll-proportion="-26.375" vertical-offset="597" max-vertical-offset="1410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ServerTests/createCorrespondenceClusters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="18" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0" vertical-offset="470" max-vertical-offset="1605">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="249" selection-end="249" vertical-scroll-proportion="0.16356878" vertical-offset="4" max-vertical-offset="1926">
+        <state line="72" column="28" selection-start="2747" selection-end="2767" vertical-scroll-proportion="-25.8" vertical-offset="420" max-vertical-offset="1695">
+          <folding>
+            <marker date="1419200533000" expanded="true" signature="2695:2737" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="209" column="17" selection-start="7895" selection-end="7895" vertical-scroll-proportion="-17.68" vertical-offset="2693" max-vertical-offset="4560">
+          <folding>
+            <element signature="e#25#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="76" column="64" selection-start="2553" selection-end="2553" vertical-scroll-proportion="1.0363636" vertical-offset="0" max-vertical-offset="1500">
           <folding />
         </state>
       </provider>
