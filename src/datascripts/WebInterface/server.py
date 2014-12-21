@@ -16,6 +16,11 @@ from autobahn.twisted.websocket import WebSocketServerFactory, \
 from autobahn.twisted.resource import WebSocketResource, \
                                       HTTPChannelHixie76Aware
 
+from CorrespondenceGraph import CGraph
+from SourceSelection import LocalSearch
+from SourceSelection import GainFunction
+from SourceSelection import CostFunction
+
 
 class CGraphServerProtocol(WebSocketServerProtocol):
 
