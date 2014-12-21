@@ -25,10 +25,6 @@ from Utilities import DataLoader
 
 class CGraphServerProtocol(WebSocketServerProtocol):
 
-    def __init__(self,cgraph,queryengine):
-        self._cgraph = cgraph
-        self._queryengine = queryengine
-
     def onConnect(self, request):
         print("WebSocket connection request: {}".format(request))
 

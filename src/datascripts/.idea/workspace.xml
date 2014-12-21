@@ -63,19 +63,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="18" selection-start="476" selection-end="476" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="1755">
-              <folding />
+            <state line="29" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.34545454" vertical-offset="150" max-vertical-offset="1695">
+              <folding>
+                <element signature="e#26#36#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="explore-c-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="146" column="92" selection-start="7830" selection-end="7830" vertical-scroll-proportion="0.72324723" vertical-offset="1602" max-vertical-offset="2430">
+            <state line="146" column="92" selection-start="7830" selection-end="7830" vertical-scroll-proportion="-24.5" vertical-offset="1602" max-vertical-offset="2430">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -134,8 +136,8 @@
         <option value="$PROJECT_DIR$/AutobahnClient.py" />
         <option value="$PROJECT_DIR$/WebInterface/server.py" />
         <option value="$PROJECT_DIR$/WebServer/server.py" />
-        <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/explore-c-graph.html" />
+        <option value="$PROJECT_DIR$/server.py" />
       </list>
     </option>
   </component>
@@ -742,18 +744,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
+    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="18" selection-start="476" selection-end="476" vertical-scroll-proportion="-10.8" vertical-offset="0" max-vertical-offset="1755">
-          <folding />
+        <state line="146" column="92" selection-start="7830" selection-end="7830" vertical-scroll-proportion="-24.5" vertical-offset="1602" max-vertical-offset="2430">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+    <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="146" column="92" selection-start="7830" selection-end="7830" vertical-scroll-proportion="0.72324723" vertical-offset="1602" max-vertical-offset="2430">
+        <state line="29" column="0" selection-start="808" selection-end="808" vertical-scroll-proportion="0.34545454" vertical-offset="150" max-vertical-offset="1695">
           <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#26#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
