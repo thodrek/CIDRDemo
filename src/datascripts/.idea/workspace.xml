@@ -63,13 +63,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="13" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.07272727" vertical-offset="630" max-vertical-offset="1755">
+            <state line="46" column="13" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-2.4" vertical-offset="630" max-vertical-offset="1755">
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="17" selection-start="5788" selection-end="5788" vertical-scroll-proportion="0.6863469" vertical-offset="822" max-vertical-offset="1635">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -117,6 +126,7 @@
         <option value="$PROJECT_DIR$/WebInterface/server.py" />
         <option value="$PROJECT_DIR$/WebServer/server.py" />
         <option value="$PROJECT_DIR$/server.py" />
+        <option value="$PROJECT_DIR$/explore-c-graph.html" />
       </list>
     </option>
   </component>
@@ -711,10 +721,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="13" selection-start="1398" selection-end="1398" vertical-scroll-proportion="0.07272727" vertical-offset="630" max-vertical-offset="1755">
+        <state line="46" column="13" selection-start="1398" selection-end="1398" vertical-scroll-proportion="-2.4" vertical-offset="630" max-vertical-offset="1755">
           <folding>
             <element signature="e#26#36#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="17" selection-start="5788" selection-end="5788" vertical-scroll-proportion="0.6863469" vertical-offset="822" max-vertical-offset="1635">
+          <folding />
         </state>
       </provider>
     </entry>
