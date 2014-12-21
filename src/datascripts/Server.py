@@ -1,3 +1,5 @@
+from Utilities import DataLoader
+
 __author__ = 'thodoris'
 
 from twisted.internet.protocol import Factory
@@ -6,7 +8,6 @@ from CorrespondenceGraph import CGraph
 from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction
-import DataLoader
 import argparse
 import json
 

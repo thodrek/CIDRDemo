@@ -20,6 +20,7 @@ from CorrespondenceGraph import CGraph
 from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction
+from Utilities import DataLoader
 
 
 class CGraphServerProtocol(WebSocketServerProtocol):
