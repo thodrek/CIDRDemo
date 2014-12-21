@@ -44,7 +44,7 @@ class CGraphServerProtocol(WebSocketServerProtocol):
                 self.factory.retrieveSelectedSources(str(query))
 
 
-class CGraphFractry(WebSocketServerFactory):
+class CGraphFractory(WebSocketServerFactory):
 
     protocol = CGraphServerProtocol
 
