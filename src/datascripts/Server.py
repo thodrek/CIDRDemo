@@ -34,10 +34,12 @@ class CGraphServerProtocol(WebSocketServerProtocol):
             print "Received ", query
             if "_clusters:" in query:
                 query = query.replace("_clusters:","")
-                self.factory.retrieveClusters(str(query))
+                payload = self.factory.retrieveClusters(str(query))
+                self.sendMessage(payload,isBinary=False)
             if "_selection:" in query:
                 query = query.replace("_selection:","")
-                self.factory.retrieveSelectedSources(str(query))
+                payload = self.factory.retrieveSelectedSources(str(query))
+                self.sendMessage(payload,isBinary=False)
 
 
 class CGraphFactory(WebSocketServerFactory):
@@ -66,14 +68,13 @@ class CGraphFactory(WebSocketServerFactory):
         qRes = self._qEngine.processQuery(qString)
         if len(qRes) == 0:
             payload = "No results found!"
-            self.sendMessage(payload,isBinary=False)
         else:
             payload = str(qRes)
-            self.sendMessage(payload,isBinary=False)
+        return payload
 
     def retrieveSelectedSources(self,qString):
         payload = "Not supported yet!"
-        self.sendMessage(payload, isBinary=False)
+        return payload
 
 
 def main():

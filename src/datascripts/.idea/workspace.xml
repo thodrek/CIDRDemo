@@ -66,7 +66,7 @@
       <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="71" column="52" selection-start="2335" selection-end="2335" vertical-scroll-proportion="0.6909091" vertical-offset="495" max-vertical-offset="1695">
+            <state line="41" column="27" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.29090908" vertical-offset="375" max-vertical-offset="1710">
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -755,7 +755,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="52" selection-start="2335" selection-end="2335" vertical-scroll-proportion="0.6909091" vertical-offset="495" max-vertical-offset="1695">
+        <state line="41" column="27" selection-start="1373" selection-end="1373" vertical-scroll-proportion="0.29090908" vertical-offset="375" max-vertical-offset="1710">
           <folding>
             <element signature="e#26#36#0" expanded="true" />
           </folding>
