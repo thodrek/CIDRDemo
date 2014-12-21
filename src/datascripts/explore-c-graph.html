@@ -82,20 +82,37 @@ else document.observe('dom:loaded', initFlyouts);
                   sock = null;
                }
                sock.onmessage = function(e) {
+                  //ReplaceContentInContainer("log",e.data);
                   log("Got: " + e.data);
                }
             }
          };
          function sendCGraph() {
+            // form message to be sent
             var entities = document.getElementById('entities').value;
             var topics = document.getElementById('topics').value;
-            var entityPrefix = "_clusters:entities:"
-            var msg = entityPrefix.concat(entities);
-            if (sock) {
-               sock.send(msg);
-               log("Sent " + msg);
-            } else {
-               log("Not connected.");
+            var msg = ""
+            if (entities != "") {
+                msg = "_clusters:entities:"
+                msg = msg.concat(entities)
+            }
+            if (topics != "") {
+                if (msg == "") {
+                    msg = "_clusters:topic:"
+                }
+                else {
+                    msg = msg.concat(" AND topic:")
+                }
+                msg = msg.concat(topics)
+            }
+            if (msg != "") {
+                if (sock) {
+                   sock.send(msg);
+                   log("Sent " + msg);
+                }
+                else {
+                   log("Not connected.");
+                }
             }
          };
          function log(m) {
@@ -103,6 +120,14 @@ else document.observe('dom:loaded', initFlyouts);
             ellog.scrollTop = ellog.scrollHeight;
          };
 </script>
+<script type="text/javascript"><!--
+function ReplaceContentInContainer(id,content) {
+var container = document.getElementById(id);
+container.innerHTML = content;
+}
+//--></script>
+
+
 </head>
 <body class='no-header-page  wsite-theme-light wsite-page-explore-c-graph'>
 <div id="header-wrap">
@@ -136,16 +161,16 @@ else document.observe('dom:loaded', initFlyouts);
             <table align="center">
             <tr>
             <td align="right">Entities:</td>
-            <td align="left"><input id="entities" type="text" size="50" maxlength="50" value="Search for Entities" /></td>
+            <td align="left"><input id="entities" type="text" size="50" maxlength="50" /></td>
             </tr>
             <tr>
             <td align="right">Topics:</td>
-            <td align="left"><input id="topics" type="text" size="50" maxlength="50" value="Search for Topics" /></td>
+            <td align="left"><input id="topics" type="text" size="50" maxlength="50"/></td>
             </tr>
             </table>
             </form>
-            <div align="center"><button onclick='sendCGraph();'>Search Source Sight</button></div>
-            <pre id="log" style="height: 80em; overflow-y: scroll; background-color: #FFFFFF;"></pre>
+            <div align="center"><button onclick='sendCGraph();'>Explore Correspondence Graph</button></div>
+            <pre id="log" style="height: 50em; width: 80em; overflow-y: scroll; background-color: #FFFFFF;"></pre>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
 
