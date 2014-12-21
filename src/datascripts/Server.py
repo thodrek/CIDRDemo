@@ -69,7 +69,7 @@ class CGraphFactory(WebSocketServerFactory):
             self.sendMessage(payload,isBinary=False)
         else:
             payload = str(qRes)
-            self.transport.write(payload,isBinary=False)
+            self.sendMessage(payload,isBinary=False)
 
     def retrieveSelectedSources(self,qString):
         payload = "Not supported yet!"
