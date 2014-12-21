@@ -5,12 +5,15 @@ import sys
 
 class ClusterManager:
 
-    def __init__(self):
+    def __init__(self,cgraph):
+        self._cgraph = cgraph
         self._entitiesToClusters = {}
         self._topicsToClusters = {}
         self._nextId = 0
         self._cClusters = {}
         self._sources = {}
+        self._ClusterEntityWeights = {}
+        self._ClusterSourceWeights = {}
 
 
     def addCCluster(self, entities, topics):
@@ -44,6 +47,25 @@ class ClusterManager:
                 self._cClusters[c].registerDelay(source.id(),delay)
                 self._cClusters[c].registerBias(source.id(), polarity, subjectivity)
 
+                # update cluster-entity weights
+                cid = self._cClusters[c].id()
+                srcId = source.id()
+                entIds = self._cClusters[c].entities()
+
+                # update cluster source weight
+                if cid not in self._ClusterSourceWeights:
+                    self._ClusterSourceWeights[cid] = {}
+                if srcId not in self._ClusterSourceWeights[cid]:
+                    self._ClusterSourceWeights[cid][srcId] = 0.0
+                self._ClusterSourceWeights[cid][srcId] += 1.0
+
+                # update cluster entity weight
+                for eId in entIds:
+                    if cid not in self._ClusterEntityWeights:
+                        self._ClusterEntityWeights[cid] = {}
+                    if eId not in self._ClusterEntityWeights[cid]:
+                        self._ClusterEntityWeights[cid][eId] = 0.0
+                    self._ClusterSourceWeights[cid][eId] += 1.0
 
     def totalClusters(self):
         return self._nextId

@@ -14,7 +14,7 @@ from textblob import TextBlob
 
 class CGraph:
     def __init__(self):
-        self._Manager = ClusterManager()
+        self._Manager = ClusterManager(self)
         self._cEntRefToName = {}
         self._cTopicToName = {}
         self._sources = {}
