@@ -82,7 +82,6 @@ class CGraphFractry(WebSocketServerFactory):
 
 def main():
     # Read input arguments
-    sys.path.append('/scratch0/CIDRDemo/src/datascripts/')
     print "Reading input args...",
     parser = argparse.ArgumentParser(description='Please use script as "python server.py -i <input_files_dir>. -d')
     parser.add_argument('-i','--input',help="Specifies input directory.",required=True)
