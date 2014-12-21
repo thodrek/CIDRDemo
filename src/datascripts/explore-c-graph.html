@@ -54,6 +54,55 @@ else document.observe('dom:loaded', initFlyouts);
 })(window._W && _W.jQuery)
 //-->
 </script>
+<script type="text/javascript">
+         var sock = null;
+         var ellog = null;
+         window.onload = function() {
+            ellog = document.getElementById('log');
+            var wsuri;
+            if (window.location.protocol === "file:") {
+               wsuri = "ws://127.0.0.1:8080/ws?a=23&foo=bar";
+            } else {
+               wsuri = "ws://" + window.location.hostname + ":8080/ws?a=23&foo=bar";
+            }
+            if ("WebSocket" in window) {
+               sock = new WebSocket(wsuri);
+            } else if ("MozWebSocket" in window) {
+               sock = new MozWebSocket(wsuri);
+            } else {
+               log("Browser does not support WebSocket!");
+               window.location = "http://autobahn.ws/unsupportedbrowser";
+            }
+            if (sock) {
+               sock.onopen = function() {
+                  log("Connected to " + wsuri);
+               }
+               sock.onclose = function(e) {
+                  log("Connection closed (wasClean = " + e.wasClean + ", code = " + e.code + ", reason = '" + e.reason + "')");
+                  sock = null;
+               }
+               sock.onmessage = function(e) {
+                  log("Got: " + e.data);
+               }
+            }
+         };
+         function sendCGraph() {
+            var entities = document.getElementById('entities').value;
+            var topics = document.getElementById('topics').value;
+            var entityPrefix = "_clusters:entities:"
+            var msg = entityPrefix.concat(entities);
+            if (sock) {
+               sock.send(msg);
+               log("Sent " + msg);
+            } else {
+               log("Not connected.");
+            }
+         };
+         function log(m) {
+            ellog.innerHTML += m + '\n';
+            ellog.scrollTop = ellog.scrollHeight;
+         };
+</script>
 </head>
 <body class='no-header-page  wsite-theme-light wsite-page-explore-c-graph'>
 <div id="header-wrap">
@@ -95,6 +144,8 @@ else document.observe('dom:loaded', initFlyouts);
             </tr>
             </table>
             </form>
+            <button onclick='sendCGraph();'>Search Source Sight</button>
+            <pre id="log" style="height: 20em; overflow-y: scroll; background-color: #FFFFFF;"></pre>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
 
