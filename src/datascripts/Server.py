@@ -105,6 +105,5 @@ def main():
 
     ## both under one Twisted Web Site
     site = Site(root)
-    site.protocol = HTTPChannelHixie76Aware # needed if Hixie76 is to be supported
     reactor.listenTCP(8080, site)
     reactor.run()
