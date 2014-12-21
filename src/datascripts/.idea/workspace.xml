@@ -27,7 +27,9 @@
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="34" column="37" selection-start="995" selection-end="995" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="1500">
-              <folding />
+              <folding>
+                <marker date="1419201426000" expanded="true" signature="1534:2255" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -35,7 +37,7 @@
       <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="230" column="38" selection-start="10159" selection-end="10159" vertical-scroll-proportion="0.20664206" vertical-offset="3282" max-vertical-offset="4425">
+            <state line="193" column="36" selection-start="9054" selection-end="9054" vertical-scroll-proportion="0.8154982" vertical-offset="2232" max-vertical-offset="4455">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -736,7 +738,9 @@
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="34" column="37" selection-start="995" selection-end="995" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="1500">
-          <folding />
+          <folding>
+            <marker date="1419201426000" expanded="true" signature="1534:2255" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -758,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="230" column="38" selection-start="10159" selection-end="10159" vertical-scroll-proportion="0.20664206" vertical-offset="3282" max-vertical-offset="4425">
+        <state line="193" column="36" selection-start="9054" selection-end="9054" vertical-scroll-proportion="0.8154982" vertical-offset="2232" max-vertical-offset="4455">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
