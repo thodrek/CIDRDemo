@@ -17,10 +17,15 @@ class MyClientProtocol(WebSocketClientProtocol):
         print "Connected to server"
 
     def onMessage(self, payload, isBinary):
-        if isBinary:
-            return "Binary message received"
-        else:
-            return "Text message received: "+ str(payload.decode('utf8'))
+        if not isBinary:
+            query = payload.decode('utf8')
+            print "Received ", query
+            if "_clusters:" in query:
+                query = query.replace("_clusters:","")
+                self.retrieveClusters(str(query))
+            if "_selection:" in query:
+                data = query.replace("_selection:","")
+                self.retrieveSelectedSources(str(query))
 
     def sendMessage(self,s):
         obj = {'a':s,'b':2}
