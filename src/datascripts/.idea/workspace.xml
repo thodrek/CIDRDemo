@@ -26,7 +26,7 @@
       <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ServerTests/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="-4.8" vertical-offset="30" max-vertical-offset="1560">
+            <state line="97" column="0" selection-start="3188" selection-end="3225" vertical-scroll-proportion="-28.8" vertical-offset="735" max-vertical-offset="1560">
               <folding />
             </state>
           </provider>
@@ -66,7 +66,7 @@
       <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="106" column="21" selection-start="3456" selection-end="3456" vertical-scroll-proportion="0.8545455" vertical-offset="885" max-vertical-offset="1710">
+            <state line="111" column="10" selection-start="3547" selection-end="3547" vertical-scroll-proportion="0.94545454" vertical-offset="885" max-vertical-offset="1755">
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -668,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ServerTests/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="313" selection-end="313" vertical-scroll-proportion="-4.8" vertical-offset="30" max-vertical-offset="1560">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/DataLoader.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="330" selection-end="330" vertical-scroll-proportion="-8.4" vertical-offset="0" max-vertical-offset="840">
@@ -709,9 +702,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ServerTests/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="97" column="0" selection-start="3188" selection-end="3225" vertical-scroll-proportion="-28.8" vertical-offset="735" max-vertical-offset="1560">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="21" selection-start="3456" selection-end="3456" vertical-scroll-proportion="0.8545455" vertical-offset="885" max-vertical-offset="1710">
+        <state line="111" column="10" selection-start="3547" selection-end="3547" vertical-scroll-proportion="0.94545454" vertical-offset="885" max-vertical-offset="1755">
           <folding>
             <element signature="e#26#36#0" expanded="true" />
           </folding>

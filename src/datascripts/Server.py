@@ -107,3 +107,6 @@ def main():
     site = Site(root)
     reactor.listenTCP(8080, site)
     reactor.run()
+
+if __name__ == '__main__':
+    main()
