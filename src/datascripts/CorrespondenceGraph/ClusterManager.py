@@ -65,7 +65,7 @@ class ClusterManager:
                         self._ClusterEntityWeights[cid] = {}
                     if eId not in self._ClusterEntityWeights[cid]:
                         self._ClusterEntityWeights[cid][eId] = 0.0
-                    self._ClusterEntityeWeights[cid][eId] += 1.0
+                    self._ClusterEntityWeights[cid][eId] += 1.0
 
     def clusterEntityWeights(self):
         return self._ClusterEntityWeights
