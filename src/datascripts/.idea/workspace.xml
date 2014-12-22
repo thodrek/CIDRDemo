@@ -26,7 +26,7 @@
       <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="112" column="18" selection-start="5775" selection-end="5801" vertical-scroll-proportion="0.60076046" vertical-offset="1364" max-vertical-offset="4560">
+            <state line="152" column="21" selection-start="7194" selection-end="7194" vertical-scroll-proportion="0.36501902" vertical-offset="2088" max-vertical-offset="4680">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -736,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="24" selection-start="2783" selection-end="2783" vertical-scroll-proportion="-15.04" vertical-offset="569" max-vertical-offset="1605">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="25" selection-start="6816" selection-end="6816" vertical-scroll-proportion="-48.125" vertical-offset="0" max-vertical-offset="1410">
@@ -758,9 +751,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="82" column="24" selection-start="2783" selection-end="2783" vertical-scroll-proportion="-15.04" vertical-offset="569" max-vertical-offset="1605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="112" column="18" selection-start="5775" selection-end="5801" vertical-scroll-proportion="0.60076046" vertical-offset="1364" max-vertical-offset="4560">
+        <state line="152" column="21" selection-start="7194" selection-end="7194" vertical-scroll-proportion="0.36501902" vertical-offset="2088" max-vertical-offset="4680">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
