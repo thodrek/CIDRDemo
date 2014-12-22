@@ -110,8 +110,10 @@ else document.observe('dom:loaded', initFlyouts);
                   sock = null;
                }
                sock.onmessage = function(e) {
-                  //ReplaceContentInContainer("log",e.data);
-                  log("Got: " + e.data);
+                  if (typeof myVar == 'string' || myVar instanceof String) {
+                    //ReplaceContentInContainer("log",e.data);
+                    log("Got: " + e.data);
+                  }
                   var inputData = JSON.parse(e.data)
                   plotcGraphResult(inputData)
                }
