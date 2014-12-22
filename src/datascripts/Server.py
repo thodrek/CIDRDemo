@@ -70,7 +70,6 @@ class CGraphFactory(WebSocketServerFactory):
     def retrieveClusters(self,qString):
         print qString
         qRes, status = self._qEngine.processQuery(qString)
-        print status
         if status == "OK":
             if len(qRes) == 0:
                 payload = "No results found!"
@@ -78,7 +77,10 @@ class CGraphFactory(WebSocketServerFactory):
                 # Format result to json
                 payload = self._dataformater.cgraphExploration(qRes)
         else:
-            payload = status
+            tmpStr = str(status)
+            tmpStr = tmpStr.replace("entities:", "")
+            tmpStr = tmpStr.replace("topic:", "")
+            payload = tmpStr
         return payload
 
     def retrieveSelectedSources(self,qString):
