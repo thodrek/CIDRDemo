@@ -224,70 +224,54 @@ class DataFormater:
         result['nodes'] = []
         result['links'] = []
 
-        nodeIds = 0
-        sourceToNodeKey = {}
-        entityToNodeKey = {}
-
-        # populate nodes and links
+        nodes = {}
+        nid = 0
+        # populate nodes
         for cid in clusterIds:
-            # set cluster name
             clusterName = "Cluster "+str(cid)
-
-            # set cluster id
-            cNodeId = nodeIds
-            nodeIds += 1
-
-            # add cluster node
-            result['nodes'].append({"name":clusterName})
-
-            # find entity nodes and entity to cluster links
+            if clusterName not in nodes:
+                nodes[clusterName] = nid
+                nid += 1
             entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
             for eid in entityWeights:
-
-                # get entity name
                 eName = self._cgraph.entToName(eid)
-
-
-                # assign node id to entity
-                if eid in entityToNodeKey:
-                    eNodeId = entityToNodeKey[eid]
-                else:
-                    eNodeId = nodeIds
-                    entityToNodeKey[eid] = eNodeId
-                    nodeIds += 1
-
-                # add entity node
-                result['nodes'].append({"name":eName})
-
-                # add link entity -> cluster
-                # get link weight
-                linkWeight = entityWeights[eid]
-
-                result['links'].append({"source":eNodeId, "target":cNodeId, "value":linkWeight})
-
-            # find source nodes and cluster to source links
+                if eName not in nodes:
+                    nodes[eName] = nid
+                    nid += 1
             srcWeights = self._cgraph.manager().clusterSourceWeights()[cid]
             for sid in srcWeights:
-
-                # get src name
                 sName = self._cgraph.getSourceName(sid)
+                if sName not in nodes:
+                    nodes[sName] = nid
+                    nid += 1
 
-                # assign node id to source
-                if sid in sourceToNodeKey:
-                    sNodeId = sourceToNodeKey[sid]
-                else:
-                    sNodeId = nodeIds
-                    sourceToNodeKey[sid] = sNodeId
-                    nodeIds += 1
-
-                # add source node
-                result['nodes'].append({"name":sName})
-
-                # add link entity -> cluster
-                # get link weight
+        edges = {}
+        # populate edges
+        for cid in clusterIds:
+            clusterName = "Cluster "+str(cid)
+            entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
+            for eid in entityWeights:
+                eName = self._cgraph.entToName(eid)
+                linkWeight = entityWeights[eid]
+                edge = (eName,clusterName)
+                if edge not in edges:
+                    edges[edge] = 0.0
+                edges[edge] += linkWeight
+            srcWeights = self._cgraph.manager().clusterSourceWeights()[cid]
+            for sid in srcWeights:
+                sName = self._cgraph.getSourceName(sid)
                 linkWeight = srcWeights[sid]
+                edge = (clusterName,sName)
+                if edge not in edges:
+                    edges[edge] = 0.0
+                edges[edge] += linkWeight
 
-                result['links'].append({"source":cNodeId, "target":sNodeId, "value":linkWeight})
+        # construct result
+        for n in nodes:
+            result['nodes'].append({"name":n})
+
+        for e in edges:
+            result['links'].append({"source":nodes[e[0]], "target":nodes[e[1]], "value":edges[e]})
 
         # convert result to json and return
         return json.dumps(result)
