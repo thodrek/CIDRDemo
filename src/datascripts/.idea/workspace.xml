@@ -23,11 +23,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="explore-c-graph.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="235" column="34" selection-start="10009" selection-end="10009" vertical-scroll-proportion="-107.083336" vertical-offset="955" max-vertical-offset="4500">
-              <folding />
+            <state line="111" column="45" selection-start="5752" selection-end="5752" vertical-scroll-proportion="0.4581749" vertical-offset="1424" max-vertical-offset="4545">
+              <folding>
+                <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -68,10 +70,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="77" column="25" selection-start="6816" selection-end="6816" vertical-scroll-proportion="0.7927757" vertical-offset="738" max-vertical-offset="1410">
+            <state line="77" column="25" selection-start="6816" selection-end="6816" vertical-scroll-proportion="-48.125" vertical-offset="0" max-vertical-offset="1410">
               <folding>
                 <element signature="n#style#0;n#span#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -135,10 +137,10 @@
         <option value="$PROJECT_DIR$/WebInterface/server.py" />
         <option value="$PROJECT_DIR$/WebServer/server.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
-        <option value="$PROJECT_DIR$/explore-c-graph.html" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/explore-c-graph.html" />
       </list>
     </option>
   </component>
@@ -727,13 +729,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="235" column="34" selection-start="10009" selection-end="10009" vertical-scroll-proportion="-107.083336" vertical-offset="955" max-vertical-offset="4500">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="211" column="20" selection-start="7991" selection-end="7991" vertical-scroll-proportion="-13.88" vertical-offset="2653" max-vertical-offset="4275">
@@ -750,7 +745,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="77" column="25" selection-start="6816" selection-end="6816" vertical-scroll-proportion="0.7927757" vertical-offset="738" max-vertical-offset="1410">
+        <state line="77" column="25" selection-start="6816" selection-end="6816" vertical-scroll-proportion="-48.125" vertical-offset="0" max-vertical-offset="1410">
           <folding>
             <element signature="n#style#0;n#span#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#h2#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -759,6 +754,15 @@
             <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#span#0;n#span#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="111" column="45" selection-start="5752" selection-end="5752" vertical-scroll-proportion="0.4581749" vertical-offset="1424" max-vertical-offset="4545">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

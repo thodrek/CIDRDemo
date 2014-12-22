@@ -110,8 +110,11 @@ else document.observe('dom:loaded', initFlyouts);
                   sock = null;
                }
                sock.onmessage = function(e) {
-                  //ReplaceContentInContainer("log",e.data);
-                  log("Got: " + e.data);
+               if (typeof e.data == 'string' || e.data instanceof String) {
+                  d3.select('svg').remove();
+                  ReplaceContentInContainer("log",e.data);
+               }
+               else {
                   var inputData = JSON.parse(e.data)
                   plotcGraphResult(inputData)
                }
@@ -281,9 +284,9 @@ function plotcGraphResult(inputData) {
             </table>
             </form>
             <div align="center"><button onclick='sendCGraph();'>Explore Correspondence Graph</button></div>
+            <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
             <p id="chart">
             </p>
-            <pre id="log" style="height: 5em; width: 80em; overflow-y: scroll; background-color: #FFFFFF;"></pre>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
 
