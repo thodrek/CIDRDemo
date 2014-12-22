@@ -205,11 +205,15 @@ class QueryEngine:
 
         # check query for misspelled words
         corrected = searcher.correct_query(q,queryString)
+        if corrected.query != q:
+            status = "Did you mean: "+corrected.string
+            return None, status
         results = searcher.search(corrected.query, limit=30)
+        status = "OK"
         outClusterIds = []
         for r in results:
             outClusterIds.append(int(r['cid']))
-        return outClusterIds
+        return outClusterIds, status
 
 
 
