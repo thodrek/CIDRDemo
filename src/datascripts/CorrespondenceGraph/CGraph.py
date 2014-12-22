@@ -225,23 +225,27 @@ class DataFormater:
         result['links'] = []
 
         nodes = {}
+        nodeNames = []
         nid = 0
         # populate nodes
         for cid in clusterIds:
             clusterName = "Cluster "+str(cid)
             if clusterName not in nodes:
                 nodes[clusterName] = nid
+                nodeNames.append(clusterName)
                 nid += 1
             entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
             for eid in entityWeights:
                 eName = self._cgraph.entToName(eid)
                 if eName not in nodes:
                     nodes[eName] = nid
+                    nodeNames.append(eName)
                     nid += 1
             srcWeights = self._cgraph.manager().clusterSourceWeights()[cid]
             for sid in srcWeights:
                 sName = self._cgraph.getSourceName(sid)
                 if sName not in nodes:
+                    nodeNames.append(sName)
                     nodes[sName] = nid
                     nid += 1
 
@@ -267,7 +271,7 @@ class DataFormater:
                 edges[edge] += linkWeight
 
         # construct result
-        for n in nodes:
+        for n in nodeNames:
             result['nodes'].append({"name":n})
 
         for e in edges:
