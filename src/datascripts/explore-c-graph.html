@@ -116,10 +116,8 @@ else document.observe('dom:loaded', initFlyouts);
                     ReplaceContentInContainer("log",e.data);
                     //log("Got: " + e.data);
                   }
-                  else {
-                    var inputData = JSON.parse(e.data)
-                    plotcGraphResult(inputData)
-                  }
+                  var inputData = JSON.parse(e.data)
+                  plotcGraphResult(inputData)
                }
             }
          };
