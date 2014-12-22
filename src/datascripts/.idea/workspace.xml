@@ -23,10 +23,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="explore-c-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="21" selection-start="7073" selection-end="7073" vertical-scroll-proportion="0.486692" vertical-offset="1949" max-vertical-offset="4605">
+            <state line="147" column="21" selection-start="7073" selection-end="7073" vertical-scroll-proportion="-10.666667" vertical-offset="1949" max-vertical-offset="4605">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -34,10 +34,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="82" column="24" selection-start="2783" selection-end="2783" vertical-scroll-proportion="-15.04" vertical-offset="569" max-vertical-offset="1605">
+            <state line="35" column="30" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.36431226" vertical-offset="44" max-vertical-offset="1605">
               <folding />
             </state>
           </provider>
@@ -64,7 +64,7 @@
       <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="210" column="24" selection-start="7916" selection-end="7916" vertical-scroll-proportion="-14.48" vertical-offset="2623" max-vertical-offset="4275">
+            <state line="263" column="48" selection-start="9654" selection-end="9654" vertical-scroll-proportion="-11.32" vertical-offset="3497" max-vertical-offset="4305">
               <folding />
             </state>
           </provider>
@@ -138,9 +138,9 @@
         <option value="$PROJECT_DIR$/WebServer/server.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/server.py" />
         <option value="$PROJECT_DIR$/explore-c-graph.html" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
       </list>
     </option>
   </component>
@@ -722,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="210" column="24" selection-start="7916" selection-end="7916" vertical-scroll-proportion="-14.48" vertical-offset="2623" max-vertical-offset="4275">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="82" column="18" selection-start="2496" selection-end="2496" vertical-scroll-proportion="1.2" vertical-offset="1230" max-vertical-offset="3030">
@@ -751,19 +744,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server.py">
+    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="24" selection-start="2783" selection-end="2783" vertical-scroll-proportion="-15.04" vertical-offset="569" max-vertical-offset="1605">
+        <state line="147" column="21" selection-start="7073" selection-end="7073" vertical-scroll-proportion="-10.666667" vertical-offset="1949" max-vertical-offset="4605">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="263" column="48" selection-start="9654" selection-end="9654" vertical-scroll-proportion="-11.32" vertical-offset="3497" max-vertical-offset="4305">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+    <entry file="file://$PROJECT_DIR$/server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="21" selection-start="7073" selection-end="7073" vertical-scroll-proportion="0.486692" vertical-offset="1949" max-vertical-offset="4605">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="35" column="30" selection-start="1026" selection-end="1026" vertical-scroll-proportion="0.36431226" vertical-offset="44" max-vertical-offset="1605">
+          <folding />
         </state>
       </provider>
     </entry>

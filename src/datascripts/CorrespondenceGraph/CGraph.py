@@ -241,6 +241,7 @@ class DataFormater:
             entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
             for eid in entityWeights:
                 eName = self._cgraph.entToName(eid)
+                eName = eName.replace("the ","")
                 if eName not in nodes:
                     nodes[eName] = nid
                     nodeNames.append(eName)
@@ -260,6 +261,7 @@ class DataFormater:
             entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
             for eid in entityWeights:
                 eName = self._cgraph.entToName(eid)
+                eName = eName.replace("the ","")
                 linkWeight = entityWeights[eid]
                 edge = (eName,clusterName)
                 if edge not in edges:
