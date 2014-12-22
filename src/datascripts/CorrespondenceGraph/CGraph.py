@@ -207,9 +207,9 @@ class QueryEngine:
         corrected = searcher.correct_query(q,queryString)
         if corrected.query != q:
             status = "Did you mean: "+corrected.string
-            return [], status
-        results = searcher.search(corrected.query, limit=30)
-        status = "OK"
+        else:
+            status = "OK"
+        results = searcher.search(q, limit=30)
         outClusterIds = []
         for r in results:
             outClusterIds.append(int(r['cid']))

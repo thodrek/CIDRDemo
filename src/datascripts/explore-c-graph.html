@@ -110,7 +110,7 @@ else document.observe('dom:loaded', initFlyouts);
                   sock = null;
                }
                sock.onmessage = function(e) {
-                  if (typeof myVar == 'string' || myVar instanceof String) {
+                  if (typeof e.data == 'string' || e.data instanceof String) {
                     //ReplaceContentInContainer("log",e.data);
                     log("Got: " + e.data);
                   }
