@@ -7,11 +7,12 @@ from SourceSelection import CostFunction
 from SourceSelection import Metrics
 class ParetoFront:
 
-    def __init__(self,qualMetrics, activeClustes, cost, costType):
+    def __init__(self,qualMetrics, activeClustes, cost, costType, srcInfo):
         self._qualMetrics = qualMetrics
         self._activeClusters = activeClustes
         self._cost = cost
         self._costType = costType
+        self._srcInfo = srcInfo
 
     def _dominates(self, row, candidateRow):
         rowData = row[1]
@@ -97,7 +98,7 @@ class ParetoFront:
         for combo in weightCombs:
             gWeights = combo
             gf = GainFunction.GainFunction(gWeights)
-            cf = CostFunction.CostFunction(self._costType)
+            cf = CostFunction.CostFunction(self._costType,self._srcInfo)
             ls = LocalSearch.LocalSearch(self._activeClusters,gf,cf, self._cost)
             selection, gain, cost, util = ls.selectSources()
             profile = ls.selectionProfile()
@@ -107,7 +108,7 @@ class ParetoFront:
             profile['selection'] = selection
             solToProfile[solIndex] = profile
             # store values
-            solValues.append((solIndex,[profile['covGain'], profile['delayGain'], profile['biasGain']]))
+            solValues.append((solIndex,[profile['covGain'], profile['delayGain'], profile['biasGain'], profile['totalCost']]))
             solIndex += 1
 
             # update progress bar

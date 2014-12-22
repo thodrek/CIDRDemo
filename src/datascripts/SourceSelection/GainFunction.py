@@ -7,7 +7,7 @@ from Utilities import functions
 
 class GainFunction:
 
-    def __init__(self, weights):
+    def __init__(self, weights,):
         self._weights = weights
 
     def covGain(self,cov):

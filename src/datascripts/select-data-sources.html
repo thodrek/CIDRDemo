@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" type="text/css" /><link rel='stylesheet' type='text/css' href='http://cdn1.editmysite.com/editor/libraries/fancybox/fancybox.css?1234' />
 <link rel='stylesheet' type='text/css' href='files/main_style.css?1419138491' title='wsite-theme-css' />
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,700,400italic,700italic&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link type="text/css" rel="stylesheet" href="scripts/srcsel/scatter-matrix.css">
 <style type='text/css'>
 .wsite-elements.wsite-not-footer div.paragraph, .wsite-elements.wsite-not-footer p, .wsite-elements.wsite-not-footer .product-block .product-title, .wsite-elements.wsite-not-footer .product-description, .wsite-elements.wsite-not-footer .wsite-form-field label, .wsite-elements.wsite-not-footer .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
 #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
@@ -31,7 +32,19 @@
 .blog-header h2 a {}
 #wsite-content h2.wsite-product-title {}
 .wsite-product .wsite-product-price a {}
+.scatter-matrix-control { float: left; margin-right: 20px; }
+.scatter-matrix-variable-control ul { list-style: none; padding-left: 10px; }
+.scatter-matrix-svg { float: left; margin-top: 15px; width: 1000px; }
+
+#chart {
+  height: 1000px;
+  width: 500px
+}
 </style>
+
+<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+<script src="scripts/srcsel/scatter-matrix.js"></script>
+
 
 <script><!--
 var STATIC_BASE = '//cdn1.editmysite.com/';
@@ -53,6 +66,103 @@ else document.observe('dom:loaded', initFlyouts);
 }
 })(window._W && _W.jQuery)
 //-->
+</script>
+<script type="text/javascript">
+         var sock = null;
+         var ellog = null;
+         window.onload = function() {
+            ellog = document.getElementById('log');
+            var wsuri;
+            if (window.location.protocol === "file:") {
+               wsuri = "ws://127.0.0.1:8080/ws?a=23&foo=bar";
+            } else {
+               wsuri = "ws://" + window.location.hostname + ":8080/ws?a=23&foo=bar";
+            }
+            if ("WebSocket" in window) {
+               sock = new WebSocket(wsuri);
+            } else if ("MozWebSocket" in window) {
+               sock = new MozWebSocket(wsuri);
+            } else {
+               log("Browser does not support WebSocket!");
+               window.location = "http://autobahn.ws/unsupportedbrowser";
+            }
+            if (sock) {
+               sock.onopen = function() {
+                  //log("Connected to " + wsuri);
+               }
+               sock.onclose = function(e) {
+                  //log("Connection closed (wasClean = " + e.wasClean + ", code = " + e.code + ", reason = '" + e.reason + "')");
+                  sock = null;
+               }
+               sock.onmessage = function(e) {
+                  //d3.select('svg').remove();
+                  inputStr = e.data
+                  if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results") != -1)) {
+                    ReplaceContentInContainer("log",e.data);
+                    //log("Got: " + e.data);
+                  }
+                  else {
+                    if (inputStr.indexOf("DONE") != -1)
+                        ReplaceContentInContainer("log","");
+                    else
+                        ReplaceContentInContainer("log",e.data);
+                    renderScatterMatrix(inputData)
+                  }
+               }
+            }
+         };
+         function sendExploration() {
+            // form message to be sent
+            var entities = document.getElementById('entities').value;
+            var topics = document.getElementById('topics').value;
+            var costType = document.getElementById('costType').value;
+            var maxCost = document.getElementById('costValue').value;
+            var msg = ""
+            if (entities != "") {
+                msg = "_selection:entities:"
+                msg = msg.concat(entities)
+            }
+            if (topics != "") {
+                if (msg == "") {
+                    msg = "_selection:topic:"
+                }
+                else {
+                    msg = msg.concat(" AND topic:")
+                }
+                msg = msg.concat(topics)
+            }
+            msg = msg.concat("&&")
+            msg = msg.concat(costType)
+            msg = msg.concat("&&")
+            msg = msg.concat(maxCost)
+            if (msg != "") {
+                if (sock) {
+                   sock.send(msg);
+                   //log("Sent " + msg);
+                }
+                else {
+                   log("Not connected.");
+                }
+            }
+         };
+         function log(m) {
+            ellog.innerHTML += m + '\n';
+            ellog.scrollTop = ellog.scrollHeight;
+         };
+</script>
+<script type="text/javascript"><!--
+    function ReplaceContentInContainer(id,content) {
+    var container = document.getElementById(id);
+    container.innerHTML = content;
+    }
+//-->
+</script>
+<script type="text/javascript">
+    function renderScatterMatrix() {
+        d3.select('svg').remove();
+        var sm = new ScatterMatrix("sel.csv");
+        sm.render();
+     }
 </script>
 </head>
 <body class='no-header-page  wsite-theme-light wsite-page-select-data-sources'>
@@ -82,9 +192,35 @@ else document.observe('dom:loaded', initFlyouts);
 
     <div id="main-wrap">
         <div class="container">
-   			<div id='wsite-content' class='wsite-elements wsite-not-footer'>
-</div>
-
+   			<div id='wsite-content' class='wsite-elements wsite-not-footer'></div>
+            <form>
+            <table align="center">
+            <tr>
+            <td align="right">Entities:</td>
+            <td align="left"><input id="entities" type="text" size="50" maxlength="50" /></td>
+            </tr>
+            <tr>
+            <td align="right">Topics:</td>
+            <td align="left"><input id="topics" type="text" size="50" maxlength="50"/></td>
+            <tr>
+            <td align="right">Cost Options:</td>
+            <td align="left">
+                <select id="costType">
+                  <option value="fixed">Number of Sources</option>
+                  <option value="specific">Monetary</option>
+                </select>
+            </td>
+            </tr>
+            <tr>
+            <td align="right">Maximum Cost:</td>
+            <td align="left"><input id="costValue" type="text" size="50" maxlength="50" value="10"/></td>
+            </tr>
+            </table>
+            </form>
+            <div align="center"><button onclick='sendExploration();'>Select Sources</button></div>
+            <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
+            <p id="chart">
+            </p>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
 	

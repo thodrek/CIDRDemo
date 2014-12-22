@@ -12,6 +12,8 @@ import os
 import re
 from textblob import TextBlob
 import json
+import heapq
+import csv
 
 class CGraph:
     def __init__(self):
@@ -31,6 +33,9 @@ class CGraph:
 
     def getSourceName(self,srcId):
         return self._Manager.getSrcName(srcId)
+
+    def getSources(self):
+        return self._sources
 
     def generate(self,inputData):
         print "Generating correspondence graph...\n"
@@ -183,7 +188,7 @@ class QueryEngine:
             sys.stdout.flush()
         writer.commit()
 
-    def processQuery(self,queryString):
+    def processQuery(self,queryString, limit):
         # initialize searcher
         searcher = self._index.searcher()
 
@@ -209,7 +214,7 @@ class QueryEngine:
             status = "Did you mean: "+corrected.string
         else:
             status = "OK"
-        results = searcher.search(q, limit=30)
+        results = searcher.search(q, limit=limit)
         outClusterIds = []
         for r in results:
             outClusterIds.append(int(r['cid']))
@@ -233,7 +238,9 @@ class DataFormater:
         nid = 0
         # populate nodes
         for cid in clusterIds:
-            clusterName = "Cluster "+str(cid)
+            cTopic = list(self._cgraph.manager().clusters()[cid].topics())
+            cTopic = cTopic[0].split('/')[-1]
+            clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
             if clusterName not in nodes:
                 nodes[clusterName] = nid
                 nodeNames.append(clusterName)
@@ -257,7 +264,9 @@ class DataFormater:
         edges = {}
         # populate edges
         for cid in clusterIds:
-            clusterName = "Cluster "+str(cid)
+            cTopic = list(self._cgraph.manager().clusters()[cid].topics())
+            cTopic = cTopic[0].split('/')[-1]
+            clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
             entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
             for eid in entityWeights:
                 eName = self._cgraph.entToName(eid)
@@ -288,5 +297,107 @@ class DataFormater:
 
 
 
+    def cgraphExplorationTest(self, clusterIds):
+        result = {}
+        result['nodes'] = []
+        result['links'] = []
+
+        # find edges for clusters
+        edges = {}
+        # find all edges
+        for cid in clusterIds:
+            cTopic = list(self._cgraph.manager().clusters()[cid].topics())
+            cTopic = cTopic[0].split('/')[-1]
+            clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
+            edges[clusterName] = {}
+            edges[clusterName]['entities'] = {}
+            edges[clusterName]['sources'] = {}
+            entityWeights = self._cgraph.manager().clusterEntityWeights()[cid]
+            for eid in entityWeights:
+                eName = self._cgraph.entToName(eid)
+                eName = eName.replace("the ","")
+                linkWeight = entityWeights[eid]
+                edge = (eName,clusterName)
+                if edge not in edges[clusterName]['entities']:
+                    edges[clusterName]['entities'][edge] = 0.0
+                edges[clusterName]['entities'][edge] += linkWeight
+            srcWeights = self._cgraph.manager().clusterSourceWeights()[cid]
+            for sid in srcWeights:
+                sName = self._cgraph.getSourceName(sid)
+                linkWeight = srcWeights[sid]
+                edge = (clusterName,sName)
+                if edge not in edges[clusterName]['sources']:
+                    edges[clusterName]['sources'][edge] = 0.0
+                edges[clusterName]['sources'][edge] += linkWeight
+
+        # for each cluster keep top 5 entities and top 5 sources
+        nodes = {}
+        nid = 0
+        for cid in clusterIds:
+
+            # grab cluster info
+            cTopic = list(self._cgraph.manager().clusters()[cid].topics())
+            cTopic = cTopic[0].split('/')[-1]
+            clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
+            nodes[clusterName] = nid
+            nid += 1
+            cNodeId = nodes[clusterName]
+
+            # top entity edges
+            entityEdges = edges[clusterName]['entities']
+            top5entityEdges = heapq.nlargest(5,entityEdges,entityEdges.get)
+            for edge in top5entityEdges:
+                eName = edge[0]
+                if eName in nodes:
+                    eNodeId = nodes[eName]
+                else:
+                    eNodeId = nid
+                    nodes[eName] = eNodeId
+                    nid += 1
+                result['links'].append({"source":eNodeId, "target":cNodeId, "value":edges[clusterName]['entities'][edge]})
+
+            # top source edges
+            sourceEdges = edges[clusterName]['sources']
+            top5sourceEdges = heapq.nlargest(5,sourceEdges,sourceEdges.get)
+            for edge in top5sourceEdges:
+                sName = edge[1]
+                if sName in nodes:
+                    sNodeId = nodes[sName]
+                else:
+                    sNodeId = nid
+                    nodes[sName] = sNodeId
+                    nid += 1
+                result['links'].append({"source":cNodeId, "target":sNodeId, "value":edges[clusterName]['sources'][edge]})
+
+
+        # add node info
+        orderedNodes = [k for k, v in sorted(nodes.iteritems(), key=lambda (k,v): (v,k))]
+        for n in orderedNodes:
+            result['nodes'].append({"name":n})
+
+        # convert result to json and return
+        return json.dumps(result)
+
+    def selectionJSON(self,paretopoints, dominatedPoints):
+        results = []
+        for p in paretopoints:
+            values = paretopoints[p]
+            results.append({"Point Type":"pareto", "Coverage Gain":str(round(values[0],2)),"Timeliness Gain":str(round(values[1],2)), "Bias Gain":str(round(values[2],2)), "Cost":str(round(values[3],2))})
+        for p in dominatedPoints:
+            values = dominatedPoints[p]
+            results.append({"Point Type":"pareto", "Coverage Gain":str(round(values[0],2)),"Timeliness Gain":str(round(values[1],2)), "Bias Gain":str(round(values[2],2)), "Cost":str(round(values[3],2))})
+        return json.dumps(results)
+
+    def selectionCSV(self,paretopoints, dominatedPoints):
+        filename = "sel.csv"
+        with open(filename, 'wb') as csvfile:
+            fwriter = csv.writer(csvfile, delimiter=',')
+            fwriter.writerow(['Point Type','Coverage','Timeliness','Bias','Cost'])
+            for p in paretopoints:
+                values = paretopoints[p]
+                fwriter.writerow(['pareto',round(values[0],2),round(values[1],2),round(values[2],2),round(values[3],2)])
+            for p in dominatedPoints:
+                values = dominatedPoints[p]
+                fwriter.writerow(['dominated',round(values[0],2),round(values[1],2),round(values[2],2),round(values[3],2)])
 
 

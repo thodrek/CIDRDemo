@@ -21,7 +21,7 @@ from SourceSelection import LocalSearch
 from SourceSelection import GainFunction
 from SourceSelection import CostFunction
 from Utilities import DataLoader
-
+from SourceSelection import ParetoFront
 
 class CGraphServerProtocol(WebSocketServerProtocol):
 
@@ -37,9 +37,18 @@ class CGraphServerProtocol(WebSocketServerProtocol):
                 payload = self.factory.retrieveClusters(str(query))
                 self.sendMessage(payload,isBinary=False)
             if "_selection:" in query:
-                query = query.replace("_selection:","")
-                payload = self.factory.retrieveSelectedSources(str(query))
-                self.sendMessage(payload,isBinary=False)
+                query = query.split("&&")
+                queryBody = query[0]
+                costType = query[1]
+                cost = float(query[2])
+                queryBody = queryBody.replace("_selection:","")
+                reactor.callLater(1,self.selectionResult,(queryBody, costType, cost))
+                self.sendMessage("Processing please wait...",isBinary=False)
+
+    def selectionResult(self, args):
+        queryBody, costType, cost = args
+        payload = self.factory.retrieveSelectedSources(str(queryBody),costType,cost)
+        self.sendMessage(payload,isBinary=False)
 
 
 class CGraphFactory(WebSocketServerFactory):
@@ -54,8 +63,17 @@ class CGraphFactory(WebSocketServerFactory):
         self._cgraph.generate(self._loader.getInput())
         self._cgraph.summary()
 
+        self._selectionCache = {}
+        self._selectionCache['paretoPoints'] = None
+        self._selectionCache['dominatedPoints'] = None
+        self._selectionCache['solutionProfiles'] = None
+
         print "Start building quality profiles..."
         self._cgraph.manager().buildQualityProfiles()
+        print "\nDONE"
+
+        print "Start building pricing profiles..."
+        self._cgraph.manager().buildPricingProfiles()
         print "\nDONE"
 
         print "Build query engine"
@@ -69,13 +87,13 @@ class CGraphFactory(WebSocketServerFactory):
 
     def retrieveClusters(self,qString):
         print qString
-        qRes, status = self._qEngine.processQuery(qString)
+        qRes, status = self._qEngine.processQuery(qString,10)
         if status == "OK":
             if len(qRes) == 0:
                 payload = "No results found!"
             else:
                 # Format result to json
-                payload = self._dataformater.cgraphExploration(qRes)
+                payload = self._dataformater.cgraphExplorationTest(qRes)
         else:
             tmpStr = str(status)
             tmpStr = tmpStr.replace("entities:", "")
@@ -84,8 +102,31 @@ class CGraphFactory(WebSocketServerFactory):
             payload = tmpStr
         return payload
 
-    def retrieveSelectedSources(self,qString):
-        payload = "Not supported yet!"
+    def retrieveSelectedSources(self,qString, costType, cost):
+        qRes, status = self._qEngine.processQuery(qString,10)
+        if status == "OK":
+            if len(qRes) == 0:
+                payload = "No results found!"
+            else:
+                # Find sources
+                activeClusters = set([])
+                for cid in qRes:
+                    # get cluster
+                    #cgraph.manager().clusters()[cid].printClusterSummary(cgraph._cEntRefToName,cgraph._cTopicToName)
+                    activeClusters.add(self._cgraph.manager().clusters()[cid])
+                pareto = ParetoFront.ParetoFront(['cov','time','bias'],activeClusters,cost,costType,self._cgraph.getSources())
+                paretoPoints, dominatedPoints, solToProfile = pareto.findFront()
+                self._selectionCache['paretoPoints'] = paretoPoints
+                self._selectionCache['dominatedPoints'] = dominatedPoints
+                self._selectionCache['solutionProfiles'] = solToProfile
+                payload = "DONE"
+                self._dataformater.selectionCSV(paretoPoints,dominatedPoints)
+        else:
+            tmpStr = str(status)
+            tmpStr = tmpStr.replace("entities:", "")
+            tmpStr = tmpStr.replace("topic:", "")
+            tmpStr += "?"
+            payload = tmpStr
         return payload
 
 
