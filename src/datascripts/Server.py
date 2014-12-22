@@ -80,6 +80,7 @@ class CGraphFactory(WebSocketServerFactory):
             tmpStr = str(status)
             tmpStr = tmpStr.replace("entities:", "")
             tmpStr = tmpStr.replace("topic:", "")
+            tmpStr += "?"
             payload = tmpStr
         return payload
 

@@ -103,19 +103,23 @@ else document.observe('dom:loaded', initFlyouts);
             }
             if (sock) {
                sock.onopen = function() {
-                  log("Connected to " + wsuri);
+                  //log("Connected to " + wsuri);
                }
                sock.onclose = function(e) {
-                  log("Connection closed (wasClean = " + e.wasClean + ", code = " + e.code + ", reason = '" + e.reason + "')");
+                  //log("Connection closed (wasClean = " + e.wasClean + ", code = " + e.code + ", reason = '" + e.reason + "')");
                   sock = null;
                }
                sock.onmessage = function(e) {
-                  if (typeof e.data == 'string' || e.data instanceof String) {
-                    //ReplaceContentInContainer("log",e.data);
-                    log("Got: " + e.data);
+                  d3.select('svg').remove();
+                  inputStr = e.data
+                  if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results"))) {
+                    ReplaceContentInContainer("log",e.data);
+                    //log("Got: " + e.data);
                   }
-                  var inputData = JSON.parse(e.data)
-                  plotcGraphResult(inputData)
+                  else {
+                    var inputData = JSON.parse(e.data)
+                    plotcGraphResult(inputData)
+                  }
                }
             }
          };
