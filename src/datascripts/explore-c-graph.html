@@ -112,7 +112,7 @@ else document.observe('dom:loaded', initFlyouts);
                sock.onmessage = function(e) {
                   d3.select('svg').remove();
                   inputStr = e.data
-                  if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results"))) {
+                  if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results") != -1)) {
                     ReplaceContentInContainer("log",e.data);
                     //log("Got: " + e.data);
                   }
