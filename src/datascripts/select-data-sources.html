@@ -102,6 +102,7 @@ else document.observe('dom:loaded', initFlyouts);
 //-->
 </script>
 <script type="text/javascript">
+         var profileState = 0;
          var sock = null;
          var ellog = null;
          window.onload = function() {
@@ -142,9 +143,16 @@ else document.observe('dom:loaded', initFlyouts);
                         renderScatterMatrix()
                     }
                     else {
-                        d3.select("#profiles").html("");
-                        var inputData = JSON.parse(e.data)
-                        plotSolutionTable(inputData)
+                        if (profileState == 0) {
+                            profileState = 1
+                            d3.select("#profiles").html("");
+                            var inputData = JSON.parse(e.data)
+                            plotSolutionTable(inputData)
+                        }
+                        else {
+                            d3.select("#profiles").html("");
+                            profileState = 0
+                        }
                     }
 
                   }
@@ -300,7 +308,7 @@ function plotSolutionTable(data) {
             </tr>
             </table>
             </form>
-            <div align="center"><button onclick='sendExploration();'>Select Sources</button></div>
+            <div align="center"><button onclick='renderScatterMatrix();'>Select Sources</button></div>
             <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
             <p id="chart">
             </p>
