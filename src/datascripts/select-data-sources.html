@@ -96,7 +96,7 @@ else document.observe('dom:loaded', initFlyouts);
                   sock = null;
                }
                sock.onmessage = function(e) {
-                  //d3.select('svg').remove();
+                  d3.select("#chart").html("");
                   inputStr = e.data
                   if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results") != -1)) {
                     ReplaceContentInContainer("log",e.data);
@@ -162,7 +162,7 @@ else document.observe('dom:loaded', initFlyouts);
 </script>
 <script type="text/javascript">
     function renderScatterMatrix() {
-        d3.select('svg').remove();
+        d3.select("#chart").html("");
         var sm = new ScatterMatrix("sel.csv");
         sm.render();
      }
@@ -220,9 +220,9 @@ else document.observe('dom:loaded', initFlyouts);
             </tr>
             </table>
             </form>
-            <div align="center"><button onclick='renderScatterMatrix();'>Select Sources</button></div>
+            <div align="center"><button onclick='sendExploration();'>Select Sources</button></div>
             <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
-            <p id="chart" align="center">
+            <p id="chart">
             </p>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
