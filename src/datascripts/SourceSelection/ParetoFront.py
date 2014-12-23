@@ -17,7 +17,7 @@ class ParetoFront:
     def _dominates(self, row, candidateRow):
         rowData = row[1]
         candidateRowData = candidateRow[1]
-        return sum([rowData[x] >= candidateRowData[x] for x in range(len(rowData))]) == len(rowData)
+        return sum([rowData[x] >= candidateRowData[x] for x in range(len(rowData)-1)]) == len(rowData)-1
 
     def _simple_cull(self, inputPoints):
         paretoPoints ={}

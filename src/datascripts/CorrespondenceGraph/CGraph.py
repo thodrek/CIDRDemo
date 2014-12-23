@@ -382,22 +382,22 @@ class DataFormater:
         results = []
         for p in paretopoints:
             values = paretopoints[p]
-            results.append({"Point Type":"pareto", "Coverage Gain":str(round(values[0],2)),"Timeliness Gain":str(round(values[1],2)), "Bias Gain":str(round(values[2],2)), "Cost":str(round(values[3],2))})
+            results.append({"Point Type":"pareto", "coverage Gain":str(round(values[0],2)),"Timeliness Gain":str(round(values[1],2)), "Bias Gain":str(round(values[2],2)), "Cost":str(round(values[3],2))})
         for p in dominatedPoints:
             values = dominatedPoints[p]
-            results.append({"Point Type":"pareto", "Coverage Gain":str(round(values[0],2)),"Timeliness Gain":str(round(values[1],2)), "Bias Gain":str(round(values[2],2)), "Cost":str(round(values[3],2))})
+            results.append({"Point Type":"dominated", "coverage gain":str(round(values[0],2)),"Timeliness Gain":str(round(values[1],2)), "Bias Gain":str(round(values[2],2)), "Cost":str(round(values[3],2))})
         return json.dumps(results)
 
     def selectionCSV(self,paretopoints, dominatedPoints):
         filename = "sel.csv"
         with open(filename, 'wb') as csvfile:
             fwriter = csv.writer(csvfile, delimiter=',')
-            fwriter.writerow(['Point Type','Coverage','Timeliness','Bias','Cost'])
+            fwriter.writerow(['id','point type','coverage gain','timeliness gain','bias gain','cost'])
             for p in paretopoints:
                 values = paretopoints[p]
-                fwriter.writerow(['pareto',round(values[0],2),round(values[1],2),round(values[2],2),round(values[3],2)])
+                fwriter.writerow([p,'pareto',round(values[0],2),round(values[1],2),round(values[2],2),round(values[3],2)])
             for p in dominatedPoints:
                 values = dominatedPoints[p]
-                fwriter.writerow(['dominated',round(values[0],2),round(values[1],2),round(values[2],2),round(values[3],2)])
+                fwriter.writerow([p,'dominated',round(values[0],2),round(values[1],2),round(values[2],2),round(values[3],2)])
 
 

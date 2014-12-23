@@ -180,7 +180,7 @@ class LocalSearch:
 
             # compute coverage, delay bounds and bias
             cov = Metrics.coverage(self._selectedSources,self._activeClusters)
-            upperD, lowerD = Metrics.delayBounds(self._selectedSources, self._activeClusters)
+            lowerD, upperD = Metrics.delayBounds(self._selectedSources, self._activeClusters)
             polarity, subjectivity = Metrics.bias(self._selectedSources, self._activeClusters)
 
             profile['cov'] = cov

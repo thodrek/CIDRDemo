@@ -44,6 +44,11 @@ class CGraphServerProtocol(WebSocketServerProtocol):
                 queryBody = queryBody.replace("_selection:","")
                 reactor.callLater(1,self.selectionResult,(queryBody, costType, cost))
                 self.sendMessage("Processing please wait...",isBinary=False)
+            if "_profile:" in query:
+                query = query.split(":")
+                id = int(query[1])
+                payload = self.factory.retrieveProfile(id)
+                self.sendMessage(payload,isBinary=False)
 
     def selectionResult(self, args):
         queryBody, costType, cost = args
@@ -62,6 +67,7 @@ class CGraphFactory(WebSocketServerFactory):
         self._cgraph = CGraph.CGraph()
         self._cgraph.generate(self._loader.getInput())
         self._cgraph.summary()
+        self._costType = "fixed"
 
         self._selectionCache = {}
         self._selectionCache['paretoPoints'] = None
@@ -104,6 +110,7 @@ class CGraphFactory(WebSocketServerFactory):
 
     def retrieveSelectedSources(self,qString, costType, cost):
         qRes, status = self._qEngine.processQuery(qString,10)
+        self._costType = costType
         if status == "OK":
             if len(qRes) == 0:
                 payload = "No results found!"
@@ -119,6 +126,7 @@ class CGraphFactory(WebSocketServerFactory):
                 self._selectionCache['paretoPoints'] = paretoPoints
                 self._selectionCache['dominatedPoints'] = dominatedPoints
                 self._selectionCache['solutionProfiles'] = solToProfile
+                print solToProfile
                 payload = "DONE"
                 self._dataformater.selectionCSV(paretoPoints,dominatedPoints)
         else:
@@ -127,6 +135,30 @@ class CGraphFactory(WebSocketServerFactory):
             tmpStr = tmpStr.replace("topic:", "")
             tmpStr += "?"
             payload = tmpStr
+        return payload
+
+    def retrieveProfile(self,pointId):
+        if not self._selectionCache['solutionProfiles']:
+            payload = "No point profile found. Please issue query again."
+        else:
+            if pointId not in self._selectionCache['solutionProfiles']:
+                payload = "No point profile found. Please issue query again."
+            else:
+                summary = []
+                summary.append({'Metric':'Coverage', 'Value':str(round(100.0*self._selectionCache['solutionProfiles'][pointId]['cov'],2))+"%"})
+                summary.append({'Metric':'Avg. Delay Lower 95% limit', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['lowerD'],2))+" mins"})
+                summary.append({'Metric':'Avg. Delay Upper 95% limit', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['upperD'],2))+" mins"})
+                summary.append({'Metric':'Polarity', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['polarity'],2))})
+                summary.append({'Metric':'Subjectivity', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['subjectivity'],2))})
+                summary.append({'Metric':'Cov. Gain', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['covGain'],2))})
+                summary.append({'Metric':'Delay Gain', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['delayGain'],2))})
+                summary.append({'Metric':'Bias Gain', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['biasGain'],2))})
+                if self._costType == "fixed":
+                    summary.append({'Metric':'Sources Selected', 'Value':str(round(self._selectionCache['solutionProfiles'][pointId]['totalCost'],2))+" Sources"})
+                else:
+                    summary.append({'Metric':'Total Cost', 'Value':"$"+str(round(self._selectionCache['solutionProfiles'][pointId]['totalCost'],2))})
+                    summary.append({'Metric':'Sources Selected', 'Value':str(len(self._selectionCache['solutionProfiles'][pointId]['selection']))+" Sources"})
+                payload = json.dumps(summary)
         return payload
 
 
@@ -145,7 +177,7 @@ def main():
     print "DONE."
 
     print "Initalizing server..."
-    factory = CGraphFactory("ws://localhost:8080", debug,inputDir)
+    factory = CGraphFactory("ws://0.0.0.0:8080", debug,inputDir)
     resource = WebSocketResource(factory)
     ## we server static files under "/" ..
     root = File(".")

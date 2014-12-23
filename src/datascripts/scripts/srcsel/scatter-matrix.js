@@ -2,6 +2,22 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
+
+function askForProfile(d) {
+    pointId = d["id"]
+    msg = "_profile:";
+    msg = msg.concat(pointId.toString());
+    if (msg != "") {
+        if (sock) {
+           sock.send(msg);
+           //log("Sent " + msg);
+        }
+        else {
+           log("Not connected.");
+        }
+    }
+ }
+
 ScatterMatrix = function(url, data, dom_id) {
   this.__url = url;
   if (data === undefined || data === null) { this.__data = undefined; }
@@ -45,7 +61,9 @@ ScatterMatrix.prototype.render = function () {
     var numeric_variable_values = {};
 
     for (k in data[0]) {
-      if (isNaN(+data[0][k])) { string_variables.push(k); }
+      if (isNaN(+data[0][k])) {
+            string_variables.push(k);
+      }
       else { numeric_variables.push(k); numeric_variable_values[k] = []; }
     }
 
@@ -70,8 +88,10 @@ ScatterMatrix.prototype.render = function () {
     var color_variable = undefined;
     var selected_colors = undefined;
     for (var j in numeric_variables) {
-      var v = numeric_variables[j];
-      to_include.push(v);
+      if (j != 0) {
+        var v = numeric_variables[j];
+        to_include.push(v);
+      }
     }
     var drill_variables = [];
 
@@ -150,12 +170,20 @@ ScatterMatrix.prototype.render = function () {
             set_filter(d);
           });
 
+    var tmp_numeric_variables = []
+    for (var v in numeric_variables) {
+        if (v != 0) {
+            tmp_numeric_variables.push(numeric_variables[v])
+        }
+    }
+
+
     var variable_li =
       variable_control
         .append('p').text('Include variables: ')
         .append('ul')
         .selectAll('li')
-        .data(numeric_variables)
+        .data(tmp_numeric_variables)
         .enter().append('li');
 
     variable_li.append('input')
@@ -179,7 +207,7 @@ ScatterMatrix.prototype.render = function () {
         .append('p').text('Drill and Expand: ')
         .append('ul')
         .selectAll('li')
-        .data(numeric_variables.concat(string_variables))
+        .data(tmp_numeric_variables.concat(string_variables))
         .enter().append('li');
 
     drill_li.append('input')
@@ -341,11 +369,6 @@ ScatterMatrix.prototype.__draw =
             return fltf(d);
           });
 
-    // Brush - for highlighting regions of data
-    //var brush = d3.svg.brush()
-    //   .on("brushstart", brushstart)
-    //    .on("brush", brush)
-    //    .on("brushend", brushend);
 
     // Root panel
     var svg = container_el.append("svg:svg")
@@ -360,7 +383,7 @@ ScatterMatrix.prototype.__draw =
       .enter().append("svg:g")
         .attr("class", "legend")
         .attr("transform", function(d, i) {
-          return "translate(" + (label_height + size * x_variables.length + padding) + "," + (i*20+10) + ")";
+          return "translate(" + (label_height + size * x_variables.length + padding + 20) + "," + (i*20+10) + ")";
         });
 
     legend.append("svg:circle")
@@ -459,7 +482,10 @@ ScatterMatrix.prototype.__draw =
           .attr("class", function(d) { return color_class(d); })
           .attr("cx", function(d) { return x[p.x](d[p.x]); })
           .attr("cy", function(d) { return y[p.y](d[p.y]); })
-          .attr("r", 5);
+          .attr("r", 5)
+          .on("click", function(d) {
+            askForProfile(d);
+          });
 
       // Add titles for x variables and drill variable values
       if (p.j == y_variables.length-1) {
@@ -482,34 +508,7 @@ ScatterMatrix.prototype.__draw =
         }
       }
 
-      // Brush
-      //cell.call(brush.x(x[p.x]).y(y[p.y]));
     }
-
-    // Clear the previously-active brush, if any
-    //function brushstart(p) {
-    //  if (brush.data !== p) {
-    //    cell.call(brush.clear());
-    //    brush.x(x[p.x]).y(y[p.y]).data = p;
-    //  }
-    //}
-
-    // Highlight selected circles
-    //function brush(p) {
-    //  var e = brush.extent();
-    //  svg.selectAll(".cell circle").attr("class", function(d) {
-    //    return e[0][0] <= d[p.x] && d[p.x] <= e[1][0]
-    //        && e[0][1] <= d[p.y] && d[p.y] <= e[1][1]
-    //        ? color_class(d) : null;
-    //  });
-    //}
-
-    // If brush is empty, select all circles
-    //function brushend() {
-    //  if (brush.empty()) svg.selectAll(".cell circle").attr("class", function(d) {
-    //    return color_class(d);
-    //  });
-    //}
 
     function cross(a, b) {
       var c = [], n = a.length, m = b.length, i, j;

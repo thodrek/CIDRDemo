@@ -36,8 +36,42 @@
 .scatter-matrix-variable-control ul { list-style: none; padding-left: 10px; }
 .scatter-matrix-svg { float: left; margin-top: 15px; width: 1000px; }
 #chart {
-  height: 1000px;
+  height: 650px;
   width: 1500px;
+}
+#profiles {
+    height: 1000px;
+    width: 1500px;
+}
+
+table.gridtable {
+	font-family: verdana,arial,sans-serif;
+	font-size:11px;
+	color:#333333;
+	border-width: 1px;
+	border-color: #666666;
+	border-collapse: collapse;
+}
+
+table.gridtable caption {
+   color: black;
+   font-weight: bold;
+   font-size: 14px;
+}
+
+table.gridtable th {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #dedede;
+}
+table.gridtable td {
+	border-width: 1px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #666666;
+	background-color: #ffffff;
 }
 
 
@@ -75,7 +109,7 @@ else document.observe('dom:loaded', initFlyouts);
             ellog = document.getElementById('log');
             var wsuri;
             if (window.location.protocol === "file:") {
-               wsuri = "ws://127.0.0.1:8080/ws?a=23&foo=bar";
+               wsuri = "ws://0.0.0.0:8080/ws?a=23&foo=bar";
             } else {
                wsuri = "ws://" + window.location.hostname + ":8080/ws?a=23&foo=bar";
             }
@@ -96,9 +130,10 @@ else document.observe('dom:loaded', initFlyouts);
                   sock = null;
                }
                sock.onmessage = function(e) {
-                  d3.select("#chart").html("");
                   inputStr = e.data
-                  if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results") != -1)) {
+                  if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results") != -1) || (inputStr.indexOf("No profile") != -1) || (inputStr.indexOf("Processing") != -1)) {
+                    d3.select("#chart").html("");
+                    d3.select("#profiles").html("");
                     ReplaceContentInContainer("log",e.data);
                     //log("Got: " + e.data);
                   }
@@ -107,8 +142,11 @@ else document.observe('dom:loaded', initFlyouts);
                         ReplaceContentInContainer("log","");
                         renderScatterMatrix()
                     }
-                    else
-                        ReplaceContentInContainer("log",e.data);
+                    else {
+                        d3.select("#profiles").html("");
+                        var inputData = JSON.parse(e.data)
+                        plotSolutionTable(inputData)
+                    }
 
                   }
                }
@@ -167,6 +205,48 @@ else document.observe('dom:loaded', initFlyouts);
         sm.render();
      }
 </script>
+<script type="text/javascript">
+function plotSolutionTable(data) {
+    d3.select("#profiles").html("");
+    // the columns you'd like to display
+    var columns = ["Metric", "Value"];
+
+    var table = d3.select("#profiles").append("table"),
+        tcaption = table.append("caption"),
+        thead = table.append("thead"),
+        tbody = table.append("tbody");
+
+    table.attr("class","gridtable")
+
+    // append caption
+    tcaption.html("Solution Summary")
+
+    // append the header row
+    thead.append("tr")
+        .selectAll("th")
+        .data(columns)
+        .enter()
+        .append("th")
+            .text(function(column) { return column; });
+
+    // create a row for each object in the data
+    var rows = tbody.selectAll("tr")
+        .data(data)
+        .enter()
+        .append("tr");
+
+    // create a cell in each row for each column
+    var cells = rows.selectAll("td")
+        .data(function(row) {
+            return columns.map(function(column) {
+                return {column: column, value: row[column]};
+            });
+        })
+        .enter()
+        .append("td")
+            .text(function(d) { return d.value; });
+};
+</script>
 </head>
 <body class='no-header-page  wsite-theme-light wsite-page-select-data-sources'>
 <div id="header-wrap">
@@ -210,7 +290,7 @@ else document.observe('dom:loaded', initFlyouts);
             <td align="left">
                 <select id="costType">
                   <option value="fixed">Number of Sources</option>
-                  <option value="specific">Monetary</option>
+                  <option value="specific">Monetary(in $)</option>
                 </select>
             </td>
             </tr>
@@ -223,6 +303,8 @@ else document.observe('dom:loaded', initFlyouts);
             <div align="center"><button onclick='sendExploration();'>Select Sources</button></div>
             <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
             <p id="chart">
+            </p>
+            <p id="profiles">
             </p>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
