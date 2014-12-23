@@ -49,6 +49,11 @@ class CGraphServerProtocol(WebSocketServerProtocol):
                 id = int(query[1])
                 payload = self.factory.retrieveProfile(id)
                 self.sendMessage(payload,isBinary=False)
+            if "_sources:" in query:
+                query = query.split(":")
+                id = int(query[1])
+                payload = self.factory.retrieveSourcesProfile(id)
+                self.sendMessage(payload,isBinary=False)
 
     def selectionResult(self, args):
         queryBody, costType, cost = args
@@ -159,6 +164,19 @@ class CGraphFactory(WebSocketServerFactory):
                     summary.append({'Metric':'Total Cost', 'Value':"$"+str(round(self._selectionCache['solutionProfiles'][pointId]['totalCost'],2))})
                     summary.append({'Metric':'Sources Selected', 'Value':str(len(self._selectionCache['solutionProfiles'][pointId]['selection']))+" Sources"})
                 payload = json.dumps(summary)
+        return payload
+
+    def retrieveSourcesProfile(self,pointId):
+        if not self._selectionCache['solutionProfiles']:
+            payload = "No point profile found. Please issue query again."
+        else:
+            if pointId not in self._selectionCache['solutionProfiles']:
+                payload = "No point profile found. Please issue query again."
+            else:
+                result = []
+                sources = self._selectionCache['solutionProfiles'][pointId]['selection']
+                for
+                payload = json.dumps(result)
         return payload
 
 

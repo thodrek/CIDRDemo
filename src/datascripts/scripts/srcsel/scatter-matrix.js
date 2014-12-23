@@ -2,9 +2,9 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
-
 function askForProfile(d) {
     pointId = d["id"]
+    pointIdGlobal = d["id"]
     msg = "_profile:";
     msg = msg.concat(pointId.toString());
     if (msg != "") {
@@ -17,6 +17,20 @@ function askForProfile(d) {
         }
     }
  }
+
+function askForSourceDetails() {
+    msg = "_sources:";
+    msg = msg.concat(pointIdGlobal.toString());
+    if (msg != "") {
+        if (sock) {
+           sock.send(msg);
+           //log("Sent " + msg);
+        }
+        else {
+           log("Not connected.");
+        }
+    }
+}
 
 ScatterMatrix = function(url, data, dom_id) {
   this.__url = url;
