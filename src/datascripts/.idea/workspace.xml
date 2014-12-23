@@ -26,7 +26,7 @@
       <file leaf-file-name="explore-c-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="333" column="1" selection-start="13277" selection-end="13277" vertical-scroll-proportion="-31.85965" vertical-offset="4178" max-vertical-offset="6642">
+            <state line="34" column="0" selection-start="3200" selection-end="3244" vertical-scroll-proportion="-8.842105" vertical-offset="108" max-vertical-offset="6642">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -37,7 +37,7 @@
       <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="121" column="31" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.0" vertical-offset="486" max-vertical-offset="3006">
+            <state line="106" column="26" selection-start="3768" selection-end="3768" vertical-scroll-proportion="0.0" vertical-offset="1930" max-vertical-offset="3006">
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -48,20 +48,9 @@
       <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="17" selection-start="7753" selection-end="7753" vertical-scroll-proportion="0.73938227" vertical-offset="1826" max-vertical-offset="4230">
+            <state line="224" column="39" selection-start="10621" selection-end="10621" vertical-scroll-proportion="0.7567568" vertical-offset="3248" max-vertical-offset="4284">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="84" selection-start="248" selection-end="248" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="846">
-              <folding>
-                <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -70,7 +59,7 @@
       <file leaf-file-name="scatter-matrix.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="266" column="28" selection-start="9509" selection-end="9511" vertical-scroll-proportion="-87.05454" vertical-offset="0" max-vertical-offset="9504">
+            <state line="31" column="63" selection-start="897" selection-end="897" vertical-scroll-proportion="14.4" vertical-offset="918" max-vertical-offset="9504">
               <folding />
             </state>
           </provider>
@@ -124,16 +113,17 @@
         <option value="$PROJECT_DIR$/WebServer/server.py" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/server.py" />
-        <option value="$PROJECT_DIR$/explore-c-graph.html" />
         <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
         <option value="$PROJECT_DIR$/SourceSelection/ParetoFront.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
-        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
-        <option value="$PROJECT_DIR$/demo.html" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/demo.html" />
+        <option value="$PROJECT_DIR$/explore-c-graph.html" />
+        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css" />
+        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
       </list>
     </option>
@@ -469,11 +459,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2625" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="33" column="19" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
@@ -758,15 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="84" selection-start="248" selection-end="248" vertical-scroll-proportion="-3.3333333" vertical-offset="0" max-vertical-offset="846">
-          <folding>
-            <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="394" column="65" selection-start="15184" selection-end="15194" vertical-scroll-proportion="0.0" vertical-offset="6299" max-vertical-offset="7362">
@@ -776,34 +752,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="31" selection-start="4653" selection-end="4653" vertical-scroll-proportion="0.0" vertical-offset="1930" max-vertical-offset="3006">
-          <folding>
-            <element signature="e#26#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="266" column="28" selection-start="9509" selection-end="9511" vertical-scroll-proportion="-87.05454" vertical-offset="0" max-vertical-offset="9504">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="333" column="1" selection-start="13277" selection-end="13277" vertical-scroll-proportion="-31.85965" vertical-offset="4178" max-vertical-offset="6642">
+        <state line="34" column="0" selection-start="3200" selection-end="3244" vertical-scroll-proportion="-8.842105" vertical-offset="108" max-vertical-offset="6642">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="26" selection-start="3768" selection-end="3768" vertical-scroll-proportion="0.0" vertical-offset="1930" max-vertical-offset="3006">
+          <folding>
+            <element signature="e#26#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="25" selection-start="886" selection-end="886" vertical-scroll-proportion="0.54804945" vertical-offset="0" max-vertical-offset="1051">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="63" selection-start="897" selection-end="897" vertical-scroll-proportion="14.4" vertical-offset="918" max-vertical-offset="9504">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="17" selection-start="7753" selection-end="7753" vertical-scroll-proportion="0.73938227" vertical-offset="1826" max-vertical-offset="4230">
+        <state line="224" column="39" selection-start="10621" selection-end="10621" vertical-scroll-proportion="0.7567568" vertical-offset="3248" max-vertical-offset="4284">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

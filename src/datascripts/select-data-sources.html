@@ -35,11 +35,12 @@
 .scatter-matrix-control { float: left; margin-right: 20px; }
 .scatter-matrix-variable-control ul { list-style: none; padding-left: 10px; }
 .scatter-matrix-svg { float: left; margin-top: 15px; width: 1000px; }
-
 #chart {
   height: 1000px;
-  width: 500px
+  width: 1500px;
 }
+
+
 </style>
 
 <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
@@ -102,11 +103,13 @@ else document.observe('dom:loaded', initFlyouts);
                     //log("Got: " + e.data);
                   }
                   else {
-                    if (inputStr.indexOf("DONE") != -1)
+                    if (inputStr.indexOf("DONE") != -1) {
                         ReplaceContentInContainer("log","");
+                        renderScatterMatrix()
+                    }
                     else
                         ReplaceContentInContainer("log",e.data);
-                    renderScatterMatrix(inputData)
+
                   }
                }
             }
@@ -217,9 +220,9 @@ else document.observe('dom:loaded', initFlyouts);
             </tr>
             </table>
             </form>
-            <div align="center"><button onclick='sendExploration();'>Select Sources</button></div>
+            <div align="center"><button onclick='renderScatterMatrix();'>Select Sources</button></div>
             <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
-            <p id="chart">
+            <p id="chart" align="center">
             </p>
         </div><!-- end container -->
     </div><!-- end main-wrap -->
