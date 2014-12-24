@@ -44,6 +44,9 @@
     width: 1500px;
 }
 
+.table-control {float: left; margin-right: 20px;}
+.bars-container {float;}
+
 table.gridtable {
 	font-family: verdana,arial,sans-serif;
 	font-size:11px;
@@ -80,7 +83,7 @@ bar {
 
 
 .chart-title {
-  font-size: 18px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -234,7 +237,10 @@ function plotSolutionTable(data) {
     // the columns you'd like to display
     var columns = ["Metric", "Value"];
 
-    var table = d3.select("#profiles").append("table"),
+    var tableContainer = d3.select("#profiles").append("div")
+                            .attr('class', '.table-control');
+
+    var table = tableContainer.append("table"),
         tcaption = table.append("caption"),
         thead = table.append("thead"),
         tbody = table.append("tbody");
@@ -329,8 +335,6 @@ function plotSolutionTable(data) {
             <p id="chart">
             </p>
             <p id="profiles">
-            </p>
-            <p id="canvas-svg">
             </p>
         </div><!-- end container -->
     </div><!-- end main-wrap -->

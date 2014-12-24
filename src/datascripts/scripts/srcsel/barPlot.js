@@ -40,7 +40,10 @@ function plotBars(data) {
 	  x.domain(value_data.map(function(d) { return d.x_axis; }));
 	  y.domain([0, d3.max(value_data, function(d) { return d.y_axis; })]);
 
-	  var svg = d3.select("#canvas-svg").append("svg")
+      var svgContainer = d3.select("#profiles").append("div")
+	                        .attr('class', '.bars-container');
+
+	  var svg = svgContainer.append("svg")
 	      .attr("width", width + margin.left + margin.right)
 	      .attr("height", height + margin.top + margin.bottom)
 	    .append("g")
