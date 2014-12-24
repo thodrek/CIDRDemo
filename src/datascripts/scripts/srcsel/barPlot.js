@@ -68,7 +68,7 @@ function plotBars(data) {
             .attr("dx", "-.8em")
             .attr("dy", ".15em")
             .attr("transform", function(d) {
-                return "rotate(-35)"
+                return "rotate(-85)"
                 });
 
 	  svg.append("g")
