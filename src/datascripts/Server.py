@@ -131,7 +131,6 @@ class CGraphFactory(WebSocketServerFactory):
                 self._selectionCache['paretoPoints'] = paretoPoints
                 self._selectionCache['dominatedPoints'] = dominatedPoints
                 self._selectionCache['solutionProfiles'] = solToProfile
-                print solToProfile
                 payload = "DONE"
                 self._dataformater.selectionCSV(paretoPoints,dominatedPoints)
         else:
