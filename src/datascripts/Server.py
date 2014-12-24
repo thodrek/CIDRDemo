@@ -183,7 +183,7 @@ class CGraphFactory(WebSocketServerFactory):
                             newChart["unit"] = "percentage"
                             for s in sources:
                                 sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                                sName.lstrip('www.')
+                                sName = sName.lstrip('www.')
                                 sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['cov']
                                 newChart[sName] = sValue
                         elif m == 'lowerD':
@@ -191,7 +191,7 @@ class CGraphFactory(WebSocketServerFactory):
                             newChart["unit"] = "minutes"
                             for s in sources:
                                 sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                                sName.lstrip('www.')
+                                sName = sName.lstrip('www.')
                                 sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['lowerD']
                                 newChart[sName] = sValue
                         elif m == 'upperD':
@@ -199,7 +199,7 @@ class CGraphFactory(WebSocketServerFactory):
                             newChart["unit"] = "minutes"
                             for s in sources:
                                 sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                                sName.lstrip('www.')
+                                sName = sName.lstrip('www.')
                                 sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['upperD']
                                 newChart[sName] = sValue
                         elif m == 'polarity':
@@ -207,7 +207,7 @@ class CGraphFactory(WebSocketServerFactory):
                             newChart["unit"] = ""
                             for s in sources:
                                 sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                                sName.lstrip('www.')
+                                sName = sName.lstrip('www.')
                                 sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['polarity']
                                 newChart[sName] = sValue
                         else:
@@ -215,7 +215,7 @@ class CGraphFactory(WebSocketServerFactory):
                             newChart["unit"] = ""
                             for s in sources:
                                 sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                                sName.lstrip('www.')
+                                sName = sName.lstrip('www.')
                                 sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['subjectivity']
                                 newChart[sName] = sValue
                         result.append(newChart)
