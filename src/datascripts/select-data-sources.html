@@ -239,18 +239,19 @@ function plotSolutionTable(data) {
     var columns = ["Metric", "Value"];
 
     var tableContainer = d3.select("#chart").append('div')
-        .attr('class', 'table-container')
-        .attr('id',function(d){
-            tableId = tableId + 1;
-            var result = 'tab'+tableId.toString();
-            return result; });
+        .attr('class', 'table-container');
 
     var table = tableContainer.append("table"),
         tcaption = table.append("caption"),
         thead = table.append("thead"),
         tbody = table.append("tbody");
 
-    table.attr("class","gridtable")
+    table.attr("class","gridtable");
+
+    table.attr('id',function(d){
+            tableId = tableId + 1;
+            var result = 'tab'+tableId.toString();
+            return result; });
 
     // append caption
     tcaption.html("Solution Summary")
