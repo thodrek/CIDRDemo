@@ -3,7 +3,7 @@ function plotBars(data) {
 
 	var Y_DATA_FORMAT = d3.format("");
 
-	var margin = {top: 70, right: 20, bottom: 100, left: 60},
+	var margin = {top: 70, right: 20, bottom: 50, left: 60},
 	    width = WIDTH - margin.left - margin.right,
 	    height = WIDTH - margin.top - margin.bottom;
 
@@ -66,10 +66,7 @@ function plotBars(data) {
 	      .selectAll("text")
             .style("text-anchor", "end")
             .attr("dx", "-.8em")
-            .attr("dy", ".15em")
-            .attr("transform", function(d) {
-                return "rotate(-85)"
-                });
+            .attr("dy", ".15em");
 
 	  svg.append("g")
 	      .attr("class", "y axis")
