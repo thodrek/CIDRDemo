@@ -62,11 +62,7 @@ function plotBars(data) {
 	  svg.append("g")
 	      .attr("class", "x axis")
 	      .attr("transform", "translate(0," + height + ")")
-	      .call(xAxis)
-	      .selectAll("text")
-            .style("text-anchor", "end")
-            .attr("dx", "-.8em")
-            .attr("dy", ".15em");
+	      .call(xAxis);
 
 	  svg.append("g")
 	      .attr("class", "y axis")
