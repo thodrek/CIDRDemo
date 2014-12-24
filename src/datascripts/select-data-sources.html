@@ -150,7 +150,7 @@ else document.observe('dom:loaded', initFlyouts);
                   }
                   else {
                     if (inputStr.indexOf("DONE") != -1) {
-                        ReplaceContentInContainer("log",pointIdGlobal);
+                        ReplaceContentInContainer("log","");
                         renderScatterMatrix()
                     }
                     else {
@@ -158,7 +158,7 @@ else document.observe('dom:loaded', initFlyouts);
                             //profileState = 1
                             d3.select("#profiles").html("");
                             var inputData = JSON.parse(e.data);
-                            ReplaceContentInContainer("log","test");
+                            ReplaceContentInContainer("log",pointIdGlobal);
                             plotSolutionTable(inputData);
                             //askForSourceDetails()
                         }
