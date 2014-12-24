@@ -148,7 +148,7 @@ else document.observe('dom:loaded', initFlyouts);
                   inputStr = e.data
                   if ((inputStr.indexOf("Did you") != -1)  || (inputStr.indexOf("No results") != -1) || (inputStr.indexOf("No profile") != -1) || (inputStr.indexOf("Processing") != -1)) {
                     d3.select("#chart").html("");
-                    d3.select("#profiles").html("");
+                    d3.select("#canvas-svg").html("");
                     ReplaceContentInContainer("log",e.data);
                     //log("Got: " + e.data);
                   }
