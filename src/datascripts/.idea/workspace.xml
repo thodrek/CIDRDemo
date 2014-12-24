@@ -46,7 +46,7 @@
       <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="326" column="68" selection-start="13198" selection-end="13198" vertical-scroll-proportion="0.61254615" vertical-offset="4392" max-vertical-offset="5205">
+            <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="0.61254615" vertical-offset="4392" max-vertical-offset="5205">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -762,7 +762,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="326" column="68" selection-start="13198" selection-end="13198" vertical-scroll-proportion="0.61254615" vertical-offset="4392" max-vertical-offset="5205">
+        <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="0.61254615" vertical-offset="4392" max-vertical-offset="5205">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
