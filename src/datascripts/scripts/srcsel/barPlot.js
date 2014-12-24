@@ -1,6 +1,6 @@
 function plotBars(data) {
 	var WIDTH = 800;
-	var HEIGHT = 1000;
+	var HEIGHT = 2000;
 
 	var Y_DATA_FORMAT = d3.format("");
 
