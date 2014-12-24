@@ -150,7 +150,7 @@ else document.observe('dom:loaded', initFlyouts);
                   }
                   else {
                     if (inputStr.indexOf("DONE") != -1) {
-                        ReplaceContentInContainer("log","");
+                        ReplaceContentInContainer("log",pointIdGlobal);
                         renderScatterMatrix()
                     }
                     else {
