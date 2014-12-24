@@ -34,7 +34,7 @@
 .wsite-product .wsite-product-price a {}
 .scatter-matrix-control { float: left; margin-right: 20px; }
 .scatter-matrix-variable-control ul { list-style: none; padding-left: 10px; }
-.scatter-matrix-svg { float: left; margin-top: 15px; width: 1000px; }
+.scatter-matrix-svg { float: left; margin-top: 15px; width: 1000px; margin-right: 20px; }
 #chart {
   height: 650px;
   width: 1500px;
@@ -45,7 +45,6 @@
 }
 
 .table-container { float: left; margin-right: 20px;}
-.bars-container {width: 2000px;}
 
 table.gridtable {
 	font-family: verdana,arial,sans-serif;
@@ -237,7 +236,7 @@ function plotSolutionTable(data) {
     // the columns you'd like to display
     var columns = ["Metric", "Value"];
 
-    var tableContainer = d3.select("#profiles").append('div')
+    var tableContainer = d3.select("#chart").append('div')
         .attr('class', 'table-container');
 
     var table = tableContainer.append("table"),
