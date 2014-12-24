@@ -232,12 +232,13 @@ else document.observe('dom:loaded', initFlyouts);
 </script>
 <script type="text/javascript">
 function plotSolutionTable(data) {
-    d3.select("#profiles").html("");
+    d3.select("tabcont").html("");
     // the columns you'd like to display
     var columns = ["Metric", "Value"];
 
     var tableContainer = d3.select("#chart").append('div')
-        .attr('class', 'table-container');
+        .attr('class', 'table-container')
+        .attr('id','tabcont');
 
     var table = tableContainer.append("table"),
         tcaption = table.append("caption"),
