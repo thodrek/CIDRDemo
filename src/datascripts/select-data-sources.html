@@ -115,6 +115,7 @@ else document.observe('dom:loaded', initFlyouts);
 //-->
 </script>
 <script type="text/javascript">
+         var tableId = 0
          var profileState = 0;
          var pointIdGlobal = -1;
          var sock = null;
@@ -232,13 +233,17 @@ else document.observe('dom:loaded', initFlyouts);
 </script>
 <script type="text/javascript">
 function plotSolutionTable(data) {
-    d3.select("#tabcont").html("");
+    var tid = '#tab'+tableId.toString()
+    d3.select(tid).html("");
     // the columns you'd like to display
     var columns = ["Metric", "Value"];
 
     var tableContainer = d3.select("#chart").append('div')
         .attr('class', 'table-container')
-        .attr('id','tabcont');
+        .attr('id',function(d){
+            tableId = tableId + 1;
+            var result = 'tab'+tableId.toString();
+            return result; });
 
     var table = tableContainer.append("table"),
         tcaption = table.append("caption"),
