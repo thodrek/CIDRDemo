@@ -32,10 +32,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="167" column="45" selection-start="7707" selection-end="7707" vertical-scroll-proportion="0.28660825" vertical-offset="2276" max-vertical-offset="3960">
+            <state line="209" column="52" selection-start="10422" selection-end="10422" vertical-scroll-proportion="-3.0196078" vertical-offset="2981" max-vertical-offset="3915">
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -61,10 +61,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select-data-sources.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="-20.75" vertical-offset="4392" max-vertical-offset="5205">
+            <state line="326" column="68" selection-start="13198" selection-end="13198" vertical-scroll-proportion="0.61254615" vertical-offset="4392" max-vertical-offset="5205">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -163,10 +163,10 @@
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
         <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
         <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
-        <option value="$PROJECT_DIR$/select-data-sources.html" />
         <option value="$PROJECT_DIR$/Utilities/functions.py" />
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
         <option value="$PROJECT_DIR$/Server.py" />
+        <option value="$PROJECT_DIR$/select-data-sources.html" />
       </list>
     </option>
   </component>
@@ -750,15 +750,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="-20.75" vertical-offset="4392" max-vertical-offset="5205">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="885">
@@ -775,9 +766,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="167" column="45" selection-start="7707" selection-end="7707" vertical-scroll-proportion="0.28660825" vertical-offset="2276" max-vertical-offset="3960">
+        <state line="209" column="52" selection-start="10422" selection-end="10422" vertical-scroll-proportion="-3.0196078" vertical-offset="2981" max-vertical-offset="3915">
           <folding>
             <element signature="e#26#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="326" column="68" selection-start="13198" selection-end="13198" vertical-scroll-proportion="0.61254615" vertical-offset="4392" max-vertical-offset="5205">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -176,9 +176,7 @@ class CGraphFactory(WebSocketServerFactory):
                 metrics = ['cov','lowerD', 'upperD','polarity','subjectivity']
                 sources = self._selectionCache['solutionProfiles'][pointId]['selection']
                 for m in metrics:
-                    if self._selectionCache['solutionProfiles'][pointId][m] == 0.0:
-                        pass
-                    else:
+                    if self._selectionCache['solutionProfiles'][pointId][m] != 0.0:
                         newChart = {}
                         if m == 'cov':
                             newChart["chart_title"] = "Coverage"
@@ -221,9 +219,8 @@ class CGraphFactory(WebSocketServerFactory):
                                 sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['subjectivity']
                                 newChart[sName] = sValue
                         result.append(newChart)
-
-                payload = json.dumps(result)
-        return payload
+                    payload = json.dumps(result)
+            return payload
 
 
 def main():
