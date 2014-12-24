@@ -159,7 +159,7 @@ else document.observe('dom:loaded', initFlyouts);
                             d3.select("#profiles").html("");
                             var inputData = JSON.parse(e.data);
                             plotSolutionTable(inputData);
-                            ReplaceContentInContainer("#canvas-svg",pointIdGlobal);
+                            ReplaceContentInContainer("#canvas-svg","test");
                             //askForSourceDetails()
                         }
                         else {
