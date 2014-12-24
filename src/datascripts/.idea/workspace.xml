@@ -46,16 +46,25 @@
       <file leaf-file-name="Metrics.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="20" selection-start="3860" selection-end="3860" vertical-scroll-proportion="-16.68" vertical-offset="1413" max-vertical-offset="2040">
+            <state line="126" column="64" selection-start="3922" selection-end="3925" vertical-scroll-proportion="-13.68" vertical-offset="1503" max-vertical-offset="2040">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="functions.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="0.41899443" vertical-offset="0" max-vertical-offset="885">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="select-data-sources.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="0.94857144" vertical-offset="4392" max-vertical-offset="5205">
+            <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="-20.75" vertical-offset="4392" max-vertical-offset="5205">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -85,15 +94,6 @@
         <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="15" column="52" selection-start="397" selection-end="397" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="465">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="388" column="34" selection-start="14940" selection-end="14940" vertical-scroll-proportion="0.0" vertical-offset="5820" max-vertical-offset="6135">
               <folding />
             </state>
           </provider>
@@ -144,7 +144,6 @@
         <option value="$PROJECT_DIR$/Server/Server.py" />
         <option value="$PROJECT_DIR$/DataLoader.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CCluster.py" />
-        <option value="$PROJECT_DIR$/Utilities/functions.py" />
         <option value="$PROJECT_DIR$/createCorrespondenceClusters.py" />
         <option value="$PROJECT_DIR$/AutobahnServer.py" />
         <option value="$PROJECT_DIR$/AutobahnClient.py" />
@@ -167,6 +166,7 @@
         <option value="$PROJECT_DIR$/select-data-sources.html" />
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
+        <option value="$PROJECT_DIR$/Utilities/functions.py" />
       </list>
     </option>
   </component>
@@ -639,11 +639,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1224" selection-end="1224" vertical-scroll-proportion="0.8698885" vertical-offset="0" max-vertical-offset="1076" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ServerTests/Server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="0" selection-start="3188" selection-end="3225" vertical-scroll-proportion="0.88289964" vertical-offset="796" max-vertical-offset="1872" />
@@ -764,19 +759,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="-20.75" vertical-offset="4392" max-vertical-offset="5205">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="20" selection-start="3860" selection-end="3860" vertical-scroll-proportion="-16.68" vertical-offset="1413" max-vertical-offset="2040">
+        <state line="126" column="64" selection-start="3922" selection-end="3925" vertical-scroll-proportion="-13.68" vertical-offset="1503" max-vertical-offset="2040">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
+    <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="326" column="64" selection-start="13194" selection-end="13194" vertical-scroll-proportion="0.94857144" vertical-offset="4392" max-vertical-offset="5205">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="0.41899443" vertical-offset="0" max-vertical-offset="885">
+          <folding />
         </state>
       </provider>
     </entry>

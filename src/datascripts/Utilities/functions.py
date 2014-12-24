@@ -13,10 +13,11 @@ def sampleCDF(values, probs, size):
                 break
             indx += 1
         value = probs[indx-1]
-        indx = 0
-        for indx in range(len(probs)):
-            if probs[indx] == value:
-                break
+        if value != 0.0:
+            indx = 0
+            for indx in range(len(probs)):
+                if probs[indx] == value:
+                    break
         sample.append(values[indx])
     return sample
 
