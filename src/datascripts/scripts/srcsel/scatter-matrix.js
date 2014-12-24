@@ -19,7 +19,7 @@ function askForProfile(d) {
  }
 
 function askForSourceDetails() {
-    ReplaceContentInContainer("canvas-svg","in function");
+    ReplaceContentInContainer("canvas-svg");
     msg = "_sources:";
     msg = msg.concat(pointIdGlobal.toString());
     if (msg != "") {
