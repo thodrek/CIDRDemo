@@ -66,10 +66,7 @@ function plotBars(data) {
 	      .selectAll("text")
             .style("text-anchor", "end")
             .attr("dx", "-.8em")
-            .attr("dy", ".15em")
-            .attr("transform", function(d) {
-                return "rotate(-85)"
-                });
+            .attr("dy", ".15em");
 
 	  svg.append("g")
 	      .attr("class", "y axis")
