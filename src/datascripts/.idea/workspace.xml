@@ -55,7 +55,7 @@
       <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="43" column="13" selection-start="3583" selection-end="3583" vertical-scroll-proportion="-0.5682657" vertical-offset="1107" max-vertical-offset="5295">
+            <state line="47" column="31" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.44649446" vertical-offset="342" max-vertical-offset="5295">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -66,7 +66,7 @@
       <file leaf-file-name="barPlot.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="45" column="25" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1845">
+            <state line="45" column="25" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="1845">
               <folding />
             </state>
           </provider>
@@ -743,13 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="25" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1845">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="885">
@@ -757,9 +750,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="25" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.0" vertical-offset="995" max-vertical-offset="1845">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="13" selection-start="3583" selection-end="3583" vertical-scroll-proportion="-0.5682657" vertical-offset="1107" max-vertical-offset="5295">
+        <state line="47" column="31" selection-start="3676" selection-end="3676" vertical-scroll-proportion="0.44649446" vertical-offset="342" max-vertical-offset="5295">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
