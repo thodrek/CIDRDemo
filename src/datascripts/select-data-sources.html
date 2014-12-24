@@ -157,8 +157,9 @@ else document.observe('dom:loaded', initFlyouts);
                         if (profileState == 0) {
                             //profileState = 1
                             d3.select("#profiles").html("");
-                            var inputData = JSON.parse(e.data)
-                            plotSolutionTable(inputData)
+                            var inputData = JSON.parse(e.data);
+                            plotSolutionTable(inputData);
+                            ReplaceContentInContainer("#canvas-svg",pointIdGlobal);
                             //askForSourceDetails()
                         }
                         else {
