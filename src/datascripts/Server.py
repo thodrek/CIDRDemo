@@ -167,6 +167,7 @@ class CGraphFactory(WebSocketServerFactory):
         return payload
 
     def retrieveSourcesProfile(self,pointId):
+        print self._selectionCache['solutionProfiles'][pointId]
         if not self._selectionCache['solutionProfiles']:
             payload = "No point profile found. Please issue query again."
         else:
@@ -183,20 +184,23 @@ class CGraphFactory(WebSocketServerFactory):
                         newChart["unit"] = "percentage"
                         for s in sources:
                             sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                            sName.lstrip('www.')
                             sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['cov']
                             newChart[sName] = sValue
                     elif m == 'lowerD':
                         newChart["chart_title"] = "Avg. Delay Lower 95% limit"
-                        newChart["unit"] = "Minutes"
+                        newChart["unit"] = "minutes"
                         for s in sources:
                             sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                            sName.lstrip('www.')
                             sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['lowerD']
                             newChart[sName] = sValue
                     elif m == 'upperD':
                         newChart["chart_title"] = "Avg. Delay Upper 95% limit"
-                        newChart["unit"] = "Minutes"
+                        newChart["unit"] = "minutes"
                         for s in sources:
                             sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                            sName.lstrip('www.')
                             sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['upperD']
                             newChart[sName] = sValue
                     elif m == 'polarity':
@@ -204,6 +208,7 @@ class CGraphFactory(WebSocketServerFactory):
                         newChart["unit"] = ""
                         for s in sources:
                             sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                            sName.lstrip('www.')
                             sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['polarity']
                             newChart[sName] = sValue
                     else:
@@ -211,6 +216,7 @@ class CGraphFactory(WebSocketServerFactory):
                         newChart["unit"] = ""
                         for s in sources:
                             sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                            sName.lstrip('www.')
                             sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['subjectivity']
                             newChart[sName] = sValue
                     result.append(newChart)
