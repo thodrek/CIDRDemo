@@ -52,10 +52,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="select-data-sources.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="241" column="30" selection-start="10278" selection-end="10278" vertical-scroll-proportion="0.3321033" vertical-offset="3345" max-vertical-offset="5280">
+            <state line="47" column="0" selection-start="3645" selection-end="3660" vertical-scroll-proportion="-14.375" vertical-offset="360" max-vertical-offset="5295">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -63,19 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="barPlot.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="barPlot.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="23" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1800">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="scatter-matrix.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="62" column="63" selection-start="1505" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="8130">
+            <state line="45" column="25" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.5470588" vertical-offset="210" max-vertical-offset="1845">
               <folding />
             </state>
           </provider>
@@ -156,8 +147,8 @@
         <option value="$PROJECT_DIR$/Utilities/functions.py" />
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
         <option value="$PROJECT_DIR$/Server.py" />
-        <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
+        <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
       </list>
     </option>
   </component>
@@ -752,6 +743,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="0" selection-start="3645" selection-end="3660" vertical-scroll-proportion="-14.375" vertical-offset="360" max-vertical-offset="5295">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="62" column="63" selection-start="1505" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="8130">
@@ -761,17 +761,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="23" selection-start="1799" selection-end="1799" vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="1800">
+        <state line="45" column="25" selection-start="1170" selection-end="1170" vertical-scroll-proportion="0.5470588" vertical-offset="210" max-vertical-offset="1845">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="30" selection-start="10278" selection-end="10278" vertical-scroll-proportion="0.3321033" vertical-offset="3345" max-vertical-offset="5280">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
