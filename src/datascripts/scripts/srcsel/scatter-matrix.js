@@ -4,7 +4,7 @@
 
 function askForProfile(d) {
     pointId = d["id"]
-    //pointIdGlobal = d["id"]
+    pointIdGlobal = d["id"]
     msg = "_profile:";
     msg = msg.concat(pointId.toString());
     if (msg != "") {
