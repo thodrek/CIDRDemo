@@ -120,10 +120,6 @@ def timeliness(selection, activeClusters):
 
 def delayBounds(selection, activeClusters):
     delayIntervals, delayProbs = timeliness(selection,activeClusters)
-    print "\n\n Selection",
-    print selection
-    print delayIntervals
-    print delayProbs
     sample = functions.sampleCDF(delayIntervals,delayProbs,10000)
     # compute average delay, upper and lower bound
     m = np.mean(sample)

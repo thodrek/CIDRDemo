@@ -166,7 +166,6 @@ class CGraphFactory(WebSocketServerFactory):
         return payload
 
     def retrieveSourcesProfile(self,pointId):
-        print self._selectionCache['solutionProfiles'][pointId]
         if not self._selectionCache['solutionProfiles']:
             payload = "No point profile found. Please issue query again."
         else:

@@ -35,7 +35,7 @@
       <file leaf-file-name="Server.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="223" column="47" selection-start="8478" selection-end="11301" vertical-scroll-proportion="0.718398" vertical-offset="2771" max-vertical-offset="3975">
+            <state line="167" column="45" selection-start="7707" selection-end="7707" vertical-scroll-proportion="0.28660825" vertical-offset="2276" max-vertical-offset="3960">
               <folding>
                 <element signature="e#26#36#0" expanded="true" />
               </folding>
@@ -46,7 +46,7 @@
       <file leaf-file-name="Metrics.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="126" column="64" selection-start="3922" selection-end="3925" vertical-scroll-proportion="-13.68" vertical-offset="1503" max-vertical-offset="2040">
+            <state line="121" column="69" selection-start="3766" selection-end="3766" vertical-scroll-proportion="-24.6" vertical-offset="1155" max-vertical-offset="1980">
               <folding />
             </state>
           </provider>
@@ -164,8 +164,8 @@
         <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
         <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
-        <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
         <option value="$PROJECT_DIR$/Utilities/functions.py" />
+        <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
         <option value="$PROJECT_DIR$/Server.py" />
       </list>
     </option>
@@ -759,13 +759,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="126" column="64" selection-start="3922" selection-end="3925" vertical-scroll-proportion="-13.68" vertical-offset="1503" max-vertical-offset="2040">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="885">
@@ -773,9 +766,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="121" column="69" selection-start="3766" selection-end="3766" vertical-scroll-proportion="-24.6" vertical-offset="1155" max-vertical-offset="1980">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="223" column="47" selection-start="8478" selection-end="11301" vertical-scroll-proportion="0.718398" vertical-offset="2771" max-vertical-offset="3975">
+        <state line="167" column="45" selection-start="7707" selection-end="7707" vertical-scroll-proportion="0.28660825" vertical-offset="2276" max-vertical-offset="3960">
           <folding>
             <element signature="e#26#36#0" expanded="true" />
           </folding>
