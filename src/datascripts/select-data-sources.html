@@ -155,11 +155,11 @@ else document.observe('dom:loaded', initFlyouts);
                     }
                     else {
                         if (profileState == 0) {
-                            profileState = 1
+                            //profileState = 1
                             d3.select("#profiles").html("");
                             var inputData = JSON.parse(e.data)
                             plotSolutionTable(inputData)
-                            askForSourceDetails()
+                            //askForSourceDetails()
                         }
                         else {
                             d3.select("#canvas-svg").html("");
@@ -321,7 +321,7 @@ function plotSolutionTable(data) {
             </tr>
             </table>
             </form>
-            <div align="center"><button onclick='sendExploration();'>Select Sources</button></div>
+            <div align="center"><button onclick='renderScatterMatrix();'>Select Sources</button></div>
             <pre id="log" style="height: 5em; width: 80em; background-color: #FFFFFF;"></pre>
             <p id="chart">
             </p>
