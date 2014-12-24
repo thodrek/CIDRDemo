@@ -177,48 +177,51 @@ class CGraphFactory(WebSocketServerFactory):
                 metrics = ['cov','lowerD', 'upperD','polarity','subjectivity']
                 sources = self._selectionCache['solutionProfiles'][pointId]['selection']
                 for m in metrics:
-                    newChart = {}
-                    if m == 'cov':
-                        newChart["chart_title"] = "Coverage"
-                        newChart["unit"] = "percentage"
-                        for s in sources:
-                            sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                            sName.lstrip('www.')
-                            sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['cov']
-                            newChart[sName] = sValue
-                    elif m == 'lowerD':
-                        newChart["chart_title"] = "Avg. Delay Lower 95% limit"
-                        newChart["unit"] = "minutes"
-                        for s in sources:
-                            sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                            sName.lstrip('www.')
-                            sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['lowerD']
-                            newChart[sName] = sValue
-                    elif m == 'upperD':
-                        newChart["chart_title"] = "Avg. Delay Upper 95% limit"
-                        newChart["unit"] = "minutes"
-                        for s in sources:
-                            sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                            sName.lstrip('www.')
-                            sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['upperD']
-                            newChart[sName] = sValue
-                    elif m == 'polarity':
-                        newChart["chart_title"] = "Polarity"
-                        newChart["unit"] = ""
-                        for s in sources:
-                            sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                            sName.lstrip('www.')
-                            sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['polarity']
-                            newChart[sName] = sValue
+                    if self._selectionCache['solutionProfiles'][pointId][m] == 0.0:
+                        pass
                     else:
-                        newChart["chart_title"] = "Subjectivity"
-                        newChart["unit"] = ""
-                        for s in sources:
-                            sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
-                            sName.lstrip('www.')
-                            sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['subjectivity']
-                            newChart[sName] = sValue
-                    result.append(newChart)
+                        newChart = {}
+                        if m == 'cov':
+                            newChart["chart_title"] = "Coverage"
+                            newChart["unit"] = "percentage"
+                            for s in sources:
+                                sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                                sName.lstrip('www.')
+                                sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['cov']
+                                newChart[sName] = sValue
+                        elif m == 'lowerD':
+                            newChart["chart_title"] = "Avg. Delay Lower 95% limit"
+                            newChart["unit"] = "minutes"
+                            for s in sources:
+                                sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                                sName.lstrip('www.')
+                                sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['lowerD']
+                                newChart[sName] = sValue
+                        elif m == 'upperD':
+                            newChart["chart_title"] = "Avg. Delay Upper 95% limit"
+                            newChart["unit"] = "minutes"
+                            for s in sources:
+                                sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                                sName.lstrip('www.')
+                                sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['upperD']
+                                newChart[sName] = sValue
+                        elif m == 'polarity':
+                            newChart["chart_title"] = "Polarity"
+                            newChart["unit"] = ""
+                            for s in sources:
+                                sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                                sName.lstrip('www.')
+                                sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['polarity']
+                                newChart[sName] = sValue
+                        else:
+                            newChart["chart_title"] = "Subjectivity"
+                            newChart["unit"] = ""
+                            for s in sources:
+                                sName = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['name']
+                                sName.lstrip('www.')
+                                sValue = self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s]['subjectivity']
+                                newChart[sName] = sValue
+                        result.append(newChart)
 
                 payload = json.dumps(result)
         return payload
