@@ -158,8 +158,8 @@ else document.observe('dom:loaded', initFlyouts);
                             //profileState = 1
                             d3.select("#profiles").html("");
                             var inputData = JSON.parse(e.data);
-                            plotSolutionTable(inputData);
                             ReplaceContentInContainer("log","test");
+                            plotSolutionTable(inputData);
                             //askForSourceDetails()
                         }
                         else {
