@@ -46,8 +46,10 @@
       <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="40" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.26199263" vertical-offset="1137" max-vertical-offset="5205">
-              <folding />
+            <state line="166" column="28" selection-start="7842" selection-end="7842" vertical-scroll-proportion="0.61254615" vertical-offset="1992" max-vertical-offset="5205">
+              <folding>
+                <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -55,7 +57,7 @@
       <file leaf-file-name="barPlot.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+            <state line="21" column="16" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1800">
               <folding />
             </state>
           </provider>
@@ -752,15 +754,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1800">
+        <state line="21" column="16" selection-start="525" selection-end="525" vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="1800">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="40" selection-start="4372" selection-end="4372" vertical-scroll-proportion="0.26199263" vertical-offset="1137" max-vertical-offset="5205">
-          <folding />
+        <state line="166" column="28" selection-start="7842" selection-end="7842" vertical-scroll-proportion="0.61254615" vertical-offset="1992" max-vertical-offset="5205">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
