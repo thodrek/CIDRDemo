@@ -160,7 +160,8 @@ else document.observe('dom:loaded', initFlyouts);
                     else {
                         if (profileState == 0) {
                             profileState = 1
-                            d3.select("#profiles").html("");
+                            var tid = '#tab'+tableId.toString()
+                            d3.select(tid).remove()
                             var inputData = JSON.parse(e.data);
                             plotSolutionTable(inputData);
                             askForSourceDetails()
@@ -233,8 +234,6 @@ else document.observe('dom:loaded', initFlyouts);
 </script>
 <script type="text/javascript">
 function plotSolutionTable(data) {
-    var tid = '#tab'+tableId.toString()
-    d3.select(tid).html("");
     // the columns you'd like to display
     var columns = ["Metric", "Value"];
 
@@ -246,9 +245,8 @@ function plotSolutionTable(data) {
         thead = table.append("thead"),
         tbody = table.append("tbody");
 
-    table.attr("class","gridtable");
-
-    table.attr('id',function(d){
+    table.attr("class","gridtable")
+    .attr('id',function(d){
             tableId = tableId + 1;
             var result = 'tab'+tableId.toString();
             return result; });
