@@ -43,19 +43,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select-data-sources.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="75" selection-start="7875" selection-end="7922" vertical-scroll-proportion="-22.625" vertical-offset="1947" max-vertical-offset="5175">
+            <state line="164" column="44" selection-start="7763" selection-end="7763" vertical-scroll-proportion="0.6494465" vertical-offset="1932" max-vertical-offset="5190">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scatter-matrix.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scatter-matrix.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="56" selection-start="541" selection-end="541" vertical-scroll-proportion="0.3670588" vertical-offset="3" max-vertical-offset="8130">
+            <state line="21" column="56" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="8130">
               <folding />
             </state>
           </provider>
@@ -144,8 +144,8 @@
         <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/Source.py" />
         <option value="$PROJECT_DIR$/Server.py" />
-        <option value="$PROJECT_DIR$/select-data-sources.html" />
         <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
+        <option value="$PROJECT_DIR$/select-data-sources.html" />
       </list>
     </option>
   </component>
@@ -739,16 +739,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="75" selection-start="7875" selection-end="7922" vertical-scroll-proportion="-22.625" vertical-offset="1947" max-vertical-offset="5175">
+        <state line="21" column="56" selection-start="541" selection-end="541" vertical-scroll-proportion="0.0" vertical-offset="3" max-vertical-offset="8130">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
+    <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="56" selection-start="541" selection-end="541" vertical-scroll-proportion="0.3670588" vertical-offset="3" max-vertical-offset="8130">
+        <state line="164" column="44" selection-start="7763" selection-end="7763" vertical-scroll-proportion="0.6494465" vertical-offset="1932" max-vertical-offset="5190">
           <folding />
         </state>
       </provider>

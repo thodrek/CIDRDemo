@@ -162,6 +162,7 @@ else document.observe('dom:loaded', initFlyouts);
                             askForSourceDetails()
                         }
                         else {
+                            profileState = 0
                             //d3.select("#canvas-svg").html("");
                             var inputData = JSON.parse(e.data)
                             ReplaceContentInContainer("canvas-svg",e.data);
