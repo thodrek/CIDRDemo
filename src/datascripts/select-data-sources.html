@@ -155,17 +155,17 @@ else document.observe('dom:loaded', initFlyouts);
                     }
                     else {
                         if (profileState == 0) {
-                            //profileState = 1
+                            profileState = 1
                             d3.select("#profiles").html("");
                             var inputData = JSON.parse(e.data);
                             plotSolutionTable(inputData);
-                            ReplaceContentInContainer("canvas-svg",pointIdGlobal);
-                            //askForSourceDetails()
+                            askForSourceDetails()
                         }
                         else {
-                            d3.select("#canvas-svg").html("");
+                            //d3.select("#canvas-svg").html("");
                             var inputData = JSON.parse(e.data)
-                            plotBars(inputData)
+                            ReplaceContentInContainer("canvas-svg",e.data);
+                            //plotBars(inputData)
                         }
                     }
 
