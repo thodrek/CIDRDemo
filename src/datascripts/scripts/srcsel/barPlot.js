@@ -86,7 +86,7 @@ function plotBars(data) {
 	  svg.selectAll(".bar")
 	      .data(value_data)
 	    .enter().append("rect")
-	      .style("fill", "red")
+	      .style("fill", "#ff7f0e")
 	      .attr("x", function(d) { return x(d.x_axis); })
 	      .attr("width", x.rangeBand())
 	      .attr("y", function(d) { return y(d.y_axis); })
