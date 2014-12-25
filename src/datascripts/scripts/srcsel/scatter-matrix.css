@@ -35,7 +35,7 @@ circle { fill: #ccc; fill-opacity: .5; }
 .color-17 { fill: #00c; }
 
 circle.hidden {
-  fill: #ccc !important;
+  fill: #00c !important;
 }
 
 .scatter-matrix-filter-control ul { list-style: none; padding-left: 10px; }
