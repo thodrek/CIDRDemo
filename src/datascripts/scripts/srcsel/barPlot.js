@@ -2,7 +2,7 @@ function plotBars(data) {
 	var WIDTH = 800;
 	var HEIGHT = 2000;
 
-	var Y_DATA_FORMAT = d3.format("05.2f");
+	var Y_DATA_FORMAT = d3.format("");
 
 	var margin = {top: 70, right: 20, bottom: 50, left: 60},
 	    width = WIDTH - margin.left - margin.right,
@@ -93,7 +93,7 @@ function plotBars(data) {
 	      .on("mouseover", function(d, i, j) {
 		detailBox.attr("x", x.range()[i] - Y_DATA_FORMAT(d.y_axis).length / 2)
 		  .attr("y", y(d.y_axis))
-		  .text(Y_DATA_FORMAT(d.y_axis))
+		  .text(Y_DATA_FORMAT(d.y_axis.toFixed(2)))
 		  .style("visibility", "visible");
 	      
 		d3.select(this)
