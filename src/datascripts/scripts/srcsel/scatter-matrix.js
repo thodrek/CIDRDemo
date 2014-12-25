@@ -3,7 +3,7 @@
 //
 
 function highlight(dIn) {
-    svg.selectAll("circle").classed("hidden",true);
+    svg.selectAll("circle").enter().attr("fill","red");
 }
 
 function askForProfile(d) {
