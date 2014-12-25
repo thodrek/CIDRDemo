@@ -6,7 +6,7 @@ function highlight(d,svg) {
     //svg.selectAll("circle").classed(".hidden", function(d) {
     //  return dIn["id"] == d["id"];
     //});
-    svg.selectAll("circle").classed("hidden",true)
+    d3.selectAll("circle").classed("hidden",true)
 }
 
 function askForProfile(d) {
