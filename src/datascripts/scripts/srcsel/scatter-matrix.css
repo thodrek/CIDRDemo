@@ -8,7 +8,7 @@ svg { font-size: 12px; }
 rect.extent { fill: #000; fill-opacity: .125; stroke: #fff; }
 rect.frame { fill: #fff; fill-opacity: .7; stroke: #aaa; }
 
-circle { fill: #ccc; fill-opacity: .5; }
+circle { fill: grey; fill-opacity: .5; }
 
 .legend circle { fill-opacity: 1; }
 .legend text { font-size: 12px; font-style: oblique; }
@@ -34,8 +34,8 @@ circle { fill: #ccc; fill-opacity: .5; }
 .color-16 { fill: #0c0; }
 .color-17 { fill: #00c; }
 
-circle.hidden {
-  fill: grey !important;
+circle.hightlight {
+  fill-opacity: 1; fill: yellow !important;
 }
 
 .scatter-matrix-filter-control ul { list-style: none; padding-left: 10px; }

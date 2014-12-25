@@ -3,7 +3,7 @@
 //
 
 function highlight(dIn) {
-    d3.selectAll("circle").classed("hidden", function(d) {
+    d3.selectAll("circle").classed("hightlight", function(d) {
       return dIn["id"] == d["id"];
     });
 }
