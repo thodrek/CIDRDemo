@@ -2,9 +2,9 @@ function plotBars(data) {
 	var WIDTH = 800;
 	var HEIGHT = 2000;
 
-	var Y_DATA_FORMAT = d3.format("");
+	var Y_DATA_FORMAT = d3.format("05.2f");
 
-	var margin = {top: 150, right: 20, bottom: 50, left: 60},
+	var margin = {top: 70, right: 20, bottom: 50, left: 60},
 	    width = WIDTH - margin.left - margin.right,
 	    height = HEIGHT - margin.top - margin.bottom;
 
