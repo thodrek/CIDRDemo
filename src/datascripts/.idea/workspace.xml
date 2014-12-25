@@ -46,7 +46,7 @@
       <file leaf-file-name="scatter-matrix.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="519" column="32" selection-start="17310" selection-end="17310" vertical-scroll-proportion="0.7329843" vertical-offset="7365" max-vertical-offset="8280">
+            <state line="515" column="25" selection-start="17247" selection-end="17247" vertical-scroll-proportion="0.8115183" vertical-offset="7260" max-vertical-offset="8385">
               <folding />
             </state>
           </provider>
@@ -707,7 +707,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="519" column="32" selection-start="17310" selection-end="17310" vertical-scroll-proportion="0.7329843" vertical-offset="7365" max-vertical-offset="8280">
+        <state line="515" column="25" selection-start="17247" selection-end="17247" vertical-scroll-proportion="0.8115183" vertical-offset="7260" max-vertical-offset="8385">
           <folding />
         </state>
       </provider>

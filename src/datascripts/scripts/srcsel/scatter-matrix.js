@@ -501,12 +501,19 @@ ScatterMatrix.prototype.__draw =
       // Scatter plot dots
       cell.selectAll("circle")
           .data(data_to_draw)
-        .enter().append("svg:circle")
+        .enter().append("path")
           .style("fill", function(d) { return color(d["id"]); })
-          //.attr("class", function(d) { return color_class(d); })
-          .attr("cx", function(d) { return x[p.x](d[p.x]); })
-          .attr("cy", function(d) { return y[p.y](d[p.y]); })
-          .attr("r", 5)
+          .attr("transform", function(d) { return "translate(" + x[p.x](d[p.x]) + "," + y[p.y](d[p.y]) + ")"; })
+          .attr("d", d3.svg.symbol()
+            .type(function(d) {
+                if (d["point type"].indexOf("pareto")return != -1)
+                    "triangle-up";
+                else
+                    "diamond";
+             }))
+          //.attr("cx", function(d) { return x[p.x](d[p.x]); })
+          //.attr("cy", function(d) { return y[p.y](d[p.y]); })
+          //.attr("r", 5)
           .on("click", function(d) {
             highlight(d);
             askForProfile(d);
