@@ -4,7 +4,7 @@ function plotBars(data) {
 
 	var Y_DATA_FORMAT = d3.format("");
 
-	var margin = {top: 70, right: 20, bottom: 50, left: 60},
+	var margin = {top: 70, right: 20, bottom: 1000, left: 60},
 	    width = WIDTH - margin.left - margin.right,
 	    height = HEIGHT - margin.top - margin.bottom;
 
@@ -37,9 +37,10 @@ function plotBars(data) {
 	  var value_data = _.map(groups, function(d) {
 	    return {x_axis: d, y_axis: bar_data[d]};
 	  });
-	  
+
+	  var minY = Math.min(0,d3.min(value_data, function(d) { return d.y_axis; }))
 	  x.domain(value_data.map(function(d) { return d.x_axis; }));
-	  y.domain([0, d3.max(value_data, function(d) { return d.y_axis; })]);
+	  y.domain([minY, d3.max(value_data, function(d) { return d.y_axis; })]);
 
 	  var svg = d3.select("#canvas-svg").append("svg")
 	      .attr("width", width + margin.left + margin.right)
