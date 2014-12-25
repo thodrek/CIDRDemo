@@ -506,7 +506,7 @@ ScatterMatrix.prototype.__draw =
           .attr("transform", function(d) { return "translate(" + x[p.x](d[p.x]) + "," + y[p.y](d[p.y]) + ")"; })
           .attr("d", d3.svg.symbol()
             .type(function(d) {
-                if (d["point type"].indexOf("pareto")return != -1)
+                if (d["point type"].indexOf("pareto") != -1)
                     "triangle-up";
                 else
                     "diamond";
