@@ -37,7 +37,7 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="900">
+            <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.6" vertical-offset="35" max-vertical-offset="885">
               <folding />
             </state>
           </provider>
@@ -54,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scatter-matrix.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scatter-matrix.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="6" selection-start="273" selection-end="273" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="8250">
+            <state line="6" column="22" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="8235">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scatter-matrix.css" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="scatter-matrix.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="6" selection-start="946" selection-end="946" vertical-scroll-proportion="-21.6" vertical-offset="0" max-vertical-offset="750">
+            <state line="37" column="12" selection-start="968" selection-end="968" vertical-scroll-proportion="0.6727273" vertical-offset="0" max-vertical-offset="825">
               <folding />
             </state>
           </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py" />
         <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
-        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css" />
         <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
+        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css" />
       </list>
     </option>
   </component>
@@ -736,13 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="900">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="101" column="30" selection-start="3928" selection-end="3928" vertical-scroll-proportion="-60.0" vertical-offset="0" max-vertical-offset="1695">
@@ -803,13 +796,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="946" selection-end="946" vertical-scroll-proportion="-21.6" vertical-offset="0" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="328" column="52" selection-start="13235" selection-end="13235" vertical-scroll-proportion="-15.75" vertical-offset="4542" max-vertical-offset="5355">
@@ -821,7 +807,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="6" selection-start="273" selection-end="273" vertical-scroll-proportion="0.14563107" vertical-offset="0" max-vertical-offset="8250">
+        <state line="6" column="22" selection-start="236" selection-end="236" vertical-scroll-proportion="-3.4615386" vertical-offset="0" max-vertical-offset="8235">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-7.6" vertical-offset="35" max-vertical-offset="885">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="12" selection-start="968" selection-end="968" vertical-scroll-proportion="0.6727273" vertical-offset="0" max-vertical-offset="825">
           <folding />
         </state>
       </provider>
