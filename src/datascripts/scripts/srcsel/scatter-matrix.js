@@ -505,6 +505,7 @@ ScatterMatrix.prototype.__draw =
           .attr("cy", function(d) { return y[p.y](d[p.y]); })
           .attr("r", 5)
           .on("click", function(d) {
+            highlight(d);
             askForProfile(d);
           });
 

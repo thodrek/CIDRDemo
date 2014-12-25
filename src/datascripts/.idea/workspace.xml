@@ -54,19 +54,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scatter-matrix.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="scatter-matrix.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="6" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8220">
+            <state line="507" column="25" selection-start="16918" selection-end="16918" vertical-scroll-proportion="0.5588235" vertical-offset="7130" max-vertical-offset="8235">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scatter-matrix.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="scatter-matrix.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="25" selection-start="678" selection-end="678" vertical-scroll-proportion="0.43636364" vertical-offset="0" max-vertical-offset="825">
+            <state line="42" column="74" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-25.2" vertical-offset="0" max-vertical-offset="750">
               <folding />
             </state>
           </provider>
@@ -159,8 +159,8 @@
         <option value="$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py" />
         <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
-        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
         <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css" />
+        <option value="$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js" />
       </list>
     </option>
   </component>
@@ -812,16 +812,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="6" selection-start="256" selection-end="256" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8220">
+        <state line="42" column="74" selection-start="1212" selection-end="1212" vertical-scroll-proportion="-25.2" vertical-offset="0" max-vertical-offset="750">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="25" selection-start="678" selection-end="678" vertical-scroll-proportion="0.43636364" vertical-offset="0" max-vertical-offset="825">
+        <state line="507" column="25" selection-start="16918" selection-end="16918" vertical-scroll-proportion="0.5588235" vertical-offset="7130" max-vertical-offset="8235">
           <folding />
         </state>
       </provider>
