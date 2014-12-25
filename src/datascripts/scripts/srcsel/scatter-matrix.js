@@ -2,6 +2,12 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
+function highlight(dIn) {
+    svg.selectAll("circle").classed("hidden", function(d) {
+      return dIn["id"] == d["id"];
+    });
+}
+
 function askForProfile(d) {
     pointId = d["id"]
     pointIdGlobal = d["id"]
