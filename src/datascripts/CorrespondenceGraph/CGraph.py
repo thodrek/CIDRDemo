@@ -63,6 +63,7 @@ class CGraph:
                 newTrans = set([])
 
                 for e in ar['entities']:
+                    eCanName = e['name']
                     # update entity reference to name map
                     if e['cRef'] not in self._cEntRefToName:
                         self._cEntRefToName[e['cRef']] = e['name']

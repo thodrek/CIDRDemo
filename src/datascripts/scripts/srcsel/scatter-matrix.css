@@ -8,7 +8,7 @@ svg { font-size: 12px; }
 rect.extent { fill: #000; fill-opacity: .125; stroke: #fff; }
 rect.frame { fill: #fff; fill-opacity: .7; stroke: #aaa; }
 
-circle { fill: grey; fill-opacity: .5; }
+circle { fill-opacity: .5; }
 
 .legend circle { fill-opacity: 1; }
 .legend text { font-size: 12px; font-style: oblique; }

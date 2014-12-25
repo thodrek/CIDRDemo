@@ -39,6 +39,8 @@ function askForSourceDetails() {
     }
 }
 
+var color = d3.scale.category20();
+
 ScatterMatrix = function(url, data, dom_id) {
   this.__url = url;
   if (data === undefined || data === null) { this.__data = undefined; }
@@ -500,7 +502,8 @@ ScatterMatrix.prototype.__draw =
       cell.selectAll("circle")
           .data(data_to_draw)
         .enter().append("svg:circle")
-          .attr("class", function(d) { return color_class(d); })
+          .style("fill", function(d) { return color(d["id"]); })
+          //.attr("class", function(d) { return color_class(d); })
           .attr("cx", function(d) { return x[p.x](d[p.x]); })
           .attr("cy", function(d) { return y[p.y](d[p.y]); })
           .attr("r", 5)
