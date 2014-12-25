@@ -2,7 +2,7 @@ __author__ = 'thodrek'
 
 import cPickle as pickle
 import argparse
-from DataPreprocessing.EventRegistry import *
+from EventRegistry import *
 import socket
 import os
 import sys

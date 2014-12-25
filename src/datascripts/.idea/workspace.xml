@@ -35,10 +35,8 @@
       <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="40" selection-start="8168" selection-end="8168" vertical-scroll-proportion="-0.29411766" vertical-offset="2625" max-vertical-offset="3915">
-              <folding>
-                <element signature="e#26#36#0" expanded="true" />
-              </folding>
+            <state line="176" column="40" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="3915">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,36 +44,52 @@
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="885">
+            <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="900">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="select-data-sources.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="49" selection-start="7865" selection-end="7865" vertical-scroll-proportion="0.7785978" vertical-offset="1857" max-vertical-offset="5325">
-              <folding>
-                <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="barPlot.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1920">
+            <state line="42" column="14" selection-start="3564" selection-end="3564" vertical-scroll-proportion="-9.375" vertical-offset="405" max-vertical-offset="5325">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CostFunction.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
+      <file leaf-file-name="scatter-matrix.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="52" selection-start="397" selection-end="397" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="124" column="28" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="8130">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="enrichArticles.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="2190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="extractArticleInfo.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="4" column="5" selection-start="70" selection-end="70" vertical-scroll-proportion="28.2" vertical-offset="765" max-vertical-offset="1560">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="barPlot.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="92" column="16" selection-start="2636" selection-end="2637" vertical-scroll-proportion="2.2456813" vertical-offset="210" max-vertical-offset="1920">
               <folding />
             </state>
           </provider>
@@ -93,7 +107,7 @@
       <file leaf-file-name="LocalSearch.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="182" column="45" selection-start="5967" selection-end="5967" vertical-scroll-proportion="-2.36" vertical-offset="2656" max-vertical-offset="3405">
+            <state line="182" column="45" selection-start="5967" selection-end="5967" vertical-scroll-proportion="0.0" vertical-offset="2730" max-vertical-offset="3420">
               <folding />
             </state>
           </provider>
@@ -148,14 +162,15 @@
         <option value="$PROJECT_DIR$/SourceSelection/Metrics.py" />
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
+        <option value="$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1920" />
-    <option name="height" value="970" />
+    <option name="width" value="1280" />
+    <option name="height" value="690" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -230,6 +245,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SourceSelection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ServerTests" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="DataPreprocessing" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -410,15 +453,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="970" extended-state="6" />
+    <frame x="0" y="22" width="1280" height="690" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13691416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13661636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -426,10 +468,11 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32801822" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -446,9 +489,9 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11690363" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="UnknownFeatures">
@@ -471,11 +514,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="19" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="135" column="0" selection-start="4310" selection-end="4310" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="2790" />
@@ -611,11 +649,6 @@
         <state line="6" column="0" selection-start="85" selection-end="85" vertical-scroll-proportion="0.0" vertical-offset="108" max-vertical-offset="216" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="2190" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utilities/exploreEnrichedEvents.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1051" />
@@ -656,11 +689,6 @@
         <state line="9" column="31" selection-start="156" selection-end="156" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="39" selection-start="385" selection-end="385" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2034" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="86" column="24" selection-start="2587" selection-end="2598" vertical-scroll-proportion="11.8" vertical-offset="1866" max-vertical-offset="3636" />
@@ -669,13 +697,6 @@
     <entry file="file://$PROJECT_DIR$/ServerTests/createCorrespondenceClusters.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="56" column="14" selection-start="1601" selection-end="1698" vertical-scroll-proportion="0.23048328" vertical-offset="688" max-vertical-offset="1926" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="388" column="34" selection-start="14940" selection-end="14940" vertical-scroll-proportion="0.0" vertical-offset="5820" max-vertical-offset="6135">
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
@@ -694,75 +715,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="43" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="706" max-vertical-offset="1782">
-          <folding />
-        </state>
+        <state line="57" column="43" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="706" max-vertical-offset="1782" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/CostFunction.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="52" selection-start="397" selection-end="397" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="465">
+        <state line="15" column="52" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="465">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="45" selection-start="5967" selection-end="5967" vertical-scroll-proportion="-2.36" vertical-offset="2656" max-vertical-offset="3405">
+        <state line="182" column="45" selection-start="5967" selection-end="5967" vertical-scroll-proportion="0.0" vertical-offset="2730" max-vertical-offset="3420">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="121" column="69" selection-start="3766" selection-end="3766" vertical-scroll-proportion="-24.6" vertical-offset="1155" max-vertical-offset="1980">
-          <folding />
-        </state>
+        <state line="121" column="69" selection-start="3766" selection-end="3766" vertical-scroll-proportion="-24.6" vertical-offset="1155" max-vertical-offset="1980" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="176" column="40" selection-start="8168" selection-end="8168" vertical-scroll-proportion="-0.29411766" vertical-offset="2625" max-vertical-offset="3915">
-          <folding>
-            <element signature="e#26#36#0" expanded="true" />
-          </folding>
+        <state line="176" column="40" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="3915">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="25" selection-start="886" selection-end="886" vertical-scroll-proportion="0.58181816" vertical-offset="0" max-vertical-offset="825">
+        <state line="32" column="25" selection-start="886" selection-end="886" vertical-scroll-proportion="0.58181816" vertical-offset="0" max-vertical-offset="825" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="30" selection-start="3928" selection-end="3928" vertical-scroll-proportion="-60.0" vertical-offset="0" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="22" selection-start="705" selection-end="705" vertical-scroll-proportion="0.50098234" vertical-offset="0" max-vertical-offset="5940">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="2190">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DataPreprocessing/extractArticleInfo.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="5" selection-start="70" selection-end="70" vertical-scroll-proportion="28.2" vertical-offset="765" max-vertical-offset="1560">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="63" selection-start="1505" selection-end="1548" vertical-scroll-proportion="0.0" vertical-offset="750" max-vertical-offset="8130">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="382" selection-end="382" vertical-scroll-proportion="-9.0" vertical-offset="0" max-vertical-offset="885">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="59" selection-end="59" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1920">
+        <state line="124" column="28" selection-start="3642" selection-end="3642" vertical-scroll-proportion="0.0" vertical-offset="1610" max-vertical-offset="8130">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="49" selection-start="7865" selection-end="7865" vertical-scroll-proportion="0.7785978" vertical-offset="1857" max-vertical-offset="5325">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="42" column="14" selection-start="3564" selection-end="3564" vertical-scroll-proportion="-9.375" vertical-offset="405" max-vertical-offset="5325">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/barPlot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="92" column="16" selection-start="2636" selection-end="2637" vertical-scroll-proportion="2.2456813" vertical-offset="210" max-vertical-offset="1920">
+          <folding />
         </state>
       </provider>
     </entry>
