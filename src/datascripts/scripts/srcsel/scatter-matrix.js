@@ -3,9 +3,9 @@
 //
 
 function highlight(dIn) {
-    svg.selectAll("circle").classed("hidden", function(d) {
-      return dIn["id"] == d["id"];
-    });
+    //svg.selectAll("circle").classed("hidden", function(d) {
+    //  return dIn["id"] == d["id"];
+    //});
 }
 
 function askForProfile(d) {
