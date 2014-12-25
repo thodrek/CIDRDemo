@@ -32,15 +32,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="176" column="40" selection-start="8168" selection-end="8168" vertical-scroll-proportion="0.0" vertical-offset="2625" max-vertical-offset="3915">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="functions.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utilities/functions.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -53,10 +44,19 @@
       <file leaf-file-name="select-data-sources.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/select-data-sources.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="314" column="67" selection-start="12671" selection-end="12671" vertical-scroll-proportion="-0.029411765" vertical-offset="4725" max-vertical-offset="5385">
+            <state line="337" column="19" selection-start="13542" selection-end="13542" vertical-scroll-proportion="0.47058824" vertical-offset="4815" max-vertical-offset="5355">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main_style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/files/main_style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-7.48" vertical-offset="23" max-vertical-offset="2670">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -233,6 +233,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="srcsel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="files" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -516,11 +530,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CCluster.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="4310" selection-end="4310" vertical-scroll-proportion="0.0" vertical-offset="2025" max-vertical-offset="2790" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="125" column="0" selection-start="4476" selection-end="4476" vertical-scroll-proportion="0.0" vertical-offset="1875" max-vertical-offset="3255">
@@ -800,9 +809,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/files/main_style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-7.48" vertical-offset="23" max-vertical-offset="2670">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="314" column="67" selection-start="12671" selection-end="12671" vertical-scroll-proportion="-0.029411765" vertical-offset="4725" max-vertical-offset="5385">
+        <state line="337" column="19" selection-start="13542" selection-end="13542" vertical-scroll-proportion="0.47058824" vertical-offset="4815" max-vertical-offset="5355">
           <folding>
             <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
