@@ -57,7 +57,7 @@
       <file leaf-file-name="scatter-matrix.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="19" selection-start="832" selection-end="832" vertical-scroll-proportion="0.5647059" vertical-offset="0" max-vertical-offset="8250">
+            <state line="8" column="44" selection-start="309" selection-end="309" vertical-scroll-proportion="0.14117648" vertical-offset="0" max-vertical-offset="8250">
               <folding />
             </state>
           </provider>
@@ -803,6 +803,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="6" selection-start="946" selection-end="946" vertical-scroll-proportion="-21.6" vertical-offset="0" max-vertical-offset="750">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/select-data-sources.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="328" column="52" selection-start="13235" selection-end="13235" vertical-scroll-proportion="-15.75" vertical-offset="4542" max-vertical-offset="5355">
@@ -812,16 +819,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="6" selection-start="946" selection-end="946" vertical-scroll-proportion="-21.6" vertical-offset="0" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="19" selection-start="832" selection-end="832" vertical-scroll-proportion="0.5647059" vertical-offset="0" max-vertical-offset="8250">
+        <state line="8" column="44" selection-start="309" selection-end="309" vertical-scroll-proportion="0.14117648" vertical-offset="0" max-vertical-offset="8250">
           <folding />
         </state>
       </provider>
