@@ -176,7 +176,10 @@ class CGraphFactory(WebSocketServerFactory):
                 metrics = ['cov','lowerD', 'upperD','polarity','subjectivity']
                 sources = self._selectionCache['solutionProfiles'][pointId]['selection']
                 for m in metrics:
-                    if self._selectionCache['solutionProfiles'][pointId][m] != 0.0:
+                    srcMetrics = []
+                    for s in sources:
+                        srcMetrics.append(self._selectionCache['solutionProfiles'][pointId]['srcInfo'][s][m])
+                    if sum([x == 0.0 for x in srcMetrics]) != len(srcMetrics):
                         newChart = {}
                         if m == 'cov':
                             newChart["chart_title"] = "Coverage"
