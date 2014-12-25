@@ -2,7 +2,7 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
-function highlight(dIn) {
+function highlight(d) {
     //svg.selectAll("circle").classed(".hidden", function(d) {
     //  return dIn["id"] == d["id"];
     //});
@@ -507,7 +507,7 @@ ScatterMatrix.prototype.__draw =
           .attr("r", 5)
           .on("click", function(d) {
             highlight(d);
-            askForProfile(d);
+            //askForProfile(d);
           });
 
       // Add titles for x variables and drill variable values
