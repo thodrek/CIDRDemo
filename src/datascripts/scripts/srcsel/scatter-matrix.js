@@ -2,8 +2,8 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
-function highlight(d) {
-    d3.selectAll("circle").classed("hidden", function(d) {
+function highlight(dIn) {
+    d3.selectAll("circle").classed("hightlight", function(d) {
       return dIn["id"] == d["id"];
     });
 }
