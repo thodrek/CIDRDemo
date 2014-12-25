@@ -2,8 +2,8 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
-function highlight(dIn) {
-    d3.selectAll("circle").classed("hightlight", function(d) {
+function highlight(d) {
+    d3.selectAll("circle").classed("hidden", function(d) {
       return dIn["id"] == d["id"];
     });
 }
@@ -38,8 +38,6 @@ function askForSourceDetails() {
         }
     }
 }
-
-var color = d3.scale.category20();
 
 ScatterMatrix = function(url, data, dom_id) {
   this.__url = url;
@@ -501,19 +499,11 @@ ScatterMatrix.prototype.__draw =
       // Scatter plot dots
       cell.selectAll("circle")
           .data(data_to_draw)
-        .enter().append("path")
-          .style("fill", function(d) { return color(d["id"]); })
-          .attr("transform", function(d) { return "translate(" + x[p.x](d[p.x]) + "," + y[p.y](d[p.y]) + ")"; })
-          .attr("d", d3.svg.symbol()
-            .type(function(d) {
-                if (d["point type"].indexOf("pareto") != -1)
-                    "triangle-up";
-                else
-                    "diamond";
-             }))
-          //.attr("cx", function(d) { return x[p.x](d[p.x]); })
-          //.attr("cy", function(d) { return y[p.y](d[p.y]); })
-          //.attr("r", 5)
+        .enter().append("svg:circle")
+          .attr("class", function(d) { return color_class(d); })
+          .attr("cx", function(d) { return x[p.x](d[p.x]); })
+          .attr("cy", function(d) { return y[p.y](d[p.y]); })
+          .attr("r", 5)
           .on("click", function(d) {
             highlight(d);
             askForProfile(d);
