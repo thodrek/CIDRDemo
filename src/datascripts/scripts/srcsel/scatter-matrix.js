@@ -2,7 +2,7 @@
 // http://mbostock.github.io/d3/talk/20111116/iris-splom.html
 //
 
-function highlight(d) {
+function highlight(d,svg) {
     //svg.selectAll("circle").classed(".hidden", function(d) {
     //  return dIn["id"] == d["id"];
     //});
@@ -505,8 +505,8 @@ ScatterMatrix.prototype.__draw =
           .attr("cx", function(d) { return x[p.x](d[p.x]); })
           .attr("cy", function(d) { return y[p.y](d[p.y]); })
           .attr("r", 5)
-          .on("click", function(d) {
-            highlight(d);
+          .on("click", function(d,svg) {
+            highlight(d,svg);
             //askForProfile(d);
           });
 
