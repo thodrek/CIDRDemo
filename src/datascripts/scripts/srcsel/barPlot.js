@@ -4,7 +4,7 @@ function plotBars(data) {
 
 	var Y_DATA_FORMAT = d3.format("");
 
-	var margin = {top: 70, right: 20, bottom: 1000, left: 60},
+	var margin = {top: 70, right: 20, bottom: 100, left: 60},
 	    width = WIDTH - margin.left - margin.right,
 	    height = HEIGHT - margin.top - margin.bottom;
 
