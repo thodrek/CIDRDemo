@@ -3,7 +3,9 @@
 //
 
 function highlight(dIn) {
-    svg.selectAll("circle").enter().attr("fill","red");
+    //svg.selectAll("circle").classed("hidden", function(d) {
+    //  return dIn["id"] == d["id"];
+    //});
 }
 
 function askForProfile(d) {
