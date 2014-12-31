@@ -400,8 +400,10 @@ class DataFormater:
             result['nodes'].append({"name":n})
 
         # print coverage and pairwise coverages
+        print "\n"
         self.cgraphExplorationOverlaps(clusterIds,srcs)
-
+        print "\n"
+        
         # convert result to json and return
         return json.dumps(result)
 
