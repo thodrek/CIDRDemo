@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="339" column="48" selection-start="12323" selection-end="12323" vertical-scroll-proportion="-2.8431373" vertical-offset="4940" max-vertical-offset="6675">
+            <state line="339" column="13" selection-start="12288" selection-end="12288" vertical-scroll-proportion="-0.41152263" vertical-offset="5285" max-vertical-offset="6705">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -54,10 +54,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="explore-c-graph.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="238" column="13" selection-start="10152" selection-end="10152" vertical-scroll-proportion="0.56530213" vertical-offset="3280" max-vertical-offset="5580">
+            <state line="238" column="13" selection-start="10152" selection-end="10152" vertical-scroll-proportion="-12.083333" vertical-offset="3280" max-vertical-offset="5580">
               <folding>
                 <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -170,8 +170,8 @@
         <option value="$PROJECT_DIR$/scripts/srcsel/barPlot.js" />
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
-        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
         <option value="$PROJECT_DIR$/explore-c-graph.html" />
+        <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
       </list>
     </option>
   </component>
@@ -804,6 +804,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="13" selection-start="10152" selection-end="10152" vertical-scroll-proportion="-12.083333" vertical-offset="3280" max-vertical-offset="5580">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Server.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="187" column="33" selection-start="8795" selection-end="8795" vertical-scroll-proportion="-7.52" vertical-offset="2317" max-vertical-offset="3660">
@@ -813,18 +822,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="339" column="48" selection-start="12323" selection-end="12323" vertical-scroll-proportion="-2.8431373" vertical-offset="4940" max-vertical-offset="6675">
+        <state line="339" column="13" selection-start="12288" selection-end="12288" vertical-scroll-proportion="-0.41152263" vertical-offset="5285" max-vertical-offset="6705">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="238" column="13" selection-start="10152" selection-end="10152" vertical-scroll-proportion="0.56530213" vertical-offset="3280" max-vertical-offset="5580">
-          <folding>
-            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

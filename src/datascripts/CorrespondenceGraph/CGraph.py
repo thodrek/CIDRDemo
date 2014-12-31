@@ -337,6 +337,7 @@ class DataFormater:
         for cid in clusterIds:
             cTopic = list(self._cgraph.manager().clusters()[cid].topics())
             cTopic = cTopic[0].split('/')[-1]
+            #clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
             clusterName = "C_"+str(cid)+"\n Topic: "+cTopic
             edges[clusterName] = {}
             edges[clusterName]['entities'] = {}
@@ -368,7 +369,8 @@ class DataFormater:
             # grab cluster info
             cTopic = list(self._cgraph.manager().clusters()[cid].topics())
             cTopic = cTopic[0].split('/')[-1]
-            clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
+            #clusterName = "Cluster "+str(cid)+", Topic: "+cTopic
+            clusterName = "C_"+str(cid)+"\n Topic: "+cTopic
             nodes[clusterName] = nid
             nid += 1
             cNodeId = nodes[clusterName]
