@@ -37,16 +37,16 @@
       <file leaf-file-name="Server.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="127" column="78" selection-start="4443" selection-end="4731" vertical-scroll-proportion="-4.1960783" vertical-offset="1391" max-vertical-offset="3660">
+            <state line="187" column="33" selection-start="8795" selection-end="8795" vertical-scroll-proportion="-7.52" vertical-offset="2317" max-vertical-offset="3660">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="319" column="17" selection-start="11807" selection-end="11807" vertical-scroll-proportion="0.537037" vertical-offset="4524" max-vertical-offset="6675">
+            <state line="339" column="48" selection-start="12323" selection-end="12323" vertical-scroll-proportion="-2.8431373" vertical-offset="4940" max-vertical-offset="6675">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -54,11 +54,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Metrics.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SourceSelection/Metrics.py">
+      <file leaf-file-name="explore-c-graph.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="12" selection-start="1003" selection-end="1011" vertical-scroll-proportion="-8.4" vertical-offset="330" max-vertical-offset="1980">
-              <folding />
+            <state line="238" column="13" selection-start="10152" selection-end="10152" vertical-scroll-proportion="0.56530213" vertical-offset="3280" max-vertical-offset="5580">
+              <folding>
+                <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -156,7 +158,6 @@
         <option value="$PROJECT_DIR$/SourceSelection/GainFunction.py" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/ClusterManager.py" />
         <option value="$PROJECT_DIR$/demo.html" />
-        <option value="$PROJECT_DIR$/explore-c-graph.html" />
         <option value="$PROJECT_DIR$/SourceSelection/ParetoFront.py" />
         <option value="$PROJECT_DIR$/SourceSelection/LocalSearch.py" />
         <option value="$PROJECT_DIR$/SourceSelection/CostFunction.py" />
@@ -170,6 +171,7 @@
         <option value="$PROJECT_DIR$/Server.py" />
         <option value="$PROJECT_DIR$/select-data-sources.html" />
         <option value="$PROJECT_DIR$/CorrespondenceGraph/CGraph.py" />
+        <option value="$PROJECT_DIR$/explore-c-graph.html" />
       </list>
     </option>
   </component>
@@ -266,6 +268,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="SourceSelection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="datascripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CorrespondenceGraph" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -713,11 +729,6 @@
         <state line="14" column="30" selection-start="1045" selection-end="1045" vertical-scroll-proportion="-7.48" vertical-offset="23" max-vertical-offset="2670" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="221" column="73" selection-start="9466" selection-end="9622" vertical-scroll-proportion="-20.02" vertical-offset="2314" max-vertical-offset="5550" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataPreprocessing/enrichArticles.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="0" selection-start="312" selection-end="312" vertical-scroll-proportion="-5.4" vertical-offset="0" max-vertical-offset="2190" />
@@ -736,13 +747,6 @@
     <entry file="file://$PROJECT_DIR$/scripts/srcsel/scatter-matrix.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="9" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="750">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="127" column="78" selection-start="4443" selection-end="4731" vertical-scroll-proportion="-4.1960783" vertical-offset="1391" max-vertical-offset="3660">
           <folding />
         </state>
       </provider>
@@ -800,11 +804,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Server.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="187" column="33" selection-start="8795" selection-end="8795" vertical-scroll-proportion="-7.52" vertical-offset="2317" max-vertical-offset="3660">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="319" column="17" selection-start="11807" selection-end="11807" vertical-scroll-proportion="0.537037" vertical-offset="4524" max-vertical-offset="6675">
+        <state line="339" column="48" selection-start="12323" selection-end="12323" vertical-scroll-proportion="-2.8431373" vertical-offset="4940" max-vertical-offset="6675">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/explore-c-graph.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="238" column="13" selection-start="10152" selection-end="10152" vertical-scroll-proportion="0.56530213" vertical-offset="3280" max-vertical-offset="5580">
+          <folding>
+            <element signature="n#style#0;n#pre#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -232,8 +232,10 @@ function plotcGraphResult(inputData) {
       .text(function(d) {
             if (d.name.indexOf(", Topic") == -1)
                 return d.name;
-            else
-                return d.name.replace(/, Topic: [a-zA-z]+/, "")
+            else {
+                return d.name;
+                //return d.name.replace(/, Topic: [a-zA-z]+/, "")
+            }
             })
     .filter(function(d) { return d.x < width / 2; })
       .attr("x", 6 + sankey.nodeWidth())
