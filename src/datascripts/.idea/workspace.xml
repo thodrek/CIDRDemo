@@ -43,10 +43,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="CGraph.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="402" column="55" selection-start="15090" selection-end="15090" vertical-scroll-proportion="0.065743946" vertical-offset="6011" max-vertical-offset="6540">
+            <state line="16" column="35" selection-start="390" selection-end="390" vertical-scroll-proportion="-4.7058825" vertical-offset="0" max-vertical-offset="6540">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -99,11 +99,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ParetoFront.py" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ParetoFront.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="28" selection-start="359" selection-end="373" vertical-scroll-proportion="1.7647059" vertical-offset="180" max-vertical-offset="1860">
-              <folding />
+            <state line="11" column="28" selection-start="359" selection-end="373" vertical-scroll-proportion="0.5397351" vertical-offset="2" max-vertical-offset="1935">
+              <folding>
+                <element signature="e#23#39#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -775,13 +777,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="28" selection-start="359" selection-end="373" vertical-scroll-proportion="1.7647059" vertical-offset="180" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SourceSelection/LocalSearch.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="182" column="45" selection-start="5967" selection-end="5967" vertical-scroll-proportion="-38.4" vertical-offset="1755" max-vertical-offset="3405">
@@ -798,9 +793,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="402" column="55" selection-start="15090" selection-end="15090" vertical-scroll-proportion="0.065743946" vertical-offset="6011" max-vertical-offset="6540">
+        <state line="16" column="35" selection-start="390" selection-end="390" vertical-scroll-proportion="-4.7058825" vertical-offset="0" max-vertical-offset="6540">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceSelection/ParetoFront.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="28" selection-start="359" selection-end="373" vertical-scroll-proportion="0.5397351" vertical-offset="2" max-vertical-offset="1935">
+          <folding>
+            <element signature="e#23#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

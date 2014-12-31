@@ -14,7 +14,7 @@ from textblob import TextBlob
 import json
 import heapq
 import csv
-import Metrics
+from SourceSelection import Metrics
 
 class CGraph:
     def __init__(self):
