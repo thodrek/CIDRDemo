@@ -14,6 +14,7 @@ from textblob import TextBlob
 import json
 import heapq
 import csv
+import Metrics
 
 class CGraph:
     def __init__(self):
@@ -297,11 +298,31 @@ class DataFormater:
         return json.dumps(result)
 
 
+    def cgraphExplorationOverlaps(self, clusterIds, srcs):
+        activeClusters = set([])
+        for cid in clusterIds:
+            activeClusters.add(self._cgraph.manager().clusters()[cid])
+
+        for srcOut in srcs:
+            for srcIn in srcs:
+                sNameOut = self._cgraph.getSourceName(srcOut)
+                sNameIn = self._cgraph.getSourceName(srcIn)
+                selection = set([srcOut, srcIn])
+                selectionKey = sNameOut+ ", "+ sNameIn
+
+                coverage = Metrics.coverage(selection,activeClusters)
+                print selectionKey, coverage
+
+
+
+
 
     def cgraphExplorationTest(self, clusterIds):
         result = {}
         result['nodes'] = []
         result['links'] = []
+        srcsNameToId = {}
+        srcs = set([])
 
         # find edges for clusters
         edges = {}
@@ -325,6 +346,7 @@ class DataFormater:
             srcWeights = self._cgraph.manager().clusterSourceWeights()[cid]
             for sid in srcWeights:
                 sName = self._cgraph.getSourceName(sid)
+                srcsNameToId[sName] = sid
                 linkWeight = srcWeights[sid]
                 edge = (clusterName,sName)
                 if edge not in edges[clusterName]['sources']:
@@ -362,6 +384,7 @@ class DataFormater:
             top5sourceEdges = heapq.nlargest(5,sourceEdges,sourceEdges.get)
             for edge in top5sourceEdges:
                 sName = edge[1]
+                srcs.add(srcsNameToId[sName])
                 if sName in nodes:
                     sNodeId = nodes[sName]
                 else:
@@ -375,6 +398,9 @@ class DataFormater:
         orderedNodes = [k for k, v in sorted(nodes.iteritems(), key=lambda (k,v): (v,k))]
         for n in orderedNodes:
             result['nodes'].append({"name":n})
+
+        # print coverage and pairwise coverages
+        self.cgraphExplorationOverlaps(clusterIds,srcs)
 
         # convert result to json and return
         return json.dumps(result)
