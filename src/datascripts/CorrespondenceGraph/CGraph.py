@@ -303,16 +303,23 @@ class DataFormater:
         for cid in clusterIds:
             activeClusters.add(self._cgraph.manager().clusters()[cid])
 
+        singleCoverage = {}
+
         for srcOut in srcs:
             for srcIn in srcs:
                 sNameOut = self._cgraph.getSourceName(srcOut)
                 sNameIn = self._cgraph.getSourceName(srcIn)
                 selection = set([srcOut, srcIn])
                 selectionKey = sNameOut+ ", "+ sNameIn
-
                 coverage = Metrics.coverage(selection,activeClusters)
+                if sNameIn == sNameOut:
+                    singleCoverage[sNameIn] = coverage
                 print selectionKey, coverage
 
+        topSrcs = sorted(singleCoverage.items(), key=lambda x: (-x[1], x[0]))
+        print "\n"
+        for r in topSrcs:
+            print r[0], r[1]
 
 
 
@@ -403,7 +410,7 @@ class DataFormater:
         print "\n"
         self.cgraphExplorationOverlaps(clusterIds,srcs)
         print "\n"
-        
+
         # convert result to json and return
         return json.dumps(result)
 

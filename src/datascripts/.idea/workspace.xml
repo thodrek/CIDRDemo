@@ -46,7 +46,7 @@
       <file leaf-file-name="CGraph.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="405" column="8" selection-start="15158" selection-end="15158" vertical-scroll-proportion="0.7404844" vertical-offset="5861" max-vertical-offset="6570">
+            <state line="319" column="17" selection-start="11807" selection-end="11807" vertical-scroll-proportion="0.537037" vertical-offset="4524" max-vertical-offset="6675">
               <folding>
                 <element signature="e#25#66#0" expanded="true" />
               </folding>
@@ -451,7 +451,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.327787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.327787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13661636" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -802,7 +802,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CorrespondenceGraph/CGraph.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="405" column="8" selection-start="15158" selection-end="15158" vertical-scroll-proportion="0.7404844" vertical-offset="5861" max-vertical-offset="6570">
+        <state line="319" column="17" selection-start="11807" selection-end="11807" vertical-scroll-proportion="0.537037" vertical-offset="4524" max-vertical-offset="6675">
           <folding>
             <element signature="e#25#66#0" expanded="true" />
           </folding>
